@@ -1,4 +1,4 @@
-<p align="center"><img src="hhttps://www.shareicon.net/data/128x128/2015/10/06/112721_development_512x512.png"></p>
+<p align="center"><img src="https://www.shareicon.net/data/128x128/2015/10/06/112721_development_512x512.png"></p>
 
 ## Sobre este projeto
 
