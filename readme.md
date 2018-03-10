@@ -1,10 +1,4 @@
-<p align="center"><img src="https://cdn2.iconfinder.com/data/icons/oxygen/128x128/apps/tux.png"></p>
-
-<p align="center">
-<a href="https://travis-ci.org"><img src="https://felixrieseberg.gallerycdn.vsassets.io/extensions/felixrieseberg/vsc-travis-ci-status/1.1.0/1489588030200/Microsoft.VisualStudio.Services.Icons.Default" alt="Travis CI"></a>
-<a href="https://docker.com"><img src="https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2016/Nov/07/2479042169-6-fenics-dev-docker-logo_avatar.png" alt="Docker"></a>
-
-</p>
+<p align="center"><img src="hhttps://www.shareicon.net/data/128x128/2015/10/06/112721_development_512x512.png"></p>
 
 ## Sobre este projeto
 
