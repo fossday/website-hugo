@@ -1,9 +1,8 @@
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png"></p>
+<p align="center"><img src="https://cdn2.iconfinder.com/data/icons/oxygen/128x128/apps/tux.png"></p>
 
 <p align="center">
-<a href="http://gohugo.io"><img src="https://gitlab.com/uploads/-/system/project/avatar/912096/hugo.png" alt="GoHugo"></a>
-<a href="https://github.com"><img src="https://iconscout.com/icon/github-brand-logo" alt="Github"></a>
-<a href="https://github.com"><img src="https://microsoftcloudexplorer.gallerycdn.vsassets.io/extensions/microsoftcloudexplorer/visualstudiotoolsfordocker-preview/0.41.0/1482142258056/176081/2/DockerIcon.png" alt="Docker"></a>
+<a href="https://travis-ci.org"><img src="https://felixrieseberg.gallerycdn.vsassets.io/extensions/felixrieseberg/vsc-travis-ci-status/1.1.0/1489588030200/Microsoft.VisualStudio.Services.Icons.Default" alt="Travis CI"></a>
+<a href="https://docker.com"><img src="https://microsoftcloudexplorer.gallerycdn.vsassets.io/extensions/microsoftcloudexplorer/visualstudiotoolsfordocker-preview/0.41.0/1482142258056/176081/2/DockerIcon.png" alt="Docker"></a>
 
 </p>
 
