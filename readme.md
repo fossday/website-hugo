@@ -19,10 +19,10 @@ curl -fsSL https://get.docker.com/ | sh
 ## Como obter Docker?
 
 - [Link para documentação oficial](https://docs.docker.com/install/)
-- [Instalando em Windows](https://docs.docker.com/docker-for-windows/install/)
-- [Instalando em Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
-- [Instalando em Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-- [Instalando em MacOS](https://docs.docker.com/docker-for-mac/install/)
+    - [Instalando em Windows](https://docs.docker.com/docker-for-windows/install/)
+    - [Instalando em Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
+    - [Instalando em Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+    - [Instalando em MacOS](https://docs.docker.com/docker-for-mac/install/)
 
 ## Como criar uma imagem
 
