@@ -5,6 +5,8 @@
 Este repositório é para o site do http://fossday.org. Um evento comunitário que é realizado
 em Lajeado/RS.
 
+Caso tenha interesse em contribuir, deixe sem Pull Request :-)
+
 
 ## TL;DR (Too Long, Didn't Read) - Longo demais, não li
 
