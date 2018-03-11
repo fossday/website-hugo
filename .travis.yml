@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-
+  - git clone https://github.com/raffaeldutra/fossday.git
   - docker build -t fossday/gohugo .
   - docker run -it -v $(pwd)/site:/src -v $(pwd)/public:/src/public -p 1313:1313 fossday/gohugo /gohugo.sh -s
 
