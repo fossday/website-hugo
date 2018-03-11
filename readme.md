@@ -37,7 +37,7 @@ docker build -t fossday/gohugo .
 Publicação de código, ou seja, transforma todos os arquivos.md para HTML
 
 ```bash
-docker run -it -v $(pwd):/src -v $(pwd)/public:/src/public -p 1313:1313 fossday/gohugo
+docker run -it -v $(pwd)/site:/src -v $(pwd)/public:/src/public -p 1313:1313 fossday/gohugo
 ```
 
 ## Como rodar um servidor
@@ -45,5 +45,5 @@ docker run -it -v $(pwd):/src -v $(pwd)/public:/src/public -p 1313:1313 fossday/
 Aqui é possível rodar Hugo em modo servidor
 
 ```bash
-docker run -it -v $(pwd):/src -v $(pwd)/public:/src/public -p 1313:1313 fossday/gohugo /gohugo.sh -s
+docker run -it -v $(pwd)/site:/src -v $(pwd)/public:/src/public -p 1313:1313 fossday/gohugo /gohugo.sh -s
 ```
