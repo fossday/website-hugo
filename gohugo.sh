@@ -17,10 +17,10 @@ fi
 # -p para Publish (publicar conteúdo), ou seja, pega todos arquivos .md e
 # transforma para  HTML
 if [ "${1}" = "-p" ]; then
-    /go/bin/hugo \
+    hugo \
     --layoutDir \
     /src/layouts \
-    --config /src/config.toml \
+    --config /src/config.yaml \
     --themesDir /src/themes \
     --contentDir /src/content \
     --ignoreCache \
@@ -28,16 +28,14 @@ if [ "${1}" = "-p" ]; then
 
 # -p para Server (rodar servidor)
 elif [ "${1}" = "-s" ]; then
-    /go/bin/hugo server \
+    hugo server \
     --watch true \
     --bind 0.0.0.0 \
-    --config /src/config.toml \
+    --config /src/config.yaml \
     --layoutDir /src/layouts \
     --themesDir /src/themes \
     --contentDir /src/content \
     --ignoreCache \
-    --disableFastRender \
-    --config /src/config.toml \
     --baseURL ${url}
 fi
 
