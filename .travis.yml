@@ -22,4 +22,7 @@ deploy:
   verbose: true
   fqdn: fossday.org
   on:
-    branch: gh-pages
+    repo: raffaeldutra/fossday
+    branches:
+      only:
+        - master
