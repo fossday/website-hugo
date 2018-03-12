@@ -10,10 +10,11 @@ before_install:
 deploy:
   name: FOSS Team Deployment
   provider: pages
-  local-dir: site/public
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
+  local_dir: site/public
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
   verbose: true
+  fqdn: fossday.org
   on:
     branch: master
