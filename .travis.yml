@@ -8,9 +8,10 @@ script:
   - docker run --rm -v $(pwd)/site:/src -v $(pwd)/public:/src/public fossday/gohugo
   - echo $?
 
-after_success:
-- ls -la site
-- ls -la site/public
+# after_success:
+# - ls -la site
+# - ls -la site/public
+# - ls -la
 
 deploy:
   name: "FOSS Team Deployment"
