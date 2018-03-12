@@ -6,6 +6,8 @@ services:
 before_install:
 - docker build -t fossday/gohugo .
 - docker run -it -v $(pwd)/site:/src -v $(pwd)/public:/src/public fossday/gohugo
+- echo $?
+- echo "teste final"
 
 after_success:
 - ls -la
