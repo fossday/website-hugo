@@ -22,7 +22,7 @@ deploy:
   verbose: true
   fqdn: fossday.org
   on:
-    repo: raffaeldutra/fossday
+    repo: raffaeldutra/fossday.github.io
     branches:
       only:
-        - master
+        - develop
