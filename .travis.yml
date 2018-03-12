@@ -10,7 +10,7 @@ before_install:
 deploy:
   name: FOSS Team Deployment
   provider: pages
-  local-dir: public
+  local-dir: site/public
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
