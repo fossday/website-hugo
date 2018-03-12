@@ -1,12 +1,18 @@
 sudo: required
 
-dist: trusty
-
-language: bash
-
 services:
   - docker
 
 before_install:
 - docker build -t fossday/gohugo .
-- docker run -it -v $(pwd)/site:/src -v $(pwd)/public:/src/public -p 1313:1313 fossday/gohugo /gohugo.sh -s
+- docker run -it -v $(pwd)/site:/src -v $(pwd)/public:/src/public -p 1313:1313 fossday/gohugo
+
+deploy:
+  name: FOSS Team Deployment
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  verbose: true
+  on:
+    branch: master
