@@ -9,7 +9,6 @@ script:
   - echo $?
 
 # after_success:
-# - ls -la site
 # - ls -la site/public
 
 deploy:
