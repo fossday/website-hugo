@@ -20,7 +20,7 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
   verbose: true
-  fqdn: fossday.org
+  target_branch: master
   on:
     repo: raffaeldutra/fossday.github.io
     branches:
