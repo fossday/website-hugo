@@ -7,6 +7,9 @@ before_install:
 - docker build -t fossday/gohugo .
 - docker run -it -v $(pwd)/site:/src -v $(pwd)/public:/src/public fossday/gohugo
 
+after_success:
+- ls -la
+
 deploy:
   name: FOSS Team Deployment
   provider: pages
