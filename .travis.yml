@@ -13,7 +13,7 @@ after_success:
 - ls -la site/public
 
 deploy:
-  name: FOSS Team Deployment
+  name: "FOSS Team Deployment"
   provider: pages
   local_dir: site/public
   skip_cleanup: true
