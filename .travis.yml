@@ -22,7 +22,6 @@ deploy:
   verbose: true
   target_branch: master
   on:
-    repo: raffaeldutra/fossday.github.io
     branches:
       only:
         - develop
