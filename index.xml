@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Primeiro Foss Day Lajeado</title>
-    <link>https://fossday.github.io/</link>
+    <link>https://fossday.github.io/site/</link>
     <description>Recent content on Primeiro Foss Day Lajeado</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://fossday.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fossday.github.io/site/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
