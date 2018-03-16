@@ -20,7 +20,7 @@ if [ "${1}" = "-p" ]; then
     hugo \
     --layoutDir \
     /src/layouts \
-    --config /src/config.yaml \
+    --config /src/config.yml \
     --themesDir /src/themes \
     --contentDir /src/content \
     --ignoreCache \
@@ -31,7 +31,7 @@ elif [ "${1}" = "-s" ]; then
     hugo server \
     --watch true \
     --bind 0.0.0.0 \
-    --config /src/config.yaml \
+    --config /src/config.yml \
     --layoutDir /src/layouts \
     --themesDir /src/themes \
     --contentDir /src/content \
