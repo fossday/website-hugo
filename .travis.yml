@@ -6,14 +6,14 @@ services:
 
 script:
   - docker build --no-cache -t fossday/gohugo .
-  - docker run --rm -v $(pwd)/site:/src -v $(pwd)/site/deploy:/src/public fossday/gohugo
-  - docker run --rm -v $(pwd)/site:/src -v $(pwd)/site/deploy:/src/public fossday/gohugo ls -la /src/public
+  - docker run --rm -v $(pwd)/site:/src -v $(pwd)/site/public:/src/public fossday/gohugo
+  - docker run --rm -v $(pwd)/site:/src -v $(pwd)/site/public:/src/public fossday/gohugo ls -la /src/public
   - docker --version
 
-deploy:
+public:
   name: "FOSS Team Deployment"
   provider: pages
-  local_dir: site/deploy
+  local_dir: site/public
   skip_cleanup: false
   github_token: $GITHUB_TOKEN
   keep_history: true
