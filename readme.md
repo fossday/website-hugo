@@ -1,5 +1,11 @@
 <p align="center"><img src="https://www.shareicon.net/data/128x128/2015/10/06/112721_development_512x512.png"></p>
 
+
+<p align="center">
+<a href="https://travis-ci.org/fossday/site"><img src="https://travis-ci.org/fossday/site.svg?branch=develop" alt="Build Status"></a>
+<a href="https://img.shields.io/badge/License-GPL%20v3-blue.svg"><img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="License"></a>
+</p>
+
 - [Docker](#docker)
     - [Sobre este projeto](#sobre-este-projeto)
     - [TL;DR (Too Long, Didn't Read)](#tldr-too-long-didnt-read)
