@@ -1,4 +1,3 @@
-#baseurl: "http://localhost"
 baseurl: "https://fossday.github.io"
 title: "Primeiro Foss Day Lajeado"
 canonifyurls: true
