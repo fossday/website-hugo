@@ -1,5 +1,6 @@
 baseurl: "http://localhost"
-title: "Foss Day Lajeado"
+#baseurl: "http://fossday.github.io/site"
+title: "Primeiro Foss Day Lajeado"
 canonifyurls: true
 theme: "hugo-conference"
 
