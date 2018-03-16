@@ -9,7 +9,7 @@ params:
   # Conference info
   Name: "FossDay Lajeado"
   Description: "Conference description"
-  Date: "5 de Maio de 2018"v
+  Date: "5 de Maio de 2018"
   #Price: "Only $100" # If your event is free, just comment this line
   Venue: "Univates"
   Address: "UNIVATES"
