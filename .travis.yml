@@ -7,7 +7,6 @@ services:
 script:
   - docker build --no-cache -t fossday/gohugo .
   - docker run --rm -v $(pwd)/site:/src -v $(pwd)/public:/src/public fossday/gohugo
-  - ls -la public
 
 deploy:
   name: "FOSS Team Deployment"
