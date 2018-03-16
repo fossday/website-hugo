@@ -8,6 +8,7 @@ script:
   - docker build -t fossday/gohugo .
   - docker run --rm -v $(pwd)/site:/src -v $(pwd)/site/deploy:/src/public fossday/gohugo
   - docker run --rm -v $(pwd)/site:/src -v $(pwd)/site/deploy:/src/public fossday/gohugo ls -la /src/public
+  - docker --version
 
 deploy:
   name: "FOSS Team Deployment"
