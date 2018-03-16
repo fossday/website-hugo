@@ -6,12 +6,12 @@ services:
 
 script:
   - docker build -t fossday/gohugo .
-  - docker run --rm -v $(pwd)/site:/src -v $(pwd)/site/public:/src/public fossday/gohugo
+  - docker run --rm -v $(pwd)/site:/src -v $(pwd)/site/deploy:/src/public fossday/gohugo
 
 deploy:
   name: "FOSS Team Deployment"
   provider: pages
-  local_dir: site/public
+  local_dir: site/deploy
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
