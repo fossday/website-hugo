@@ -6,7 +6,7 @@ services:
 
 script:
   - docker build -t fossday/gohugo .
-  - docker run --rm -v $(pwd)/site:/src -v $(pwd)/public:/src/public fossday/gohugo
+  - docker run --rm -v $(pwd)/site:/src -v $(pwd)/site/public:/src/public fossday/gohugo
 
 deploy:
   name: "FOSS Team Deployment"
