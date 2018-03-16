@@ -9,7 +9,7 @@ script:
   - docker run --rm -v $(pwd)/site:/src -v $(pwd)/public:/src/public fossday/gohugo
   - ls -la public
 
-public:
+deploy:
   name: "FOSS Team Deployment"
   provider: pages
   local_dir: public
