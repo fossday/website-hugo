@@ -20,6 +20,4 @@ EXPOSE 1313
 
 COPY ./gohugo.sh /gohugo.sh
 
-VOLUME /src/public
-
 CMD ["/gohugo.sh", "-p"]
