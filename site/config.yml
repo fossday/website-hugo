@@ -1,4 +1,4 @@
-baseurl: "https://fossday.github.io"
+baseurl: "https://fossday.github.io/site"
 title: "Primeiro Foss Day Lajeado"
 canonifyurls: true
 theme: "hugo-conference"
