@@ -716,7 +716,7 @@ nav {
    HEADER
    ========================================================================== */
 .header {
-  background-image: url('../img/cover.jpg');
+  background-image: url('/img/header.png');
   background-color: #2b2b2b;
   background-repeat: no-repeat;
   background-position: center bottom;
