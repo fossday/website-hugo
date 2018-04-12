@@ -16,15 +16,15 @@ params:
   City:  "Lajeado"
   State: "Rio Grande do Sul"
   Images: ["/img/badge.jpg"]
-  GoogleMapsKey: "my-secret-maps-key"
+  GoogleMapsKey: "AIzaSyD0SXo4PtQAlft4ERHwSlsGjQ6RYyF20hc"
 
   # Active sections on the website to deactivate comment out with '#'
   # you can also change order here and it will reflect on page
   Sections:
     - about
     - location
-    #- speakers
-    #- schedule
+    - speakers
+    - schedule
     #- sponsors
     #- partners
     #- contact
@@ -43,7 +43,7 @@ params:
   # If you don't want this, just remove the callToAction property.
   CallToAction:
     text: "Faça seu registro!"
-    link: "http://register.example.com"
+    link: "https://goo.gl/wtmEEE"
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
   ForkButton:
@@ -66,83 +66,74 @@ params:
 
   # The entire schedule
   Schedule:
-    - name: "Check-in / Breakfast"
-      time: "9h00"
+    - name: "Recepção + Coffee"
+      time: "08:30"
 
-    - name: "Linus Torvalds"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Linux Foundation"
+    - name: "Jon \"Maddog\" Hall"
+      photo: "/img/speakers/maddog.png"
+      bio: "Jon Maddog Hall é o diretor executivo da Linux International, uma organização sem fins lucrativos de profissionais da computação e CEO da OptDyn"
+      company: "Linux Professional Institute (LPI)"
       link:
-        href: "http://twitter.com/linus"
-        text: "@linus"
+        href: "http://twitter.com/maddoghall"
+        text: "@maddoghall"
       presentation:
-        title: "Digging into a Linux Kernel"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "10h00"
+        title: "Abertura do evento"
+        description: "-"
+        time: "09h00"
 
-    - name: "Bill Gates"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Microsoft"
+    - name: "Jon \"Maddog\" Hall"
+      photo: "/img/speakers/maddog.png"
+      bio: "Jon Maddog Hall é o diretor executivo da Linux International, uma organização sem fins lucrativos de profissionais da computação e CEO da OptDyn"
+      company: "Linux Professional Institute (LPI)"
       link:
-        href: "http://github.com/billy95"
-        text: "@billy95"
+        href: "http://twitter.com/maddoghall"
+        text: "@maddoghall"
       presentation:
-        title: "Introducing Windows 12"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        title: "Computação em nuvem, Criptomoedas e Blockchain"
+        description: ""
+        time: "09h10"
+
+    - name: "Rafael Dutra"
+      photo: "/img/speakers/rafael_dutra.jpg"
+      bio: "Rafael Dutra é Administrador de Sistemas e entusiasta DevOps. Utiliza Linux desde 2005 e atualmente trabalha como Arquiteto SAAS para Jive Software pela Crossover"
+      company: "Crossover/Jive Software"
+      link:
+        href: "http://rafaeldutra.me"
+        text: "@raffaeldutra"
+      presentation:
+        title: "Docker Workshop (iniciante e intermediário)"
+        description: "Um hands on para iniciarmos no mundo de containers utilizando Docker"
         time: "11h00"
 
-    - name: "Lunch"
+    - name: "Almoço"
       time: "12h00"
 
-    - name: "Chuck Norris"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Delta Command"
+    - name: "Rafael Dutra"
+      photo: "/img/speakers/rafael_dutra.jpg"
+      bio: "Rafael Dutra é Administrador de Sistemas e entusiasta DevOps. Utiliza Linux desde 2005 e atualmente trabalha como Arquiteto SAAS para Jive Software pela Crossover"
+      company: "Crossover/Jive Software"
       link:
-        href: "http://twitter.com/littlechuck"
-        text: "@littlechuck"
+        href: "http://rafaeldutra.me"
+        text: "@raffaeldutra"
       presentation:
-        title: "How to kill a elephant with one finger"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        title: "Docker Workshop (iniciante e intermediário)"
+        description: "Continuação do Workshop sobre Docker"
         time: "13h00"
-
-    - name: "Steve Jobs"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Apple, Inc."
-      link:
-        href: "http://github.com/stevie"
-        text: "@stevie"
-      presentation:
-        title: "Presenting iPad"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "14h00"
 
     - name: "Coffee-break"
       time: "15h00"
 
-    - name: "Mark Zuckerberg"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Facebook"
+    - name: "Pablo Dall'Oglio"
+      photo: "/img/speakers/pablo.jpeg"
+      bio: "Pablo Dall’Oglio é graduado em Análise de Sistemas e mestre em Engenharia de Software pela Universidade do Vale do Rio dos Sinos (Unisinos). Autor dos livros PHP-GTK – Criando aplicações gráficas com PHP e Criando relatórios com PHP, tem grande experiência no desenvolvimento de sistemas para gestão de negócios e está constantemente envolvido com projeto e implementação de softwares orientados a objetos.Atualmente dedica-se à sua empresa, a Adianti Solutions (adianti.com.br), onde constrói ferramentas de produtividade como o Adianti Framework (adianti.com.br/framework) e o Adianti Reports (adianti.com.br/reports), além de prestar consultoria em projeto e desenvolvimento de sistemas orientados a objetos."
+      company: "Adianti Solutions"
       link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
+        href: "https://www.adianti.com.br/"
+        text: "https://www.adianti.com.br/"
       presentation:
-        title: "Revealing Facebook Secrets"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "16h00"
+        title: ""
+        description: ""
+        time: "15h30"
 
-    - name: "Steve Wozniak"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Apple, Inc."
-      link:
-        href: "http://twitter.com/woz"
-        text: "@woz"
-      presentation:
-        title: "Why do I prefer Android over iPhone"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "17h00"
+    - name: "Encerramento"
+      time: "17:00"
