@@ -8,7 +8,7 @@ GoogleAnalytics: ""
 params:
   # Conference info
   Name: "FossDay Lajeado"
-  Description: "Conference description"
+  Description: "Primeiro evento FOSS Day Lajeado. Participação do ilustre \"Maddog\""
   Date: "5 de Maio de 2018"
   #Price: "Only $100" # If your event is free, just comment this line
   Venue: "Univates"
