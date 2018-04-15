@@ -19,3 +19,4 @@ deploy:
   target_branch: master
   on:
     branch: develop
+  fqdn: fossday.org
