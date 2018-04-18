@@ -25,7 +25,7 @@ params:
     - location
     - speakers
     - schedule
-    #- sponsors
+    - sponsors
     #- partners
     #- contact
 
@@ -51,9 +51,9 @@ params:
 
   # List of Sponsors
   Sponsors:
-    - name: "Hugo"
-      logo: "/img/hugo.png"
-      url: "http://gohugo.io"
+    - name: "Solis"
+      logo: "/img/sponsors/solis.png"
+      url: "http://www.solis.com.br"
 
   # List of Partners
   Partners:
@@ -69,17 +69,17 @@ params:
     - name: "Recepção + Coffee"
       time: "08:30"
 
-    - name: "Jon \"Maddog\" Hall"
-      photo: "/img/speakers/maddog.png"
-      bio: "Jon \"Maddog\" Hall é o diretor executivo da Linux International, uma organização sem fins lucrativos de profissionais da computação e CEO da OptDyn"
-      company: "Diretor Executivo da Linux International, CEO da OptDyn e presidente do conselho do Linux Professional Institute."
+    - name: "Abertura do evento + avisos"
+      photo: "/img/speakers/fossday-logo.jpeg"
+      bio: ""
+      company: ""
       link:
-        href: "http://twitter.com/maddoghall"
-        text: "@maddoghall"
+        href: "http://fossday.org"
+        text: ""
       presentation:
         title: "Abertura do evento"
         description: "-"
-        time: "09h00"
+        time: "09h05"
 
     - name: "Jon \"Maddog\" Hall"
       photo: "/img/speakers/maddog.png"
@@ -114,7 +114,7 @@ params:
         href: "http://rafaeldutra.me"
         text: "@raffaeldutra"
       presentation:
-        title: "Docker Workshop (iniciante e intermediário)"
+        title: "Docker Workshop (iniciante e intermediário)."
         description: "Um hands on para iniciarmos no mundo de containers utilizando Docker"
         time: "11h00"
 
