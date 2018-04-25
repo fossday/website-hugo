@@ -93,7 +93,7 @@ params:
         description: "Independente do que você escolher para trabalhar, seguindo a atualidade e tendências tecnológicas -- inteligência artificial, robótica, internet das coisas, ciência de dados, criptomoedas, contratos inteligentes .. --, você estará trabalhando com softwares livres, de código aberto, a base de tudo isso. Jon \"maddog\" Hall, presidente do conselho do Linux Professional Institute irá falar de sua experiência no mercado de trabalho com software livre e estará à disposição para responder suas perguntas."
         time: "09h10"
 
-    - name: "Césa Brod"
+    - name: "César Brod"
       photo: "/img/speakers/cesar_brod.jpg"
       bio: "Diretor de Desenvolvimento de Comunidades do Linux Professional Institute para a América Latina e Caribe, que reside em Lajeado no Rio Grande do Sul.
       Atua na área de informática desde 1982. Sua formação profissional deu-se em grande parte nos Estados Unidos, Canadá e França. Começou a trabalhar com o Linux em 1993 e, desde 1997 desenvolve, através da BrodTec, serviços de consultoria, gestão de projetos e criação de modelos de negócios que têm por base softwares de código aberto."
