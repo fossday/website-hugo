@@ -135,7 +135,7 @@ params:
 
 
     - name: "Regis Tomkiel"
-      photo: "/img/speakers/rafael_dutra.jpg"
+      photo: ""
       bio: "Graduando em Sistemas de informação, desenvolvedor web e cofundador da produtora e agência Dose Extra Multimídia. Entusiasta de Software Livre desde 2006, quando conheceu o Slackware. Atualmente desenvolve praticamente todos os trabalhos de produção de vídeo nativamente numa distro GNU/Linux e com softwares renomados no mercado."
       company: "Dose Extra Multimídia"
       link:
@@ -159,7 +159,7 @@ Palestra introdutória sobre o gerador de sites escrito em GO, o Hugo. Serão ap
         title: "...porque no MEU TEMPO"
         description: "Voltada para todos os tipos de público, é uma apresentação / comparação sobre as tecnologias atuais em relação às disponíveis há 10 ou 15 anos atrás. Distribuições de Software, configuração de hardware, programas, redes sociais: o quanto isso pode mudar em 15 anos?"
         time: "14h00"
-        
+
 
     - name: "Coffee-break"
       time: "15h00"
