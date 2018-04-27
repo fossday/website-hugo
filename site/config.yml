@@ -26,7 +26,7 @@ params:
     - speakers
     - schedule
     - sponsors
-    - partners
+    # - partners
     #- contact
 
   # Titles which you can translate to other languages
@@ -60,9 +60,7 @@ params:
     - name: "Hugo"
       logo: "/img/hugo.jpg"
       url: "https://gohugo.io"
-    - name: "BrazilJS"
-      logo: "/img/partner.png"
-      url: "http://braziljs.org"
+
 
   # The entire schedule
   Schedule:
@@ -136,10 +134,10 @@ params:
     - name: "Fabio Beneditto"
       photo: "/img/speakers/fabio.jpg"
       bio: "Entusiasta de Software Livre desde 1999, Desenvolvedor Web desde 2008, Graduado em Sistemas para Internet em 2015, voluntário no SUMO (Suporte Mozilla) e no Tchelinux."
-      company: ""
+      company: "DBC Company"
       link:
-        href: ""
-        text: ""
+        href: "https://about.me/fabiobeneditto"
+        text: "https://about.me/fabiobeneditto"
       presentation:
         title: "...porque no MEU TEMPO"
         description: "Voltada para todos os tipos de público, é uma apresentação / comparação sobre as tecnologias atuais em relação às disponíveis há 10 ou 15 anos atrás. Distribuições de Software, configuração de hardware, programas, redes sociais: o quanto isso pode mudar em 15 anos?"
