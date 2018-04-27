@@ -203,8 +203,8 @@ Palestra introdutória sobre o gerador de sites escrito em GO, o Hugo. Serão ap
       bio: "Professor e pesquisador em assuntos relacionados a tecnologias de software e hardware livres e ao ecossistema hacker/ maker e de startups. Professor no SENAC Santa Cruz do Sul e in company; Voluntário nos projetos educacionais CodeClubeBrasil.org e JabutiEdu.org e no Grupo Tchelinux.org; Doutorando em Gestão e Tecnologia Ambiental, Mestre em Nanociências, Especialista em Gerenciamento de Projetos, Bacharel em Ciência da Computação e Técnico em Informática; Palestras em Campus Party/ Latinoware/ FISL/ FGSL e em eventos locais; Mentorias em Startups Weekends;"
       company: ""
       link:
-        href: ""
-        text: ""
+        href: "https://fb.com/luizrauber"
+        text: "https://fb.com/luizrauber"
       presentation:
         title: "25 minutos de dicas pra se aprimorar em informática!"
         description: "Com título auto-explicativo, nesta \"fala\" eu vou passar umas dicas de coisas aprendidas nos quase 10 anos de eventos e contribuições ao mundo do software livre. Assim dentro do tempo espera-se que aprenda sobre eventos, perfil e currículo (nesta ordem mesmo)."
