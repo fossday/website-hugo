@@ -26,7 +26,7 @@ params:
     - speakers
     - schedule
     - sponsors
-    #- partners
+    - partners
     #- contact
 
   # Titles which you can translate to other languages
@@ -133,9 +133,21 @@ params:
         description: "Continuação do Workshop sobre Docker"
         time: "13h00"
 
+    - name: "Fabio Beneditto"
+      photo: "/img/speakers/fabio.jpg"
+      bio: "Entusiasta de Software Livre desde 1999, Desenvolvedor Web desde 2008, Graduado em Sistemas para Internet em 2015, voluntário no SUMO (Suporte Mozilla) e no Tchelinux."
+      company: ""
+      link:
+        href: ""
+        text: ""
+      presentation:
+        title: "...porque no MEU TEMPO"
+        description: "Voltada para todos os tipos de público, é uma apresentação / comparação sobre as tecnologias atuais em relação às disponíveis há 10 ou 15 anos atrás. Distribuições de Software, configuração de hardware, programas, redes sociais: o quanto isso pode mudar em 15 anos?"
+        time: "13h00"
+
 
     - name: "Regis Tomkiel"
-      photo: ""
+      photo: "/img/speakers/regis.jpg"
       bio: "Graduando em Sistemas de informação, desenvolvedor web e cofundador da produtora e agência Dose Extra Multimídia. Entusiasta de Software Livre desde 2006, quando conheceu o Slackware. Atualmente desenvolve praticamente todos os trabalhos de produção de vídeo nativamente numa distro GNU/Linux e com softwares renomados no mercado."
       company: "Dose Extra Multimídia"
       link:
@@ -145,21 +157,7 @@ params:
         title: "Conheça a Web estática"
         description: "Conheça o mundo dos geradores de sites estáticos e comece o seu próprio projeto em minutos.
 Palestra introdutória sobre o gerador de sites escrito em GO, o Hugo. Serão apresentados exemplos, dicas e o fundamental para colocar o primeiro projeto no ar."
-        time: "13h00"
-
-
-    - name: "Fabio Beneditto"
-      photo: ""
-      bio: "Entusiasta de Software Livre desde 1999, Desenvolvedor Web desde 2008, Graduado em Sistemas para Internet em 2015, voluntário no SUMO (Suporte Mozilla) e no Tchelinux."
-      company: ""
-      link:
-        href: ""
-        text: ""
-      presentation:
-        title: "...porque no MEU TEMPO"
-        description: "Voltada para todos os tipos de público, é uma apresentação / comparação sobre as tecnologias atuais em relação às disponíveis há 10 ou 15 anos atrás. Distribuições de Software, configuração de hardware, programas, redes sociais: o quanto isso pode mudar em 15 anos?"
         time: "14h00"
-
 
     - name: "Coffee-break"
       time: "15h00"
