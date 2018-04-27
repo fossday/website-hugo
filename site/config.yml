@@ -26,8 +26,9 @@ params:
     - speakers
     - schedule
     - sponsors
-    # - partners
-    #- contact
+    # - support
+    - partners
+    - presenter
 
   # Titles which you can translate to other languages
   Titles:
@@ -38,6 +39,7 @@ params:
     sponsors: "Patrocinadores"
     partners: "Parceiros"
     contact: "Contato"
+    presenter: "Realização"
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
@@ -57,9 +59,21 @@ params:
 
   # List of Partners
   Partners:
-    - name: "Hugo"
-      logo: "/img/hugo.jpg"
-      url: "https://gohugo.io"
+    - name: "Adriano Ott"
+      logo: "/img/partners/adriano.png"
+      url: "https://www.adrianoott.com.br/"
+    - name: "LPI"
+      logo: "/img/partners/lpi.png"
+      url: "https://lpi.org"
+    - name: "Novatec"
+      logo: "/img/partners/novatec.png"
+      url: "https://novate.com.br"
+
+  # List of Support
+  Presenter:
+    - name: "Taquari Valley"
+      logo: "/img/presenter/taquari_valley.png"
+      url: ""
 
 
   # The entire schedule
@@ -103,6 +117,18 @@ params:
         description: "Um dos assuntos mais importantes e também o mais menosprezado por equipes de desenvolvimento são os testes. Reconhecidamente, a curva de aprendizagem para manter uma cobertura completa de testes em todo o software é extensa e aguda. É preciso infectar os desenvolvedores com o bicho testador para que eles reconheçam o valor dos testes tanto na proteção de seu código quanto na eliminação de débito técnico e dos bugs, verdadeiros ovos de alien que, se não tratados, tomarão conta de todo o planeta.
         Nesta apresentação, que é extraída do curso \"Introdução a Testes Ágeis\", Cesar irá mostrar como implementar testes de aceitação simples, usando o plugin Katalon Automation Recorder e a linguagem Python."
         time: "10h00"
+
+    - name: "Convidados"
+      photo: "/img/speakers/fossday-logo.jpeg"
+      bio: ""
+      company: ""
+      link:
+        href: ""
+        text: ""
+      presentation:
+        title: "Painel: Tecnologia e Software Livre"
+        description: "-"
+        time: "11h00"
 
     - name: "Rafael Dutra"
       photo: "/img/speakers/rafael_dutra.jpg"
@@ -171,6 +197,18 @@ Palestra introdutória sobre o gerador de sites escrito em GO, o Hugo. Serão ap
         title: "Criando software para o futuro com DDD, Arquitetura, Patterns, e Atitude"
         description: "Nesta palestra abordaremos diferentes aspectos do desenvolvimento de software, relacionados à modelagem, arquitetura, cultura, e padrões, que influenciam a criação de softwares adaptáveis para mudanças futuras."
         time: "15h30"
+
+    - name: "Rauber"
+      photo: "/img/speakers/rauber.jpg"
+      bio: "Professor e pesquisador em assuntos relacionados a tecnologias de software e hardware livres e ao ecossistema hacker/ maker e de startups. Professor no SENAC Santa Cruz do Sul e in company; Voluntário nos projetos educacionais CodeClubeBrasil.org e JabutiEdu.org e no Grupo Tchelinux.org; Doutorando em Gestão e Tecnologia Ambiental, Mestre em Nanociências, Especialista em Gerenciamento de Projetos, Bacharel em Ciência da Computação e Técnico em Informática; Palestras em Campus Party/ Latinoware/ FISL/ FGSL e em eventos locais; Mentorias em Startups Weekends;"
+      company: ""
+      link:
+        href: ""
+        text: ""
+      presentation:
+        title: "25 minutos de dicas pra se aprimorar em informática!"
+        description: "Com título auto-explicativo, nesta \"fala\" eu vou passar umas dicas de coisas aprendidas nos quase 10 anos de eventos e contribuições ao mundo do software livre. Assim dentro do tempo espera-se que aprenda sobre eventos, perfil e currículo (nesta ordem mesmo)."
+        time: "16h30"
 
     - name: "Encerramento"
       time: "17:00"
