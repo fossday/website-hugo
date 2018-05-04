@@ -56,7 +56,10 @@ params:
     - name: "Solis"
       logo: "/img/sponsors/solis.png"
       url: "http://www.solis.com.br"
-
+    - name: "DA Engenharia de Software Univates"
+      logo: "/img/partners/engenharia.png"
+      url: ""
+      
   # List of Partners
   Partners:
     - name: "Adriano Ott"
@@ -71,9 +74,7 @@ params:
     - name: "Traço D"
       logo: "/img/partners/tracod.jpg"
       url: "http://www.tracod.com.br"
-    - name: "DA Engenharia de Software Univates"
-      logo: "/img/partners/engenharia.png"
-      url: ""
+
 
   # List of Support
   Presenter:
