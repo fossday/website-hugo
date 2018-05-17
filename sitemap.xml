@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://fossday.org/categories/</loc>
+    <loc>https://fossday.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://fossday.org/</loc>
+    <loc>https://fossday.org/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://fossday.org/tags/</loc>
+    <loc>https://fossday.org/tags/</loc>
     <priority>0</priority>
   </url>
   
