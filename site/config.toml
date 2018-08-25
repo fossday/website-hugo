@@ -1,0 +1,5 @@
+baseURL = "/"
+languageCode = "pt-br"
+title = "My New Hugo Site"
+theme = "conference"
+dataDir = "/src/data"

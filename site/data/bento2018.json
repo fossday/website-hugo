@@ -1,0 +1,56 @@
+{
+  "content": {
+  "Event": [
+    {
+      "title": "Primeiro FossDay Bento Gonçalves",
+      "description": "Palestras sobre tecnologia, Software Livre e Open Source.",
+      "local": "Universidade de Caxias do Sul (Campus Carvi), Alameda João Dal Sasso, Bloco B...",
+      "address": "Alameda João Dal Sasso, 800 (2,12 km)",
+      "city":  "Bento Gonçalves",
+      "state": "Rio Grande do Sul",
+      "image": "/img/badge.jpg",
+      "GoogleMapsKey": "AIzaSyD0SXo4PtQAlft4ERHwSlsGjQ6RYyF20hc",
+      "date": "2018-09-22",
+      "limitSubmit": "2018-08-31",
+      "linkSubmit": "https://idjsijds.net",
+      "linkSubs": "https://fdfhdufhd.fnr",
+      "limitSubs": "2018-09-20"
+    }
+  ],
+  "Slides": [
+    {
+      "title": "Foss Day Bento Gonçalves",
+      "img": "https://i.imgur.com/yCa9FDe.png",
+      "blink": "https://fossday.org/lajeado",
+      "btext": "Submeter palestra",
+      "active": "active"
+    }
+  ],
+    "Sponsors":[
+    {
+        "title": "Dose Extra Multimídia",
+        "url": "https://doseextra.com",
+        "short": "Desenvolvimento web e publicidade.",
+        "logo": "https://i.imgur.com/ew62Ksf.png"
+    },
+    {
+      "title": "Universidade de Caxias do Sul (Carvi)",
+      "url": "https://ucs.br",
+      "short": "UCS - Campus de Bento Gonçalves (Carvi)",
+      "logo": "https://i.imgur.com/UEGm4zc.png"
+    },
+    {
+      "title": "Apoie o Foss Day Bento Gonçalves 2018",
+      "url": "https://fossday.org",
+      "short": "Apoie o Foss Day Bento Gonçalves 2018",
+      "logo": "https://i.imgur.com/aTpvv71.png"
+    },
+    {
+      "title": "Apoie o Foss Day Bento Gonçalves 2018",
+      "url": "https://fossday.org",
+      "short": "Apoie o Foss Day Bento Gonçalves 2018",
+      "logo": "https://i.imgur.com/aTpvv71.png"
+    }
+  ]
+  }
+}

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500,700');
+body {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #777777;
+  margin: 0;
+  line-height: 25px;
+  background: #fff;
+  -webkit-box-sizing: box-sizing;
+  -moz-box-sizing: box-sizing;
+  box-sizing: box-sizing;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  color: #2d2d2d;
+  font-weight: 700;
+}
+p {
+  color: #777777;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+a {
+  color: #e91e63;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+a:hover {
+  color: #e91e63;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ol {
+  list-style: none;
+}
+.section {
+  padding: 60px 0;
+}
+.section-title {
+  color: #2d2d2d;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  padding: 15px 0px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.section-subcontent {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.small-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.btn {
+  padding: 10px 40px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.btn:focus {
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+.btn-common {
+  color: #FFF;
+  background: #e91e63;
+}
+.btn-common:hover {
+  color: #fff;
+  box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42), 0 4px 23px 0px rgba(233, 30, 99, 0.12), 0 8px 10px -5px rgba(233, 30, 99, 0.02);
+}
+.btn-border {
+  color: #777777;
+  background: #fff;
+  box-shadow: 0 5px 5px -2px rgba(31, 31, 31, 0.4);
+}
+.btn-border:hover {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+.btn-border:focus {
+  color: #2d2d2d !important;
+}
+.btn-lg {
+  font-size: 15px;
+  padding: 14px 40px;
+  text-transform: uppercase;
+}
+.btn-small {
+  padding: 11px 25px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  opacity: 1;
+}
+/* ==========================================================================
+ Back to top
+ ========================================================================== */
+.back-to-top {
+  position: fixed;
+  bottom: 35px;
+  right: 40px;
+  display: none;
+  z-index: 99;
+}
+.back-to-top i {
+  display: block;
+  width: 40px;
+  font-size: 20px;
+  height: 40px;
+  background: #e91e63;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.08);
+  line-height: 32px;
+  border-radius: 50%;
+}
+/* ==========================================================================
+   Page Header
+   ========================================================================== */
+.page-header {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: url(../img/background/header-bg.jpg);
+  background-size: cover;
+  background-position: 0px 0px, 50% 50%;
+  min-height: 240px;
+}
+.page-header:before {
+  background: rgba(34, 34, 34, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+}
+.page-header .page-header-inner {
+  position: absolute;
+  color: #fff;
+  bottom: 10px;
+}
+.page-header .page-title {
+  text-align: left;
+  color: #fff;
+  font-size: 40px;
+  padding: 15px 0;
+  margin-bottom: 10px !important;
+}
+.page-header .breadcrumb {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  position: relative;
+  z-index: 9;
+}
+.page-header .breadcrumb li {
+  line-height: 25px;
+  color: #e91e63;
+}
+.page-header .breadcrumb li a {
+  color: #fff;
+}
+.page-header .breadcrumb li a:hover {
+  color: #e91e63;
+}

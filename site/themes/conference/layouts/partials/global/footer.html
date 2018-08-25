@@ -1,0 +1,49 @@
+<footer class="section">
+    <div class="container">
+        <div class="row">
+          {{ range .General }}
+            {{ range .Global }}
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <h3><img src="{{ .Logo }}" alt="{{ .Short }}"></h3>
+                <p>{{ .Description }}</p>
+            </div>
+            {{ end }}
+
+            {{ range .FooterMenu }}
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <h3>{{ .title }}</h3>
+                <ul>
+                  {{ range .submenu }}
+                    <li><a href="{{ .link }}">{{ .text }}</a></li>
+                  {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+          {{ end }}
+        </div>
+    </div>
+</footer>
+
+</div>
+
+
+<section id="copyright">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="copyright-text text-center">
+                ©Desenvolvido pela equipe <a href="{{ .Site.BaseURL }}">
+                    Foss Day</a>,
+                Baseado no tema
+                <a href="https://graygrids.com/item/impression-bootstrap-html5-event-conference-template/" target="_blank">
+                    Impression Lite
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+
+<a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+</a>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ range $.Site.Data.GeneralConf }}
+  {{ range .Cities }}
+    {{ $nick := .nick }}
+    {{ $year := now.Format "2006" }}
+    {{ $city := $year | print $nick }}
+
+      {{ range (index $.Site.Data $city) }}
+        {{ range .Event }}
+          {{ $now := now.Format "2006-01-02" }}
+          {{ $submit := (dateFormat "2006-01-02" .limitSubmit) }}
+          {{ $start := (dateFormat "2006-01-02" .date) }}
+
+            {{ if lt $now $start }}
+
+              {{ partial "global/head.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) ) }}
+                <body>
+                  {{ partial "global/header.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) ) }}
+
+               {{ if lt $now $submit }}
+
+                 {{ partial "submit/home.html" (dict "GeneralConf" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) ) }}
+
+               {{ else if (and ge $now $submit le $now $start)}}
+
+                  {{ partial "join/home.html" . }}
+
+               {{ else if gt $now $start }}
+
+                  {{ partial "base/home.html" . }}
+
+              {{ end }}
+
+              {{ partial "global/footer.html" (dict "General" $.Site.Data.GeneralConf ) }}
+
+              {{ partial "global/scripts.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city)) }}
+
+           {{ end }}
+        {{ end }}
+      {{ end }}
+  {{ end }}
+{{ end }}
+</body>
+</html>

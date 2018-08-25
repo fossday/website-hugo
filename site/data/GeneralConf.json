@@ -1,0 +1,175 @@
+{
+  "content": {
+    "Global": [
+      {
+      "Name": "Foss Day",
+      "Short": "Grupo de entusiastas de tecnologia, Software Livre e Open Source.",
+      "Description": "Foss Day é a iniciativa de promover tecnologia, Software Livre, Open Source e cidadania através de palestras organizadas por voluntários.",
+      "Logo": "kkkk.jpg",
+      "Favicon": "",
+      "History": "",
+      "Social": [
+        {
+          "analytics": "AID-8848484",
+          "telegram": "gggg",
+          "github": "fffff",
+          "facebook": {
+              "page": "fossday",
+              "id": "7837837483784",
+              "img": " "
+            }
+        }
+      ]
+      }
+    ],
+    "HeadMenu":[
+      {
+        "text": "Home",
+        "link":"http://localhost:1313"
+      },
+      {
+        "text": "Eventos",
+        "link":"https://fossday.org/eventos",
+        "sub":[
+          {
+            "text": "Adicione sua cidade",
+            "link": "https://fossday.org/realize-um-fossday"
+          }
+        ]
+      },
+      {
+        "text": "Participe",
+        "link":"https://fossday.org/comunidade"
+      },
+      {
+        "text": "O grupo",
+        "link":"https://fossday.org/comunidade"
+      },
+      {
+        "text": "Apoie",
+        "link":"https://fossday.org/apoie"
+      }
+    ],
+    "FooterMenu":[
+      {
+        "title": "Eventos",
+        "submenu":[
+          {
+            "text": "Organize um evento",
+            "link":"https://fossday.org/organize-um-evento"
+          },
+          {
+            "text": "Seja voluntário",
+            "link":"https://fossday.org/seja-voluntario"
+          },
+          {
+            "text": "Espalhe a palavra",
+            "link":"https://fossday.org/divulgue"
+          }
+        ]
+      },
+      {
+        "title": "Quem Somos",
+        "submenu":[
+          {
+            "text": "Colaboradores",
+            "link":"https://fossday.org/colaboradores"
+          },
+          {
+            "text": "Blog",
+            "link":"https://fossday.org/blog"
+          },
+          {
+            "text": "Eventos realizados",
+            "link":"https://fossday.org/eventos-realizados"
+          },
+          {
+            "text": "Repositórios",
+            "link":"https://fossday.org/repositorios"
+          }
+        ]
+      },
+      {
+        "title": "Links",
+        "submenu":[
+          {
+            "text": "GitHub",
+            "link":"https://fossday.org/colaboradores"
+          },
+          {
+            "text": "Grupo Telegram",
+            "link":"https://fossday.org/blog"
+          },
+          {
+            "text": "Página no Facebook",
+            "link":"https://fossday.org/eventos-realizados"
+          },
+          {
+            "text": "Doações",
+            "link":"https://fossday.org/repositorios"
+          }
+        ]
+      }
+    ],
+    "Slides": [
+            {
+                "title": "Foss Day Lajeado 2019",
+                "img": "assets/img/slider/bg-2.jpg",
+                "blink": "https://fossday.org/lajeado",
+                "btext": "Saiba Mais",
+                "active": "active"
+            },
+            {
+                "title": "Organize um evento",
+                "img": "assets/img/slider/bg-2.jpg",
+                "blink": "https://fossday.org",
+                "btext": "Saiba Mais"
+            },
+            {
+                "title": "Espalhe a palavra!",
+                "img": "assets/img/slider/bg-2.jpg",
+                "blink": "https://fossday.org/comunidade",
+                "btext": "Comunidade"
+            }
+
+        ],
+    "Sponsors":[
+      {
+        "name": "Dose Extra Multimídia",
+        "link": "https://doseextra.com",
+        "image": "...",
+        "alt": "Agência de publicidade e desenvolvimento web."
+      },
+      {
+        "name": "Universidade de Caxias do Sul (Carvi)",
+        "link": "https://ucs.br",
+        "image": "...",
+        "alt": "Universidade de Caxias do Sul, Campus de Bento Gonçalves."
+      },
+      {
+        "name": "Apoie o Foss Day",
+        "link": "#",
+        "image": "...",
+        "alt": "Apoie o Foss Day."
+      },
+      {
+        "name": "Apoie o Foss Day",
+        "link": "#",
+        "image": "...",
+        "alt": "Apoie o Foss Day."
+      }
+    ],
+    "Cities":[
+        {
+          "name": "Lajeado",
+          "nick":"lajeado",
+          "link":"https://fossday.org/lajeado"
+        },
+        {
+          "name": "Bento Gonçalves",
+          "nick": "bento",
+          "link":"https://fossday.org/bento"
+        }
+    ]
+  }
+}

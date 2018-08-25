@@ -1,0 +1,182 @@
+{{ range .GeneralConf }}
+<div id="carousel-area">
+  <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner" role="listbox">
+
+      {{ range .Slides }}
+
+      <div class="item {{ with .active }} active {{ end }} ">
+        <img src="{{ .img }}" alt="{{ .titulo }}" style="width: 100%">
+        <div class="carousel-caption">
+          <h2 class="wow fadeInUp" data-wow-delay="300ms">{{ .title | safeHTML}}</h2>
+          <div class="buttons" >
+            <a class="btn btn-lg btn-common wow fadeInRight" data-wow-delay="300ms" href="{{ .blink }}">{{ .btext }}</a>
+          </div>
+          <a data-scroll href="#featured">
+            <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
+              <span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      {{ end }}
+
+    </div>
+
+    <a class="left carousel-control" href="#carousel-slider" role="button" data-slide="prev">
+      <span class="icon-arrow-left" aria-hidden="true"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-slider" role="button" data-slide="next">
+      <span class="icon-arrow-right" aria-hidden="true"></span>
+    </a>
+  </div>
+</div>
+
+
+<section class="countdown-timer section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
+        <div class="text">
+          <h2>{{ .titulo | safeHTML }}</h2>
+          <h4>{{ .local }} <br> {{ .data }} </h4>
+          <a href="{{ .blink }}" class="btn btn-lg btn-common">{{ .btext }}</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
+        <div class="time-countdown">
+          <div id="clock" class="time-count"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="event" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="tab-block wow fadeInDown" data-wow-delay="0s">
+          <div class="icon">
+            <i class="icon-location-pin"></i>
+          </div>
+          <div class="desc">
+            <h4>Local</h4>
+            <p>{{ .local | safeHTML }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="tab-block wow fadeInDown" data-wow-delay="0.2s">
+          <div class="icon">
+            <i class="icon-calendar"></i>
+          </div>
+          <div class="desc">
+            <h4>Data</h4>
+            <p>{{ .data }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="tab-block wow fadeInDown" data-wow-delay="0.4s">
+          <div class="icon">
+            <i class="icon-microphone"></i>
+          </div>
+          <div class="desc">
+            <h4>Palestrantes</h4>
+            <p>{{ .speakers }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="tab-block last-block wow fadeInDown" data-wow-delay="0.6s">
+          <div class="icon">
+            <i class="icon-wallet"></i>
+          </div>
+          <div class="desc left">
+            <h4>Inscritos</h4>
+            <p>{{ .confirmados }} </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="content-text">
+          <h3 class="wow fadeInUp" data-wow-delay="0.8s">{{ .subtitulo  | safeHTML }}</h3>
+          <p class="wow fadeInUp" data-wow-delay="1s">{{ .descricao | safeHTML }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Insert Featured section -->
+{{ partial "base/featured.html" . }}
+<!-- end of Featured section -->
+
+
+
+<section id="sponsors" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Apoiadores</h2>
+        <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Instituições e organizações que apoiam o evento.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.1s">
+          <a href="#"><img src="assets/img/sponsors/logo-01.png" alt=""></a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.2s">
+          <a href="#"><img src="assets/img/sponsors/logo-02.png" alt=""></a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
+          <a href="#"><img src="assets/img/sponsors/logo-03.png" alt=""></a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.4s">
+          <a href="#"><img src="assets/img/sponsors/logo-04.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Insert gallery part -->
+{{ partial "base/gallery.html" . }}
+<!-- end of gallery part -->
+
+
+<!-- Insert blog part -->
+{{ partial "base/blog.html" . }}
+<!-- Insert blog part -->
+
+
+
+<div class="main-content">
+  <section id="community" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="wow fadeInUp" data-wow-delay="0.8s">Foss Day</h2>
+        </div>
+        <div class="col-md-12 col-sm-6 col-xs-12">
+          <div class="content-text">
+            <p>#SoftwareLivre #OpenSource #Comunidade</p>
+            <p>#Inovação #FaçaParte</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
