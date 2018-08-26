@@ -46,7 +46,10 @@ curl -fsSL https://get.docker.com/ | sh
 Publicação de código, ou seja, transforma todos os arquivos.md para HTML
 
 ```bash
-docker run -it -v $(pwd)/site:/src -v $(pwd)/site/public:/src/public raffaeldutra/docker-gohugo
+docker run -it \
+-v $(pwd)/site:/src \
+dd-v $(pwd)/site/public:/src/public \
+raffaeldutra/docker-gohugo
 ```
 
 <a name="como-rodar-um-servidor"></a>
@@ -55,5 +58,8 @@ docker run -it -v $(pwd)/site:/src -v $(pwd)/site/public:/src/public raffaeldutr
 Aqui é possível rodar Hugo em modo servidor
 
 ```bash
-docker run -it -v $(pwd)/site:/src -v $(pwd)/site/public:/src/public -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s
+docker run -it \
+-v $(pwd)/site:/src \
+-p 1313:1313 \
+raffaeldutra/docker-gohugo /gohugo.sh -s
 ```
