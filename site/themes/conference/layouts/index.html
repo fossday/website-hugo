@@ -14,13 +14,13 @@
 
             {{ if lt $now $start }}
 
-              {{ partial "global/head.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) ) }}
+              {{ partial "global/head.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) "Site" $.Site.BaseURL ) }}
                 <body>
                   {{ partial "global/header.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) ) }}
 
                {{ if lt $now $submit }}
 
-                 {{ partial "submit/home.html" (dict "GeneralConf" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) ) }}
+                 {{ partial "submit/home.html" (dict "GeneralConf" $.Site.Data.GeneralConf "gallery" $.Site.Data.Gallery "event" (index $.Site.Data $city) ) }}
 
                {{ else if (and ge $now $submit le $now $start)}}
 
@@ -34,7 +34,7 @@
 
               {{ partial "global/footer.html" (dict "General" $.Site.Data.GeneralConf ) }}
 
-              {{ partial "global/scripts.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city)) }}
+              {{ partial "global/scripts.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) "Site" $.Site.BaseURL) }}
 
            {{ end }}
         {{ end }}

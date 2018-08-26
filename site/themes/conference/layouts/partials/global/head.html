@@ -2,32 +2,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     {{ range .event }}
       {{ range .Event }}
         <title>{{ .title }}</title>
       {{ end }}
     {{ end }}
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/assets/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/yFnbmL4.png" />
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/main.css">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/responsive.css">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/assets/fonts/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/fonts/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/assets/css/slicknav.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/fonts/simple-line-icons.css">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/assets/css/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/slicknav.css">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/nivo-lightbox.css">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/assets/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/animate.css">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/assets/css/colors/default.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/owl.carousel.css">
+
+    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/colors/foss.css" media="screen" />
 
 
     <!--[if lt IE 9]>

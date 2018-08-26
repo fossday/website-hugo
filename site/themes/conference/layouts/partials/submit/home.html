@@ -90,10 +90,13 @@
       </div>
   </section>
 
+{{ end }}
+
   <!-- Insert gallery section -->
-  {{ partial "base/gallery.html" . }}
+  {{ partial "base/gallery.html" (dict "gallery" .gallery ) }}
   <!-- end of gallery section -->
 
+{{ range .event }}
   {{ range .Event }}
   <section id="map">
       <div class="container-fluid">

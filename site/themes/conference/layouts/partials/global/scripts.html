@@ -1,42 +1,42 @@
-<script src="assets/js/jquery.min.js"></script>
+<script src="{{ .Site }}/assets/js/jquery.min.js"></script>
 
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="{{ .Site }}/assets/js/bootstrap.min.js"></script>
 
-<script src="assets/js/jquery.countdown.min.js"></script>
+<script src="{{ .Site }}/assets/js/jquery.countdown.min.js"></script>
 
-<script src="assets/js/smooth-scroll.js"></script>
+<script src="{{ .Site }}/assets/js/smooth-scroll.js"></script>
 
-<script src="assets/js/wow.js"></script>
+<script src="{{ .Site }}/assets/js/wow.js"></script>
 
-<script src="assets/js/owl.carousel.min.js"></script>
+<script src="{{ .Site }}/assets/js/owl.carousel.min.js"></script>
 
-<script src="assets/js/jquery.slicknav.js"></script>
+<script src="{{ .Site }}/assets/js/jquery.slicknav.js"></script>
 
-<script src="assets/js/nivo-lightbox.js"></script>
+<script src="{{ .Site }}/assets/js/nivo-lightbox.js"></script>
 
-<script src="assets/js/form-validator.min.js"></script>
-<script src="assets/js/contact-form-script.js"></script>
-
-
-<script src="assets/js/main.js"></script>
+<script src="{{ .Site }}/assets/js/form-validator.min.js"></script>
+<script src="{{ .Site }}/assets/js/contact-form-script.js"></script>
 
 {{ range .event }}
-{{ range .Event }}
-<script type="text/javascript">
-/* ==========================================================================
-   countdown timer
-   ========================================================================== */
- jQuery('#clock').countdown('{{ .date }}',function(event){
-  var $this=jQuery(this).html(event.strftime(''
-  +'<div class="time-entry days"><span>%-D</span> Dias</div> '
-  +'<div class="time-entry hours"><span>%H</span> Horas</div> '
-  +'<div class="time-entry minutes"><span>%M</span> Minutos</div> '
-  +'<div class="time-entry seconds"><span>%S</span> Segundos</div> '));
-});
-</script>
-{{ end }}
+  {{ range .Event }}
 
-{{ end }}
+  <script src="{{ .Site }}/assets/js/main.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{ .GoogleMapsKey }}"></script>
+  <script src="{{ .Site }}/assets/js/jquery.mapit.min.js"></script>
+  <script src="{{ .Site }}/assets/js/initializers.js"></script>
 
-<script type="text/javascript" src="assets/js/jquery.mapit.min.js"></script>
-<script src="assets/js/initializers.js"></script>
+  <script type="text/javascript">
+  /* ==========================================================================
+  countdown timer
+  ========================================================================== */
+  jQuery('#clock').countdown('{{ .date }}',function(event){
+    var $this=jQuery(this).html(event.strftime(''
+    +'<div class="time-entry days"><span>%-D</span> Dias</div> '
+    +'<div class="time-entry hours"><span>%H</span> Horas</div> '
+    +'<div class="time-entry minutes"><span>%M</span> Minutos</div> '
+    +'<div class="time-entry seconds"><span>%S</span> Segundos</div> '));
+  });
+  </script>
+
+  {{ end }}
+{{ end }}
