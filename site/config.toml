@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://fossday.org"
 languageCode = "pt-br"
-title = "My New Hugo Site"
+title = "FOSS Day"
 theme = "conference"
