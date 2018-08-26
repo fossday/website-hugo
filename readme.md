@@ -6,23 +6,15 @@
 <a href="https://img.shields.io/badge/License-GPL%20v3-blue.svg"><img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="License"></a>
 </p>
 
-- [Docker](#docker)
-    - [Sobre este projeto](#sobre-este-projeto)
-    - [TL;DR (Too Long, Didn't Read)](#tldr-too-long-didnt-read)
-    - [Como obter Docker?](#como-obter-docker)
-    - [Como criar uma imagem](#como-criar-uma-imagem)
-    - [Como publicar o site](#como-publicar-o-site)
-    - [Como rodar um servidor](#como-rodar-um-servidor)
-- [Editando informações do site](#editando-informa%C3%A7%C3%B5es-do-site)
+- [Sobre este projeto](#sobre-este-projeto)
+- [TL;DR (Too Long, Didn't Read)](#tldr-too-long-didnt-read)
+- [Como obter Docker?](#como-obter-docker)
+- [Como publicar o site](#como-publicar-o-site)
+- [Como rodar um servidor](#como-rodar-um-servidor)
 
-
-<a name="docker"></a>
-# Docker
-
-Abaixo estão informações de como buildar, rodar e publicar o site utilizando Docker.
 
 <a name="sobre-este-projeto"></a>
-## Sobre este projeto
+# Sobre este projeto
 
 Este repositório é para o site do http://fossday.org. Um evento comunitário que é realizado
 em Lajeado/RS.
@@ -48,15 +40,6 @@ curl -fsSL https://get.docker.com/ | sh
     - [Instalando em Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
     - [Instalando em MacOS](https://docs.docker.com/docker-for-mac/install/)
 
-<a name="como-criar-imagem"></a>
-## Como criar uma imagem
-
-Construa a imagem que irá rodar com o comando abaixo
-
-```bash
-docker build -t raffaeldutra/docker-gohugo .
-```
-
 <a name="como-publicar-site"></a>
 ## Como publicar o site
 
@@ -74,8 +57,3 @@ Aqui é possível rodar Hugo em modo servidor
 ```bash
 docker run -it -v $(pwd)/site:/src -v $(pwd)/site/public:/src/public -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s
 ```
-
-<a name="editando-informa%C3%A7%C3%B5es-do-site"></a>
-# Editando informações do site
-
-[Gerenciando site](docs/manage_site.md)
