@@ -5,7 +5,6 @@ services:
   - docker
 
 script:
-  - docker build --no-cache -t raffaeldutra/docker-gohugo .
   - docker run --rm -v $(pwd)/site:/src -v $(pwd)/public:/src/public raffaeldutra/docker-gohugo
 
 deploy:
