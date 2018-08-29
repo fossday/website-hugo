@@ -48,8 +48,17 @@ Publicação de código, ou seja, transforma todos os arquivos.md para HTML
 ```bash
 docker run -it \
 -v $(pwd)/site:/src \
-dd-v $(pwd)/site/public:/src/public \
+-v $(pwd)/site/public:/src/public \
 raffaeldutra/docker-gohugo
+```
+
+Se você precisar de mais arquivos de configuração para rodar tanto em sua máquina local ou em Docker, passe como último parâmetro. Exemplo:
+
+```bash
+docker run -it \
+-v $(pwd)/site:/src \
+-v $(pwd)/site/public:/src/public \
+raffaeldutra/docker-gohugo /gohugo.sh -p novo-arquivo.toml
 ```
 
 <a name="como-rodar-um-servidor"></a>
@@ -61,5 +70,14 @@ Aqui é possível rodar Hugo em modo servidor
 docker run -it \
 -v $(pwd)/site:/src \
 -p 1313:1313 \
-raffaeldutra/docker-gohugo /gohugo.sh -s
+raffaeldutra/docker-gohugo /gohugo.sh
+```
+
+Se você precisar de mais arquivos de configuração para rodar tanto em sua máquina local ou em Docker, passe como último parâmetro. Exemplo:
+
+```bash
+docker run -it \
+-v $(pwd)/site:/src \
+-p 1313:1313 \
+raffaeldutra/docker-gohugo /gohugo.sh -s novo-arquivo.toml
 ```
