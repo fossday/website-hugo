@@ -5,7 +5,7 @@ services:
   - docker
 
 script:
-  - docker run --rm -v $(pwd)/site:/src -v $(pwd)/public:/src/public raffaeldutra/docker-gohugo
+  - docker run --rm -v $(pwd)/site:/src -v $(pwd)/public:/src/public raffaeldutra/docker-gohugo -p config-docker.toml
 
 deploy:
   name: "FOSS Team Deployment"
