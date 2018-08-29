@@ -48,7 +48,7 @@ Publicação de código, ou seja, transforma todos os arquivos.md para HTML
 ```bash
 docker run -it \
 -v $(pwd)/site:/src \
-dd-v $(pwd)/site/public:/src/public \
+-v $(pwd)/site/public:/src/public \
 raffaeldutra/docker-gohugo
 ```
 
@@ -57,8 +57,8 @@ Se você precisar de mais arquivos de configuração para rodar tanto em sua má
 ```bash
 docker run -it \
 -v $(pwd)/site:/src \
-dd-v $(pwd)/site/public:/src/public \
-raffaeldutra/docker-gohugo -p novo-arquivo.toml
+-v $(pwd)/site/public:/src/public \
+raffaeldutra/docker-gohugo /gohugo.sh -p novo-arquivo.toml
 ```
 
 <a name="como-rodar-um-servidor"></a>
