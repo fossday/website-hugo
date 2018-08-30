@@ -33,21 +33,21 @@
         "sub":[
           {
             "text": "Adicione sua cidade",
-            "link": "https://fossday.org/realize-um-fossday"
+            "link": "#"
           }
         ]
       },
       {
         "text": "Participe",
-        "link":"https://fossday.org/comunidade"
+        "link":"#"
       },
       {
         "text": "O grupo",
-        "link":"https://fossday.org/comunidade"
+        "link":"#"
       },
       {
         "text": "Apoie",
-        "link":"https://fossday.org/apoie"
+        "link":"#"
       }
     ],
     "FooterMenu":[
@@ -56,15 +56,15 @@
         "submenu":[
           {
             "text": "Organize um evento",
-            "link":"https://fossday.org/organize-um-evento"
+            "link":"#"
           },
           {
             "text": "Seja voluntário",
-            "link":"https://fossday.org/seja-voluntario"
+            "link":"https://github.com/fossday"
           },
           {
             "text": "Espalhe a palavra",
-            "link":"https://fossday.org/divulgue"
+            "link":"https://www.facebook.com/fossday"
           }
         ]
       },
@@ -73,19 +73,19 @@
         "submenu":[
           {
             "text": "Colaboradores",
-            "link":"https://fossday.org/colaboradores"
+            "link":"#"
           },
           {
             "text": "Blog",
-            "link":"https://fossday.org/blog"
+            "link":"#"
           },
           {
             "text": "Eventos realizados",
-            "link":"https://fossday.org/eventos-realizados"
+            "link":"#"
           },
           {
             "text": "Repositórios",
-            "link":"https://fossday.org/repositorios"
+            "link":"https://github.com/fossday"
           }
         ]
       },
@@ -94,19 +94,15 @@
         "submenu":[
           {
             "text": "GitHub",
-            "link":"https://fossday.org/colaboradores"
-          },
-          {
-            "text": "Grupo Telegram",
-            "link":"https://fossday.org/blog"
+            "link":"https://github.com/fossday"
           },
           {
             "text": "Página no Facebook",
-            "link":"https://fossday.org/eventos-realizados"
+            "link":"https://www.facebook.com/fossday"
           },
           {
             "text": "Doações",
-            "link":"https://fossday.org/repositorios"
+            "link":"https://#/"
           }
         ]
       }
@@ -169,6 +165,11 @@
           "name": "Bento Gonçalves",
           "nick": "bento",
           "link":"https://fossday.org/bento"
+        },
+        {
+          "name": "Pelotas",
+          "nick": "pelotas",
+          "link":"https://fossday.org/pelotas"
         }
     ]
   }
