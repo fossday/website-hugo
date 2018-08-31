@@ -3,12 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://fossday.org/bento/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/lajeado/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/pelotas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/colaboradores/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/divulgue/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/eventos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/organize-evento/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/participe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/seja-um-voluntario/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/apoie/</loc>
+  </url>
+  
+  <url>
     <loc>https://fossday.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://fossday.org/eventos/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://fossday.org/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/grupo/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/paginas/</loc>
     <priority>0</priority>
   </url>
   
