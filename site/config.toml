@@ -2,3 +2,7 @@ baseURL = "https://fossday.org"
 languageCode = "pt-br"
 title = "FOSS Day"
 theme = "conference"
+
+[permalinks]
+  paginas = "/:filename"
+  eventos = "/:filename"
