@@ -1,11 +1,12 @@
 {{ range  .event }}
-  {{ range .Slides }}
+
     <div id="carousel-area">
         <div id="carousel-slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
 
+                  {{ range .Slides }}
                   <div class="item {{ .active }}">
-                      <img src="{{ .img }}" alt="{{ .titulo }}" style="width: 100%">
+                      <img src="{{ .img }}" alt="{{ .title }}" style="width: 100%">
                       <div class="carousel-caption">
                           <h2 class="wow fadeInUp" data-wow-delay="300ms">{{ .title }}</h2>
                           <div class="buttons" >
@@ -18,6 +19,7 @@
                           </a>
                       </div>
                   </div>
+                  {{ end }}
             </div>
 
             <a class="left carousel-control" href="#carousel-slider" role="button" data-slide="prev">
@@ -28,7 +30,7 @@
             </a>
         </div>
     </div>
-  {{ end }}
+
 
   {{ range .Event }}
     <section class="countdown-timer section">

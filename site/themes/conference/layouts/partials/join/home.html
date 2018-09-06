@@ -1,16 +1,15 @@
+{{ range  .event }}
 
 <div id="carousel-area">
     <div id="carousel-slider" class="carousel slide" data-ride="carousel">
 
         <div class="carousel-inner" role="listbox">
 
-            {{ range $.Site.Data.content }}
-
-            {{ range .slides }}
+          {{ range .Slides }}
             <div class="item {{ .active }}">
-                <img src="{{ .img }}" alt="{{ .titulo }}" style="width: 100%">
+                <img src="{{ .img }}" alt="{{ .title }}" style="width: 100%">
                 <div class="carousel-caption">
-                    <h2 class="wow fadeInUp" data-wow-delay="300ms">{{ .titulo | safeHTML}}</h2>
+                    <h2 class="wow fadeInUp" data-wow-delay="300ms">{{ .title }}</h2>
                     <div class="buttons" >
                         <a class="btn btn-lg btn-common wow fadeInRight" data-wow-delay="300ms" href="{{ .blink }}">{{ .btext }}</a>
                     </div>
@@ -23,7 +22,6 @@
             </div>
 
             {{ end }}
-            {{ end }}
         </div>
 
         <a class="left carousel-control" href="#carousel-slider" role="button" data-slide="prev">
@@ -35,71 +33,68 @@
     </div>
 </div>
 
-{{ range $.Site.Data.content }}
+{{ range .Event }}
+  <section class="countdown-timer section">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
+                  <div class="text">
+                      <h2>{{ .title }}</h2>
+                      <h4>{{ .local }} <br> {{ .date }} </h4>
+                      <p>{{ .description | safeHTML }}</p>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
+                  <div class="time-countdown">
+                      <div id="clock" class="time-count"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+{{ end }}
 
-{{ range .eventos }}
-<section class="countdown-timer section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
-                <div class="text">
-                    <h2>{{ .titulo | safeHTML }}</h2>
-                    <h4>{{ .local }} <br> {{ .data }} </h4>
-                    <a href="{{ .blink }}" class="btn btn-lg btn-common">{{ .btext }}</a>
+{{ range .Closing }}
+  <section id="event" class="section">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="tab-block wow fadeInDown" data-wow-delay="0.2s">
+                    <div class="icon">
+                        <i class="fa fa-comment"></i>
+                    </div>
+                    <div class="desc">
+                        <h4>Conteúdo</h4>
+                        <p>{{ .schedules }}</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
-                <div class="time-countdown">
-                    <div id="clock" class="time-count"></div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="tab-block wow fadeInDown" data-wow-delay="0.4s">
+                    <div class="icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <div class="desc">
+                        <h4>Palestrantes</h4>
+                        <p>{{ .speakers }}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="event" class="section">
-    <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="tab-block wow fadeInDown" data-wow-delay="0.2s">
-                  <div class="icon">
-                      <i class="icon-calendar"></i>
-                  </div>
-                  <div class="desc">
-                      <h4>Conteúdo</h4>
-                      <p>{{ .data }}</p>
-                  </div>
-              </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="tab-block last-block wow fadeInDown" data-wow-delay="0.6s">
+                    <div class="icon">
+                        <i class="fa fa-bolt"></i>
+                    </div>
+                    <div class="desc left">
+                        <h4>Workshops</h4>
+                        <p>{{ .workshops }} </p>
+                    </div>
+                </div>
+            </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="tab-block wow fadeInDown" data-wow-delay="0.4s">
-                  <div class="icon">
-                      <i class="icon-microphone"></i>
-                  </div>
-                  <div class="desc">
-                      <h4>Palestrantes</h4>
-                      <p>{{ .speakers }}</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="tab-block last-block wow fadeInDown" data-wow-delay="0.6s">
-                  <div class="icon">
-                      <i class="icon-wallet"></i>
-                  </div>
-                  <div class="desc left">
-                      <h4>Inscritos</h4>
-                      <p>{{ .confirmados }} </p>
-                  </div>
-              </div>
-          </div>
-        </div>
-    </div>
-</section>
-
-{{ end }}
-{{ end }}
+      </div>
+  </section>
+  {{ end }}
 
 
 
@@ -117,7 +112,7 @@
             </div>
             <div class="col-md-12 col-sm-6 col-xs-12">
               <div class="content-text">
-              <a href="#" class="btn btn-lg btn-common">Realizar inscrição</a>
+              <a href="https://www.sympla.com.br/foss-day-bento-goncalves__356202" class="btn btn-lg btn-common">Realizar inscrição</a>
               </div>
             </div>
         </div>
@@ -129,13 +124,14 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Grade de palestras</h2>
-                <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A <br> enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Confira as atividades do evento.</p>
 
                 <div class="main-board wow fadeInDown" data-wow-delay="0.3s">
 
                     <ul class="nav nav-tabs day" role="tablist">
-                        <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">08:30 - 11:30 <br> <span>Manhã</span></a></li>
-                        <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">13:30 - 17:00 <br> <span>Tarde</span> </a></li>
+                        <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">08:30 - 12:00 <br> <span>Manhã</span></a></li>
+                        <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">13:00 - 17:00 <br> <span>Tarde</span> </a></li>
+                        <li role="presentation"><a href="#day3" aria-controls="day2" role="tab" data-toggle="tab"><span>Manhã e tarde</span> <br> Workshops <br> </a></li>
                     </ul>
 
                     <div class="tab-content">
@@ -147,52 +143,79 @@
                                         <ul class="nav nav-pills event-time-list">
                                             <li><a href="#">Horário</a>
                                                 <ul>
-                                                    <li class="color-3"><a href="#">9:00</a></li>
-                                                    <li class="color-2"><a href="#">9:30</a></li>
-                                                    <li class="color-1"><a href="#">10:00</a></li>
-                                                    <li class="color-4"><a href="#">10:50</a></li>
-                                                    <li class="color-4"><a href="#">12:00</a></li>
+                                                  <li class="color-1"><a href="#">8h30min</a></li>
+                                                  <li class="color-2"><a href="#">09h00min</a></li>
+                                                  <li class="color-3"><a href="#">09h50min</a></li>
+                                                  <li class="color-4"><a href="#">10h50min</a></li>
+                                                  <li class="color-5"><a href="#">11h30min</a></li>
+                                                  <li class="color-6"><a href="#">12h00min</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
+
                                     <div class="col-md-4 col-sm-6">
+                                      {{ range .Schedule }}
+                                        {{ if eq .start "08h30min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-4"><img src="assets/img/microphone.png" alt=""> Abertura do evento</a>
+                                                <a href="#" class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
-                                            <h4> Recepção + Coffee</h4>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
                                         </div>
+                                        {{ end }}
+                                        {{ if eq .start "09h00min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-2"><img src="assets/img/microphone.png" alt=""> Jon "Maddog" Hall</a>
+                                                <a href="#" class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
-                                            <h4>Computação em nuvem, Criptomoedas e Blockchain</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
                                         </div>
+                                        {{ end }}
+                                        {{ if eq .start "10h00min"}}
+                                        <div class="member">
+                                            <div class="button">
+                                                <a href="#" class="btn-large bg-3"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                            </div>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
+                                        </div>
+                                        {{ end }}
+                                      {{ end }}
                                     </div>
                                     <div class="col-md-4 col-sm-12">
+                                      {{ range .Schedule }}
+                                        {{ if eq .start "11h00min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-1"><img src="assets/img/microphone.png" alt=""> Cesar Brod</a>
+                                                <a href="#" class="btn-large bg-4"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
-                                            <h4>Testes de aceitação para Web</h4>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
                                         </div>
+                                        {{ end }}
+                                        {{ if eq .start "11h25min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-2"><img src="assets/img/microphone.png" alt=""> Convidados</a>
+                                                <a href="#" class="btn-large bg-5"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
-                                            <h4>Painel: Tecnologia e Software Livre</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
                                         </div>
+                                        {{ end }}
+                                      {{ end }}
                                     </div>
+
+
                                     <div class="col-md-1 col-sm-1">
                                         <div class="coffee">
                                             <div class="coffee-icon">
                                                 <img src="assets/img/coffee-cup.png" alt="">
                                             </div>
                                             <p>
-                                                A <br> L <br> M <br> O <br>Ç <br>O <br> <br>
+                                              <br> <br> <br> <br> <br> A <br><br> L <br><br> M <br><br> O <br><br> Ç <br><br> O <br><br> <br><br><br><br><br>
                                             </p>
                                         </div>
                                     </div>
@@ -206,31 +229,48 @@
                                 <div class="col-md-12 board text-center">
                                     <div class="column-1 col-md-3 col-sm-5">
                                         <ul class="nav nav-pills event-time-list">
-                                            <li><a href="#">Time</a>
+                                            <li><a href="#">Horário</a>
                                                 <ul>
-                                                    <li class="color-1"><a href="#">10am - 12pm</a></li>
-                                                    <li class="color-2"><a href="#">12pm - 2pm</a></li>
-                                                    <li class="color-3"><a href="#">2pm - 3pm</a></li>
-                                                    <li class="color-4"><a href="#">3pm - 5pm</a></li>
+                                                    <li class="color-1"><a href="#">13h00min</a></li>
+                                                    <li class="color-2"><a href="#">13h50min</a></li>
+                                                    <li class="color-3"><a href="#">14h25min</a></li>
+                                                    <li class="color-4"><a href="#">15h00min</a></li>
+                                                    <li class="color-5"><a href="#">16h00min</a></li>
+                                                    <li class="color-7"><a href="#">16h50min</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-4 col-sm-6">
-                                        <div class="member stephen">
+                                      {{ range .Schedule }}
+                                        {{ if eq .start "13h00min"}}
+                                        <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-1"><img src="assets/img/microphone.png" alt="">Bushra Ahsani</a>
+                                                <a href="#" class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
-                                            <h4>Main Topic</h4>
-                                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
                                         </div>
-                                        <div class="member jeson">
+                                        {{ end }}
+                                        {{ if eq .start "14h00min"}}
+                                        <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-2"><img src="assets/img/microphone.png" alt="">John Berry</a>
+                                                <a href="#" class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
-                                            <h4>Main Topic</h4>
-                                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
                                         </div>
+                                        {{ end }}
+                                        {{ if eq .start "14h25min"}}
+                                        <div class="member">
+                                            <div class="button">
+                                                <a href="#" class="btn-large bg-3"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                            </div>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
+                                        </div>
+                                        {{ end }}
+                                      {{ end }}
                                     </div>
                                     <div class="col-md-1 col-sm-1">
                                         <div class="coffee">
@@ -243,15 +283,35 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-12">
-                                        <div class="member jon">
+                                      {{ range .Schedule }}
+                                        {{ if eq .start "15h00min"}}
+                                        <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-3"><img src="assets/img/microphone.png" alt="">Martin Jones</a>
+                                                <a href="#" class="btn-large bg-4"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
-                                            <h4>Main Topic</h4>
-                                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
                                         </div>
+                                        {{ end }}
+                                        {{ if eq .start "16h00min"}}
+                                        <div class="member">
+                                            <div class="button">
+                                                <a href="#" class="btn-large bg-5"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                            </div>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
+                                        </div>
+                                        {{ end }}
+                                        {{ if eq .start "16h50min"}}
+                                        <div class="member">
+                                            <div class="button">
+                                                <a href="#" class="btn-large bg-7"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                            </div>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
+                                        </div>
+                                        {{ end }}
+                                      {{ end }}
                                     </div>
                                 </div>
                             </div>
@@ -263,111 +323,55 @@
                                 <div class="col-md-12 board text-center">
                                     <div class="column-1 col-md-3 col-sm-5">
                                         <ul class="nav nav-pills event-time-list">
-                                            <li><a href="#">Time</a>
+                                            <li><a href="#">Horário</a>
                                                 <ul>
-                                                    <li class="color-1"><a href="#">8am - 12 pm</a></li>
-                                                    <li class="color-2"><a href="#">12pm - 1 pm</a></li>
-                                                    <li class="color-3"><a href="#">1pm - 1.30 pm</a></li>
-                                                    <li class="color-4"><a href="#">2pm - 3 pm</a></li>
+                                                    <li class="color-1"><a href="#">10h00min</a></li>
+                                                    <li class="color-6"><a href="#">12h00min</a></li>
+                                                    <li class="color-2"><a href="#">13h00min</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
+
                                     <div class="col-md-4 col-sm-6">
-                                        <div class="member stephen">
+                                      {{ range .Workshops }}
+                                        {{ if eq .start "10h00min"}}
+                                        <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-1"><img src="assets/img/microphone.png" alt="">Jon Doe</a>
+                                                <a href="#" class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
-                                            <h4>Main Topic</h4>
-                                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary }}</p>
                                         </div>
-                                        <div class="member jeson">
-                                            <div class="button">
-                                                <a href="#" class="btn-large bg-2"><img src="assets/img/microphone.png" alt="">Leo Amber</a>
-                                            </div>
-                                            <h4>Main Topic</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                        </div>
+                                        {{ end }}
+                                      {{ end }}
                                     </div>
+
                                     <div class="col-md-1 col-sm-1">
                                         <div class="coffee">
                                             <div class="coffee-icon">
                                                 <img src="assets/img/coffee-cup.png" alt="">
                                             </div>
                                             <p>
-                                                C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
+                                               A <br><br> L <br><br> M <br><br> O <br><br> Ç <br><br> O <br>
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-12">
-                                        <div class="member jon">
-                                            <div class="button">
-                                                <a href="#" class="btn-large bg-3"><img src="assets/img/microphone.png" alt="">Natali Aero</a>
-                                            </div>
-                                            <h4>Main Topic</h4>
-                                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-
-                        <div role="tabpanel" class="tab-pane" id="day4">
-                            <div class="row">
-                                <div class="col-md-12 board text-center">
-                                    <div class="column-1 col-md-3 col-sm-5">
-                                        <ul class="nav nav-pills event-time-list">
-                                            <li><a href="#">Time</a>
-                                                <ul>
-                                                    <li class="color-1"><a href="#">3pm - 5pm</a></li>
-                                                    <li class="color-2"><a href="#">5pm - 7pm</a></li>
-                                                    <li class="color-3"><a href="#">7pm - 7.30 pm</a></li>
-                                                    <li class="color-4"><a href="#">8pm - 10pm</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="member stephen">
-                                            <div class="button">
-                                                <a href="#" class="btn-large bg-1"><img src="assets/img/microphone.png" alt="">Julia Merry</a>
-                                            </div>
-                                            <h4>Main Topic</h4>
-                                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                                        </div>
-                                        <div class="member jeson">
-                                            <div class="button">
-                                                <a href="#" class="btn-large bg-2"><img src="assets/img/microphone.png" alt="">Jeson Eva</a>
-                                            </div>
-                                            <h4>Main Topic</h4>
-                                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 col-sm-1">
-                                        <div class="coffee">
-                                            <div class="coffee-icon">
-                                                <img src="assets/img/coffee-cup.png" alt="">
-                                            </div>
-                                            <p>
-                                                C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
-                                            </p>
-                                        </div>
-                                    </div>
                                     <div class="col-md-4 col-sm-12">
-                                        <div class="member jon">
-                                            <div class="button">
-                                                <a href="#" class="btn-large bg-3"><img src="assets/img/microphone.png" alt="">David Ramon</a>
-                                            </div>
-                                            <h4>Main Topic</h4>
-                                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                                        </div>
+                                      {{ range .Workshops }}
+                                      {{ if eq .start "13h00min" }}
+                                      <div class="member">
+                                          <div class="button">
+                                              <a href="#" class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                          </div>
+                                          <h4> {{ .speeche }}</h4>
+                                          <p>{{ .summary }}</p>
+                                      </div>
+                                        {{ end }}
+                                      {{ end }}
                                     </div>
-                                </div>
+                                  </div>
                             </div>
                         </div>
 
@@ -385,125 +389,52 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Palestrantes</h2>
-                <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Confira os nomes confirmados:</p>
+                <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Palestrantes confirmados:</p>
             </div>
+
+            {{ range .Schedule }}
+
+              {{ if ne .vitae "out"}}
+
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="speakers-member wow fadeIn" data-wow-delay="0.1s">
-                    <div class="member-img">
-                        <img src="assets/img/teacher/img-1.png" alt="">
+                    <div class="member-img" style="background-image: url('{{ .avatar }}')">
                     </div>
                     <div class="member-desc">
-                        <h3>Jon Doe</h3>
-                        <h5>CEO, Peloton Cycle</h5>
-                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                        <h3>{{ .name }}</h3>
+                        <p>{{ .vitae  | markdownify | truncate 150 }}</p>
                         <div class="social-icon">
-                            <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
+                          {{ range .links }}
+                          <a class="social" href="{{ .link }}" target="_blank">{{ .title | safeHTML }}</i></a>
+                          {{ end }}
                         </div>
                     </div>
                 </div>
             </div>
+              {{ end }}
+            {{ end }}
+
+            {{ range .Workshops }}
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="speakers-member wow fadeIn" data-wow-delay="0.3s">
-                    <div class="member-img">
-                        <img src="assets/img/teacher/img-2.png" alt="">
+                <div class="speakers-member wow fadeIn" data-wow-delay="0.1s">
+                    <div class="member-img" style="background-image: url('{{ .avatar }}')">
+
                     </div>
                     <div class="member-desc">
-                        <h3>Natali Aero</h3>
-                        <h5>Co-founder, Hometeam</h5>
-                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                        <h3>{{ .name }}</h3>
+                        <p>{{ .vitae  | markdownify | truncate 150 }}</p>
                         <div class="social-icon">
-                            <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
+                          {{ range .links }}
+                          <a class="social" href="{{ .link }}" target="_blank">{{ .title | safeHTML }}</i></a>
+                          {{ end }}
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="speakers-member wow fadeIn" data-wow-delay="0.5s">
-                    <div class="member-img">
-                        <img src="assets/img/teacher/img-3.png" alt="">
-                    </div>
-                    <div class="member-desc">
-                        <h3>Leo Amber</h3>
-                        <h5>Director, Via</h5>
-                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                        <div class="social-icon">
-                            <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="speakers-member wow fadeIn" data-wow-delay="0.7s">
-                    <div class="member-img">
-                        <img src="assets/img/teacher/img-4.png" alt="">
-                    </div>
-                    <div class="member-desc">
-                        <h3>Jeson Eva</h3>
-                        <h5>Co-founder, theSkimm</h5>
-                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                        <div class="social-icon">
-                            <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="speakers-member wow fadeIn" data-wow-delay="0.9s">
-                    <div class="member-img">
-                        <img src="assets/img/teacher/img-5.png" alt="">
-                    </div>
-                    <div class="member-desc">
-                        <h3>Lamba Kureshi</h3>
-                        <h5>Professor, Boston University</h5>
-                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                        <div class="social-icon">
-                            <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="speakers-member wow fadeIn" data-wow-delay="1s">
-                    <div class="member-img">
-                        <img src="assets/img/teacher/img-6.png" alt="">
-                    </div>
-                    <div class="member-desc">
-                        <h3>Leo Amber</h3>
-                        <h5>CEO, lrisVR</h5>
-                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                        <div class="social-icon">
-                            <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                            <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="more-btn text-center">
+            {{ end }}
+            <!--- div class="more-btn text-center">
                 <a href="speakers.html" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">Ver lista completa</a>
-            </div>
+            </div -->
         </div>
     </div>
 </section>
@@ -515,38 +446,28 @@
                 <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Apoiadores</h2>
                 <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Instituições e organizações que apoiam o evento.</p>
             </div>
+            {{ range .Sponsors }}
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="#"><img src="assets/img/sponsors/logo-01.png" alt=""></a>
+                    <a href="{{ .url }}" title="{{ .title }} {{ .short}}" target="_blank"><img src="{{ .logo }}" alt="Logo {{ .title }}"></a>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="#"><img src="assets/img/sponsors/logo-02.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
-                    <a href="#"><img src="assets/img/sponsors/logo-03.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.4s">
-                    <a href="#"><img src="assets/img/sponsors/logo-04.png" alt=""></a>
-                </div>
-            </div>
+            {{ end }}
         </div>
     </div>
 </section>
 
+{{ range .Event }}
 <section id="map">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Local do evento</h2>
-                <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Universidade de Caxias do Sul (Campus Carvi), Alameda João Dal Sasso, Bloco B...</p>
+                <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">{{ .local }}</p>
             </div>
             <div id="map_canvas"></div>
         </div>
     </div>
 </section>
+{{ end }}
+{{ end }}

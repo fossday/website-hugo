@@ -22,9 +22,9 @@
 
                  {{ partial "submit/home.html" (dict "GeneralConf" $.Site.Data.GeneralConf "gallery" $.Site.Data.Gallery "event" (index $.Site.Data $city) ) }}
 
-               {{ else if (and ge $now $submit le $now $start)}}
+               {{ else if (and ((ge $now $submit) (le $now $start)))}}
 
-                  {{ partial "join/home.html" . }}
+                  {{ partial "join/home.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) ) }}
 
                {{ else if gt $now $start }}
 
