@@ -15,30 +15,6 @@
   </url>
   
   <url>
-    <loc>https://fossday.org/colaboradores/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fossday.org/divulgue/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fossday.org/eventos/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fossday.org/organize-evento/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fossday.org/participe/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fossday.org/seja-um-voluntario/</loc>
-  </url>
-  
-  <url>
     <loc>https://fossday.org/apoie/</loc>
   </url>
   
@@ -48,8 +24,20 @@
   </url>
   
   <url>
+    <loc>https://fossday.org/colaboradores/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/divulgue/</loc>
+  </url>
+  
+  <url>
     <loc>https://fossday.org/eventos/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/eventos/</loc>
   </url>
   
   <url>
@@ -62,8 +50,20 @@
   </url>
   
   <url>
+    <loc>https://fossday.org/organize-evento/</loc>
+  </url>
+  
+  <url>
     <loc>https://fossday.org/paginas/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/participe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/seja-um-voluntario/</loc>
   </url>
   
   <url>
