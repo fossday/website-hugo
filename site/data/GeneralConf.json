@@ -25,11 +25,11 @@
     "HeadMenu":[
       {
         "text": "Home",
-        "link":"http://localhost:1313"
+        "link":"http://fossday.org"
       },
       {
-        "text": "Eventos",
-        "link":"https://fossday.org/eventos",
+        "text": "Cidades",
+        "link":"https://fossday.org/",
         "sub":[
           {
             "text": "Adicione sua cidade",
@@ -38,16 +38,20 @@
         ]
       },
       {
-        "text": "Participe",
-        "link":"#"
-      },
-      {
-        "text": "O grupo",
-        "link":"#"
-      },
-      {
         "text": "Apoie",
-        "link":"https://docs.google.com/forms/d/e/1FAIpQLSc1VsjBFynaIuvE6_mBnLd_Cy2nljqHGKhA7ZrtXz5ttMtAKA/viewform"
+        "link": "#sponsors"
+      },
+      {
+        "text": "Participe",
+        "link":"#submit"
+      },
+      {
+        "text": "Grade de Palestras",
+        "link":"#schedule"
+      },
+      {
+        "text": "Inscreva-se",
+        "link":"https://www.sympla.com.br/foss-day-bento-goncalves__356202"
       }
     ],
     "FooterMenu":[
