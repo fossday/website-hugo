@@ -64,10 +64,16 @@
       "logo": "https://i.imgur.com/E97qawx.png"
     },
     {
-      "title": "Apoie o Foss Day Bento Gonçalves 2018",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc1VsjBFynaIuvE6_mBnLd_Cy2nljqHGKhA7ZrtXz5ttMtAKA/viewform",
-      "short": "Apoie o Foss Day Bento Gonçalves 2018",
-      "logo": "https://i.imgur.com/aTpvv71.png"
+      "title": "Devon Tecnologia",
+      "url": "https://www.devontecnologia.com.br/",
+      "short": "Agência de Desenvolvimento Web",
+      "logo": "https://i.imgur.com/1h3Yihu.png"
+    },
+    {
+      "title": "PyLadies Caxias do Sul",
+      "url": "https://pyladiescaxias.github.io/",
+      "short": "O PyLadies é uma comunidade mundial que foi trazida ao Brasil com o propósito de instigar mais mulheres a entrarem na área tecnológica.",
+      "logo": "https://i.imgur.com/dxZGhIi.png"
     },
     {
       "title": "Apoie o Foss Day Bento Gonçalves 2018",
@@ -117,7 +123,7 @@
     },
     {
       "name": "Dionatan Vidal Simioni",
-      "vitae": "Criador do blog e canal Diolinux, técnico de hardware e consultor de marketing.",
+      "vitae": "Criador do blog e canal <a href=\"https://diolinux.com.br\" target=\"_blank\">Diolinux</a>, técnico de hardware e consultor de marketing.",
       "speeche": "Como softwares Open Source podem ajudar a alavancar o seu negócio",
       "summary": "A palestra fala sobre a utilização de softwares open source na construção de negócios, falando sobre empreendedorismo digital e como os softwares estão relacionados a isso.",
       "level": "Intermediário",
@@ -211,7 +217,7 @@
     },
     {
       "name": "Jônatas A. Chagas Júnior",
-      "vitae": "Dono da agência de desenvolvimento web e marketing digital Ofitec - Agência digital, conhecimento em front-end e vendas para web, trabalho com gerenciamento de redes sociais, design e vídeo.",
+      "vitae": "Dono da agência de desenvolvimento web e marketing digital <a href=\"http://www.ofitec.com.br\" target=\"_blank\">Ofitec - Agência digital</a>, conhecimento em front-end e vendas para web, trabalho com gerenciamento de redes sociais, design e vídeo.",
       "speeche": "Para quem quer trabalhar em casa!",
       "summary": "Passarei minhas experiências de trabalhar em uma agência no centro da cidade e depois de trabalhar com home office, migrei para essa forma de trabalho depois de 2 anos alugando um espaço no centro da cidade, falarei dos principais erros que as pessoas cometem quando migram para essa forma de trabalho, falarei do mercado de trabalho, freelance, projetos pessoais e como ser mais resiliente com teus projetos em casa, diferenciando o que é casa do que é trabalho.",
       "level": "iniciante",
@@ -234,7 +240,7 @@
     },
     {
       "name": "Régis Tomkiel",
-      "vitae": "Sócio-fundador da Dose Extra Multimídia, desenvolvedor web, podcaster e co-organizador as edições de Bento Gonçalves do Tchelinux e Foss Day.",
+      "vitae": "Sócio-fundador da <a href=\"https://doseextra.com\" target=\"_blank\">Dose Extra Multimídia</a>, desenvolvedor web, podcaster e co-organizador as edições de Bento Gonçalves do Tchelinux e Foss Day.",
       "speeche": "Não! Use Wordpress.",
       "summary": "Que tal repensar um pouco sobre como você está desenvolvendo os seus projetos web? Você desenvolve o seu framework PHP do zero? Usa Laravel? Já está migrando para o Node.js? Vamos conversar sobre como otimizar seu tempo de desenvolvimento, criar projetos seguros e que pagam boletos. ",
       "level": "Intermediário",
@@ -396,9 +402,9 @@
     },
     {
       "name": "Dirson Vinícius Arndt",
-      "vitae": "Gestor de Unidade de Negócios na Batuca.",
-      "speeche": "Do Photoshop ao GIMP",
-      "summary": "A definir",
+      "vitae": "Gestor de Unidade de Negócios na Agência Batuca, co-fundador do Photoshop Bagual, especialista em pós-produção de imagens digitais e há 10 anos é facilitador no aprendizado em computação gráfica.",
+      "speeche": "Photoshop ou Gimp?",
+      "summary": "Nós entendemos que existem conceitos e técnicas de edição de imagens que vão além da máxima de qual programa usar. E, por isso, vamos nos desafiar a criar uma imagem no Gimp com os mesmos conceitos e qualidade que aplicamos no Photoshop. Acompanhe esse desafio com a gente!",
       "level": "iniciante",
       "links": [
         {

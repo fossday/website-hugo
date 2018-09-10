@@ -125,30 +125,30 @@
             <div class="col-md-12">
                 <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Grade de palestras</h2>
                 <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Confira as atividades do evento.</p>
-
+                <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">As atividades do evento estão organizadas por abas e para altenar entre elas, clique no título de cada aba.</p>
                 <div class="main-board wow fadeInDown" data-wow-delay="0.3s">
 
                     <ul class="nav nav-tabs day" role="tablist">
-                        <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">08:30 - 12:00 <br> <span>Manhã</span></a></li>
-                        <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">13:00 - 17:00 <br> <span>Tarde</span> </a></li>
+                        <li role="presentation"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">08:30 - 12:00 <br> <span>Manhã</span></a></li>
+                        <li role="presentation" class="active"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">13:00 - 17:00 <br> <span>Tarde</span> </a></li>
                         <li role="presentation"><a href="#day3" aria-controls="day2" role="tab" data-toggle="tab"><span>Manhã e tarde</span> <br> Workshops <br> </a></li>
                     </ul>
 
                     <div class="tab-content">
 
-                        <div role="tabpanel" class="tab-pane active" id="day1">
+                        <div role="tabpanel" class="tab-pane" id="day1">
                             <div class="row">
                                 <div class="col-md-12 board text-center">
                                     <div class="column-1 col-md-3 col-sm-5">
                                         <ul class="nav nav-pills event-time-list">
-                                            <li><a href="#">Horário</a>
+                                            <li><a>Horário</a>
                                                 <ul>
-                                                  <li class="color-1"><a href="#">8h30min</a></li>
-                                                  <li class="color-2"><a href="#">09h00min</a></li>
-                                                  <li class="color-3"><a href="#">09h50min</a></li>
-                                                  <li class="color-4"><a href="#">10h50min</a></li>
-                                                  <li class="color-5"><a href="#">11h30min</a></li>
-                                                  <li class="color-6"><a href="#">12h00min</a></li>
+                                                  <li class="color-1"><a>8h30min</a></li>
+                                                  <li class="color-2"><a>09h00min</a></li>
+                                                  <li class="color-3"><a>09h50min</a></li>
+                                                  <li class="color-4"><a>10h50min</a></li>
+                                                  <li class="color-5"><a>11h30min</a></li>
+                                                  <li class="color-6"><a>12h00min</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -159,7 +159,7 @@
                                         {{ if eq .start "08h30min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -168,7 +168,7 @@
                                         {{ if eq .start "09h00min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -177,7 +177,7 @@
                                         {{ if eq .start "10h00min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-3"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-3"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -190,7 +190,7 @@
                                         {{ if eq .start "11h00min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-4"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-4"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -199,7 +199,7 @@
                                         {{ if eq .start "11h25min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-5"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-5"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -224,19 +224,19 @@
                         </div>
 
 
-                        <div role="tabpanel" class="tab-pane" id="day2">
+                        <div role="tabpanel" class="tab-pane active" id="day2">
                             <div class="row">
                                 <div class="col-md-12 board text-center">
                                     <div class="column-1 col-md-3 col-sm-5">
                                         <ul class="nav nav-pills event-time-list">
-                                            <li><a href="#">Horário</a>
+                                            <li><a>Horário</a>
                                                 <ul>
-                                                    <li class="color-1"><a href="#">13h00min</a></li>
-                                                    <li class="color-2"><a href="#">13h50min</a></li>
-                                                    <li class="color-3"><a href="#">14h25min</a></li>
-                                                    <li class="color-4"><a href="#">15h00min</a></li>
-                                                    <li class="color-5"><a href="#">16h00min</a></li>
-                                                    <li class="color-7"><a href="#">16h50min</a></li>
+                                                    <li class="color-1"><a>13h00min</a></li>
+                                                    <li class="color-2"><a>13h50min</a></li>
+                                                    <li class="color-3"><a>14h25min</a></li>
+                                                    <li class="color-4"><a>15h00min</a></li>
+                                                    <li class="color-5"><a>16h00min</a></li>
+                                                    <li class="color-7"><a>16h50min</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -246,7 +246,7 @@
                                         {{ if eq .start "13h00min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -255,7 +255,7 @@
                                         {{ if eq .start "14h00min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -264,7 +264,7 @@
                                         {{ if eq .start "14h25min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-3"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-3"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -287,7 +287,7 @@
                                         {{ if eq .start "15h00min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-4"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-4"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -296,7 +296,7 @@
                                         {{ if eq .start "16h00min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-5"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-5"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -305,7 +305,7 @@
                                         {{ if eq .start "16h50min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-7"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-7"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -323,11 +323,11 @@
                                 <div class="col-md-12 board text-center">
                                     <div class="column-1 col-md-3 col-sm-5">
                                         <ul class="nav nav-pills event-time-list">
-                                            <li><a href="#">Horário</a>
+                                            <li><a >Horário</a>
                                                 <ul>
-                                                    <li class="color-1"><a href="#">10h00min</a></li>
-                                                    <li class="color-6"><a href="#">12h00min</a></li>
-                                                    <li class="color-2"><a href="#">13h00min</a></li>
+                                                    <li class="color-1"><a>10h00min</a></li>
+                                                    <li class="color-6"><a>12h00min</a></li>
+                                                    <li class="color-2"><a>13h00min</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -338,7 +338,7 @@
                                         {{ if eq .start "10h00min"}}
                                         <div class="member">
                                             <div class="button">
-                                                <a href="#" class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                                <a class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
                                             <p>{{ .summary }}</p>
@@ -363,7 +363,7 @@
                                       {{ if eq .start "13h00min" }}
                                       <div class="member">
                                           <div class="button">
-                                              <a href="#" class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                              <a class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                           </div>
                                           <h4> {{ .speeche }}</h4>
                                           <p>{{ .summary }}</p>
@@ -389,7 +389,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Palestrantes</h2>
-                <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Palestrantes confirmados:</p>
+                <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Veja quem vai participar do evento:</p>
             </div>
 
             {{ range .Schedule }}
