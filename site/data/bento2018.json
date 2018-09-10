@@ -2,7 +2,7 @@
   "content": {
   "Event": [
     {
-      "title": "Primeiro FossDay Bento Gonçalves",
+      "title": "Primeiro FOSSDay Bento Gonçalves",
       "description": "Palestras sobre tecnologia, Software Livre e Open Source. <br> O evento possui entrada gratuita, mas incentivamos a doação de 2kg de alimentos não perecíveis no momento da inscrição.",
       "local": "Universidade de Caxias do Sul (Campus Carvi), Alameda João Dal Sasso, Bloco CD e Auditório do Bloco B.",
       "address": "Alameda João Dal Sasso, 800 (2,12 km)",
@@ -19,7 +19,7 @@
   ],
   "Slides": [
     {
-      "title": "Foss Day Bento Gonçalves",
+      "title": "FOSSDay Bento Gonçalves",
       "img": "https://i.imgur.com/wEnAyH6.jpg",
       "blink": "https://www.sympla.com.br/foss-day-bento-goncalves__356202",
       "btext": "Realizar inscrição",
@@ -76,9 +76,9 @@
       "logo": "https://i.imgur.com/dxZGhIi.png"
     },
     {
-      "title": "Apoie o Foss Day Bento Gonçalves 2018",
+      "title": "Apoie o FOSSDay Bento Gonçalves 2018",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLSc1VsjBFynaIuvE6_mBnLd_Cy2nljqHGKhA7ZrtXz5ttMtAKA/viewform",
-      "short": "Apoie o Foss Day Bento Gonçalves 2018",
+      "short": "Apoie o FOSSDay Bento Gonçalves 2018",
       "logo": "https://i.imgur.com/aTpvv71.png"
     }
   ],

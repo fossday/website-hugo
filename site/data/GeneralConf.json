@@ -2,9 +2,9 @@
   "content": {
     "Global": [
       {
-      "Name": "Foss Day",
+      "Name": "FOSSDay",
       "Short": "Grupo de entusiastas de tecnologia, Software Livre e Open Source.",
-      "Description": "Foss Day é a iniciativa de promover tecnologia, Software Livre, Open Source e cidadania através de palestras organizadas por voluntários.",
+      "Description": "FOSSDay é a iniciativa de promover tecnologia, Software Livre, Open Source e cidadania através de palestras organizadas por voluntários.",
       "Logo": "https://i.imgur.com/qsEKxRC.png",
       "Favicon": "https://i.imgur.com/yFnbmL4.png",
       "History": "",
@@ -113,7 +113,7 @@
     ],
     "Slides": [
             {
-                "title": "Foss Day Lajeado 2019",
+                "title": "FOSSDay Lajeado 2019",
                 "img": "assets/img/slider/bg-2.jpg",
                 "blink": "https://fossday.org/lajeado",
                 "btext": "Saiba Mais",
@@ -147,16 +147,16 @@
         "alt": "Universidade de Caxias do Sul, Campus de Bento Gonçalves."
       },
       {
-        "name": "Apoie o Foss Day",
+        "name": "Apoie o FOSSDay",
         "link": "#",
         "image": "...",
-        "alt": "Apoie o Foss Day."
+        "alt": "Apoie o FOSSDay."
       },
       {
-        "name": "Apoie o Foss Day",
+        "name": "Apoie o FOSSDay",
         "link": "#",
         "image": "...",
-        "alt": "Apoie o Foss Day."
+        "alt": "Apoie o FOSSDay."
       }
     ],
     "Cities":[
