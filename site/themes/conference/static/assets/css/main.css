@@ -884,7 +884,11 @@ fieldset[disabled] .btn {
   border-bottom: none;
 }
 .main-board .day {
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  z-index: 9999;
+  bottom: auto;
+  top: -4em;
+  padding: 0 1.5em;
 }
 .main-board .day > li.active > a,
 .main-board .day > li.active > a:focus,
@@ -892,18 +896,24 @@ fieldset[disabled] .btn {
   background-color: #e91e63;
   color: #fff;
   border-radius: 0;
-  border: none;
+  border: 1px solid;
+  padding: 0.5em 6em;
+  top: -0.1em;
+}
+.tab-content {
+  margin-top: 4em;
 }
 .main-board .day > li > a {
-  color: #777777;
-  padding: 8px 106.9px;
+  color: #fff;
+  padding: 8px 6em;
   margin-right: 0px;
   font-weight: 400;
-  border: none;
+  border: 1px solid;
   text-transform: uppercase;
   font-size: 20px;
   text-align: center;
   border-radius: 0;
+  background: #00713b;
 }
 .main-board .day > li > a span {
   font-size: 16px;
