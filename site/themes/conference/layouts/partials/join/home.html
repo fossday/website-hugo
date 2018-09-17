@@ -443,10 +443,28 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Patrocinadores</h2>
+                <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Organizações que estão patrocinando o evento.</p>
+            </div>
+            {{ range .Sponsors }}
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="{{ .url }}" title="{{ .title }} {{ .short}}" target="_blank"><img src="{{ .logo }}" alt="Logo {{ .title }}"></a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section id="sponsors" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
                 <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Apoiadores</h2>
                 <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Instituições e organizações que apoiam o evento.</p>
             </div>
-            {{ range .Sponsors }}
+            {{ range .Partners }}
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.1s">
                     <a href="{{ .url }}" title="{{ .title }} {{ .short}}" target="_blank"><img src="{{ .logo }}" alt="Logo {{ .title }}"></a>
