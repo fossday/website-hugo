@@ -26,13 +26,33 @@
       "active": "active"
     }
   ],
-    "Sponsors":[
+  "Sponsors" : [
     {
-        "title": "Dose Extra Multimídia",
-        "url": "https://doseextra.com",
-        "short": "Desenvolvimento web e publicidade.",
-        "logo": "https://i.imgur.com/ew62Ksf.png"
+      "title": "LPI - Linux Professional Institute",
+      "url": "http://www.lpi.org/pt/",
+      "short": "O LPI é o padrão global de certificação e organização de suporte de carreira para profissionais de código aberto.",
+      "logo": "https://i.imgur.com/GYaefDy.png"
     },
+    {
+      "title": "Dose Extra Multimídia",
+      "url": "https://doseextra.com",
+      "short": "Desenvolvimento web e publicidade.",
+      "logo": "https://i.imgur.com/ew62Ksf.png"
+    },
+    {
+      "title": "Stefanini: inovação, tecnologia e talento",
+      "url": "https://stefanini.com/pt-br",
+      "short": "Nosso principal objetivo é ajudar você nos desafios do seu negócio. Presente em 40 países com mais de 25.000 funcionários, somos a quinta multinacional brasileira mais internacionalizada* e estamos entre as 100 maiores empresas de TI do mundo.",
+      "logo": "https://i.imgur.com/mjopntl.png"
+    },
+    {
+      "title": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc1VsjBFynaIuvE6_mBnLd_Cy2nljqHGKhA7ZrtXz5ttMtAKA/viewform",
+      "short": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "logo": "https://i.imgur.com/aTpvv71.png"
+    }
+  ],
+    "Partners":[
     {
       "title": "Universidade de Caxias do Sul (Carvi)",
       "url": "https://ucs.br",
@@ -80,6 +100,24 @@
       "url": "https://www.facebook.com/happycode.caxiasdosul",
       "short": "Happy Code - Escola de Programação, Desenvolvimento de Games, Aplicativos, Robótica/Drones e Youtuber para Crianças de 5 à 17 anos.",
       "logo": "https://i.imgur.com/e9dYSPD.jpg"
+    },
+    {
+      "title": "Leia Confecções",
+      "url": "https://www.facebook.com/leiaconfeccoes/",
+      "short": "Serigrafia, uniformes esportivos, camisetas personalizadas e mais.",
+      "logo": "https://i.imgur.com/zWSQZlO.png"
+    },
+    {
+      "title": "Editora Flyve",
+      "url": "https://www.facebook.com/editoraflyve/",
+      "short": "A Flyve é uma editora para autores nacionais que buscam a qualidade do tradicional e a liberdade do independente.",
+      "logo": "https://i.imgur.com/BPkCUgH.png"
+    },
+    {
+      "title": "Lucas de Lucca",
+      "url": "https://lucasdeluccablog.wordpress.com/",
+      "short": "Escritor, produtor e editor",
+      "logo": "https://i.imgur.com/RTVPAO7.png"
     },
     {
       "title": "Apoie o FOSSDay Bento Gonçalves 2018",
@@ -433,13 +471,41 @@
       ],
       "avatar": "https://i.imgur.com/FbdKtC8.jpg",
       "start": "13h00min"
+    },
+    {
+      "name": "Augusto Tomasi",
+      "vitae": "Fotógrafo e videomaker na Vagão Filmes,  e co-fundador do Photoshop Bagual, iniciou sua carreira na área audiovisual em 2010. Com foco em fotografia publicitária e tratamento digital, desenvolveu estética e técnicas apuradas nesses anos trabalhando na indústria de imagens.",
+      "speeche": "Photoshop ou Gimp?",
+      "summary": "Nós entendemos que existem conceitos e técnicas de edição de imagens que vão além da máxima de qual programa usar. E, por isso, vamos nos desafiar a criar uma imagem no Gimp com os mesmos conceitos e qualidade que aplicamos no Photoshop. Acompanhe esse desafio com a gente!",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://www.facebook.com/birdfotografia"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/augustocdtomasi"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/augusto-tomasi-55447bb4/"
+        },
+        {
+          "title": "<i class=\"fa fa-umbrella\"></i>",
+          "link": "https://www.facebook.com/PSBagual/"
+        }
+
+      ],
+      "avatar": "https://i.imgur.com/HhxPokP.jpg?1",
+      "start": ""
     }
 
   ],
   "Closing": [
     {
     "schedules": "11 horas de palestras e workshops*",
-    "speakers": "11 palestrantes",
+    "speakers": "12 palestrantes",
     "workshops": "9 palestras e 2 Workshops"
   }
 ]
