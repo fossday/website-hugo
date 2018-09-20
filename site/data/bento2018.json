@@ -24,6 +24,13 @@
       "blink": "https://www.sympla.com.br/foss-day-bento-goncalves__356202",
       "btext": "Realizar inscrição",
       "active": "active"
+    },
+    {
+      "title": "Linux Professional Institute",
+      "img": "https://i.imgur.com/y337vK6.jpg",
+      "blink": "#lpi",
+      "btext": "Saiba Mais",
+      "active": ""
     }
   ],
   "Sponsors" : [
@@ -498,6 +505,34 @@
 
       ],
       "avatar": "https://i.imgur.com/HhxPokP.jpg?1",
+      "start": ""
+    },
+    {
+      "name": "Cesar Brod",
+      "vitae": "Diretor de Desenvolvimento Regional para o Brasil do Linux Professional Institute e seu trabalho consiste em promover a compreensão do LPI acerca das necessidades da região, a fim de fortalecer suas ações com relação à formação profissional em Linux e software livre, bem como como ampliar seu renomado programa de certificação no país.",
+      "speeche": "Respresentante LPI",
+      "summary": "",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://www.lpi.org/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/cesar.brod"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/cesarbrod/"
+        },
+        {
+          "title": "<i class=\"fa fa-umbrella\"></i>",
+          "link": "http://brodtec.com/"
+        }
+
+      ],
+      "avatar": "https://i.imgur.com/85aME9m.jpg?3",
       "start": ""
     }
 

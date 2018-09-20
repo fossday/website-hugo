@@ -11,7 +11,7 @@
                 <div class="carousel-caption">
                     <h2 class="wow fadeInUp" data-wow-delay="300ms">{{ .title }}</h2>
                     <div class="buttons" >
-                        <a class="btn btn-lg btn-common wow fadeInRight" data-wow-delay="300ms" href="{{ .blink }}">{{ .btext }}</a>
+                        <a class="btn btn-lg btn-common wow fadeInRight" data-wow-delay="300ms" data-toggle="modal" href="{{ .blink }}">{{ .btext }}</a>
                     </div>
                     <a data-scroll href="#featured">
                         <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
@@ -489,3 +489,37 @@
 </section>
 {{ end }}
 {{ end }}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Modal -->
+  <div class="modal fade" id="lpi" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        {{ partial "join/temp.html" . }}
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
