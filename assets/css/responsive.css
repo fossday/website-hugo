@@ -204,6 +204,13 @@
   .main-board .day > li > a span {
     font-size: 10px;
   }
+  .main-board .day > li.active > a,
+  .main-board .day > li.active > a:focus,
+  .main-board .day > li.active > a:hover {
+    padding: 11px;
+    margin-right: 0;
+    font-size: 13px;
+  }
   .main-board .nav-pills {
     margin-top: 30px;
   }
@@ -300,5 +307,59 @@
   }
   #comments .comment-content {
     padding: 0;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 720px) {
+  .main-board .day > li > a {
+    padding: 0.5em 4em;
+    margin-right: 0;
+    font-size: 13px;
+  }
+  .main-board .day > li > a span {
+    font-size: 10px;
+  }
+  .main-board .day > li.active > a,
+  .main-board .day > li.active > a:focus,
+  .main-board .day > li.active > a:hover {
+    padding: 0.6em 4em;
+    margin-right: 0;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+  .main-board .day > li > a {
+    padding: 0.5em 4em;
+    margin-right: 0;
+    font-size: 13px;
+  }
+  .main-board .day > li > a span {
+    font-size: 10px;
+  }
+  .main-board .day > li.active > a,
+  .main-board .day > li.active > a:focus,
+  .main-board .day > li.active > a:hover {
+    padding: 0.6em 4em;
+    margin-right: 0;
+    font-size: 15px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .main-board .day > li > a {
+    padding: 0.5em 8em;
+    margin-right: 0;
+    font-size: 13px;
+  }
+  .main-board .day > li > a span {
+    font-size: 10px;
+  }
+  .main-board .day > li.active > a,
+  .main-board .day > li.active > a:focus,
+  .main-board .day > li.active > a:hover {
+    padding: 0.6em 8em;
+    margin-right: 0;
+    font-size: 15px;
   }
 }
