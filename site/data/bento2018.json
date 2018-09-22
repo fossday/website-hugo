@@ -10,7 +10,7 @@
       "state": "Rio Grande do Sul",
       "image": "/img/badge.jpg",
       "GoogleMapsKey": "AIzaSyA_9UyjzjSRTztaUxRW0e7a5rshBjOCX7M",
-      "date": "2018-09-22",
+      "date": "2018-09-23",
       "limitSubmit": "2018-09-01",
       "linkSubmit": "https://docs.google.com/forms/d/1sm6GBZMZXweM0AQb2R3a7QFyuMBODuILtJHd-pOqTSo/edit",
       "linkSubs": "https://www.sympla.com.br/foss-day-bento-goncalves__356202",
@@ -51,6 +51,12 @@
       "url": "https://stefanini.com/pt-br",
       "short": "Nosso principal objetivo é ajudar você nos desafios do seu negócio. Presente em 40 países com mais de 25.000 funcionários, somos a quinta multinacional brasileira mais internacionalizada* e estamos entre as 100 maiores empresas de TI do mundo.",
       "logo": "https://i.imgur.com/mjopntl.png"
+    },
+    {
+      "title": "Pastorello: Assitência Técnica",
+      "url": "https://www.facebook.com/PastorelloAssistenciaTecnica/",
+      "short": "Venda e manutenção de equipamentos de Informática",
+      "logo": "https://i.imgur.com/Z3z2oFx.png"
     },
     {
       "title": "Apoie o FOSSDay Bento Gonçalves 2018",
