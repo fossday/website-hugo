@@ -888,7 +888,6 @@ fieldset[disabled] .btn {
   z-index: 9999;
   bottom: auto;
   top: -4em;
-  padding: 0 1.5em;
 }
 .main-board .day > li.active > a,
 .main-board .day > li.active > a:focus,
