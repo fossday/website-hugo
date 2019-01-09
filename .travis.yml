@@ -5,13 +5,14 @@ services:
   - docker
 
 stages:
+  - run
   - test
   - deploy
 
 jobs:
   include:
-    - stage: test
-      bwfore_script:
+    - stage: run
+      before_script:
         - docker --version
       script:
         - |
@@ -19,7 +20,7 @@ jobs:
           -itd \
           -v $(pwd)/site:/src \
           -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
-        - sleep 5
+    - stage: test
         - curl -s http://localhost:1313 | grep i.imgur.com
     - stage: deploy
       script:
