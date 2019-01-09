@@ -11,6 +11,8 @@ stages:
 jobs:
   include:
     - stage: test
+      bwfore_script:
+        - docker --version
       script:
         - |
           docker run \
