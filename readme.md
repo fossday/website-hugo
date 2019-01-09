@@ -7,6 +7,7 @@
 </p>
 
 - [Sobre este projeto](#sobre-este-projeto)
+- [Continuous Integration](continuous-integration)
 - [TL;DR (Too Long, Didn't Read)](#tldr-too-long-didnt-read)
 - [Como obter Docker?](#como-obter-docker)
 - [Como publicar o site](#como-publicar-o-site)
@@ -20,6 +21,12 @@ Este repositório é para o site do http://fossday.org. Um evento comunitário q
 em Lajeado/RS.
 
 Caso tenha interesse em contribuir, deixe sem Pull Request :-)
+
+
+<a name="continuous-integration"></a>
+## Travis
+
+[https://travis-ci.org/fossday/site](https://travis-ci.org/fossday/site)
 
 
 <a name="too-long"></a>
