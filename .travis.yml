@@ -7,7 +7,9 @@ services:
 jobs:
   include:
     - stage: test
-      script: curl -s localhost:1313 | grep i.imgur.com >/dev/null || exit 1
+      script:
+        - docker run -itd -v $(pwd)/site:/src -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
+        - curl -s localhost:1313 | grep i.imgur.com >/dev/null || exit 1
     - stage: deploy
       script:
         - docker run \
