@@ -18,6 +18,7 @@ jobs:
           -v $(pwd)/site:/src \
           -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
         - sleep 15
+      after_script:
         - curl -s http://localhost:1313 | grep i.imgur.com >/dev/null || exit 1
     - stage: deploy
       script:
