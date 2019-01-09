@@ -8,14 +8,16 @@ jobs:
   include:
     - stage: test
       script:
-        - docker run \
+        - |
+          docker run \
           -itd \
           -v $(pwd)/site:/src \
           -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
         - curl -s http://localhost:1313 | grep i.imgur.com >/dev/null || exit 1
     - stage: deploy
       script:
-        - docker run \
+        - |
+          docker run \
           --rm \
           -v $(pwd)/site:/src \
           -v $(pwd)/public:/src/public \
