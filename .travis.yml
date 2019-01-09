@@ -21,9 +21,7 @@ jobs:
           -v $(pwd)/site:/src \
           -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
         - docker container ls -a
-    - stage: test
-      script:
-        - curl -s http://localhost:1313 | grep i.imgur.com
+      script: curl -s http://localhost:1313 | grep i.imgur.com
     - stage: publish
       script:
         - |
