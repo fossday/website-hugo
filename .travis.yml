@@ -4,15 +4,20 @@ sudo: required
 services:
   - docker
 
+stages:
+  - test
+  - deploy
+
 jobs:
   include:
     - stage: test
-      script:
+      befor_script:
         - |
           docker run \
           -itd \
           -v $(pwd)/site:/src \
           -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
+      script:
         - curl -s http://localhost:1313 | grep i.imgur.com >/dev/null || exit 1
     - stage: deploy
       script:
