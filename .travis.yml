@@ -7,7 +7,7 @@ services:
 stages:
   - run
   - test
-  - deploy
+  - publish
 
 jobs:
   include:
@@ -23,7 +23,7 @@ jobs:
     - stage: test
       script:
         - curl -s http://localhost:1313 | grep i.imgur.com
-    - stage: deploy
+    - stage: publish
       script:
         - |
           docker run \
@@ -31,17 +31,15 @@ jobs:
           -v $(pwd)/site:/src \
           -v $(pwd)/public:/src/public \
           raffaeldutra/docker-gohugo /gohugo.sh -p config-docker.toml
-
-
-deploy:
-  name: "FOSS Team Deployment"
-  provider: pages
-  local_dir: public
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  keep_history: true
-  verbose: true
-  target_branch: master
-  on:
-    branch: develop
-  fqdn: fossday.org
+      deploy:
+        name: "FOSS Team Deployment"
+        provider: pages
+        local_dir: public
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        keep_history: true
+        verbose: true
+        target_branch: master
+        on:
+          branch: develop
+        fqdn: fossday.org
