@@ -1,0 +1,183 @@
+{
+  "content": {
+  "Event": [
+    {
+      "title": "Segundo FOSSDay Lajeado",
+      "description": "Palestras sobre tecnologia, Software Livre e Open Source. <br> O evento possui entrada gratuita, mas incentivamos a doação de 2kg de alimentos não perecíveis no momento da inscrição.",
+      "local": "Universidade do Vale do Taquari - Univates Lajeado ",
+      "address": "Av. Avelino Talini, 171 - Bairro Universitário",
+      "city":  "Lajeado",
+      "state": "Rio Grande do Sul",
+      "image": "/img/badge.jpg",
+      "GoogleMapsKey": "AIzaSyA_9UyjzjSRTztaUxRW0e7a5rshBjOCX7M",
+      "date": "2019-05-04",
+      "limitSubmit": "2019-04-05",
+      "linkSubmit": "https://docs.google.com/forms/d/1sm6GBZMZXweM0AQb2R3a7QFyuMBODuILtJHd-pOqTSo/edit",
+      "linkSubs": "https://www.sympla.com.br/foss-day-bento-goncalves__356202",
+      "limitSubs": "2019-04-20"
+    }
+  ],
+  "Slides": [
+    {
+      "title": "FOSSDay Lajeado",
+      "img": "https://i.imgur.com/wEnAyH6.jpg",
+      "blink": "https://www.sympla.com.br/foss-day-bento-goncalves__356202",
+      "btext": "Realizar inscrição",
+      "active": "active"
+    },
+    {
+      "title": "Linux Professional Institute",
+      "img": "https://i.imgur.com/y337vK6.jpg",
+      "blink": "#lpi",
+      "btext": "Saiba Mais",
+      "active": ""
+    }
+  ],
+  "Sponsors" : [
+    {
+      "title": "LPI - Linux Professional Institute",
+      "url": "http://www.lpi.org/pt/",
+      "short": "O LPI é o padrão global de certificação e organização de suporte de carreira para profissionais de código aberto.",
+      "logo": "https://i.imgur.com/GYaefDy.png"
+    },
+    {
+      "title": "Dose Extra Multimídia",
+      "url": "https://doseextra.com",
+      "short": "Desenvolvimento web e publicidade.",
+      "logo": "https://i.imgur.com/ew62Ksf.png"
+    },
+  ],
+    "Partners":[
+    {
+      "title": "Universidade do Vale do Taquari - UNIVATES",
+      "url": "https://www.univates.br/",
+      "short": "Universidade do Vale do Taquari - UNIVATES",
+      "logo": "https://i.imgur.com/UEGm4zc.png"
+    },
+    {
+      "title": "DioStore",
+      "url": "http://www.diostore.com.br/",
+      "short": "DioStore - A sua loja Geek",
+      "logo": "https://i.imgur.com/dsrniul.png"
+    },
+  ],
+  "Schedule":[
+    {
+      "name": "Abertura do evento",
+      "vitae": "out",
+      "speeche": "Recepção + Coffee",
+      "start": "08h30min",
+      "avatar": "https://i.imgur.com/yFnbmL4.png"
+    },
+    /**{
+      "name": "Dionatan Vidal Simioni",
+      "vitae": "Criador do blog e canal <a href=\"https://diolinux.com.br\" target=\"_blank\">Diolinux</a>, técnico de hardware e consultor de marketing.",
+      "speeche": "Como softwares Open Source podem ajudar a alavancar o seu negócio",
+      "summary": "A palestra fala sobre a utilização de softwares open source na construção de negócios, falando sobre empreendedorismo digital e como os softwares estão relacionados a isso.",
+      "level": "Intermediário",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://www.diolinux.com.br"
+        },
+        {
+          "title": "<i class=\"fa fa-youtube\"></i>",
+          "link": "https://www.youtube.com/user/Diolinux"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/dionatan.vs"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/dionatanvs"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/dionatan-simioni-59baa636/"
+        }
+
+      ],
+      "avatar": "https://i.imgur.com/forCRmF.png?1",
+      "start": "15h00min"
+    },**/
+    {
+      "name": "Conversa final!",
+      "vitae": "out",
+      "speeche": "E os jogos?",
+      "summary": "Conversa sobre games, sorteio de brindes e encerramento do evento!",
+      "level": "iniciante",
+      "avatar": "https://i.imgur.com/yFnbmL4.png",
+      "start": "16h50min"
+    }
+  ],
+  "Workshops":[
+    /**{
+      "name": "Rafael Dutra",
+      "vitae": "Entusiasta da cultura DevOps e especialista em TI com foco em infraestrutura como código. Possui 13 anos de experiência atuando como SysAdmin em ambientes GNU/Linux. Atualmente trabalha pros gringos remotamente como Arquiteto SaaS para a Jive Software.",
+      "speeche": "Workshop sobre Docker",
+      "summary": "Se você é daqueles que já já ouviu falar ou tem pouco conhecimento em como iniciar usando Docker, seja sua área de desenvolvimento ou operações, aqui está sua oportunidade. Vamos neste workshop conhecer esta poderosa ferramenta que ganhou forte nome no mercado nos últimos anos. Iremos rodar comandos para manipular containers, gerar e utilizar imagens, levantar serviços e tentar entender como e onde ele pode encaixar no seu dia-a-dia.",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://rafaeldutra.me"
+        },
+        {
+          "title": "<i class=\"fa fa-github\"></i>",
+          "link": "https://github.com/raffaeldutra"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/rafaeldutra/"
+        },
+        {
+          "title": "<i class=\"fa fa-gitlab\"></i>",
+          "link": "https://gitlab.com/raffaeldutra"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/raffaeldutra"
+        }
+      ],
+      "avatar": "https://i.imgur.com/wdhkIiu.jpg?1",
+      "start": "10h00min"
+    },**/
+    {
+      "name": "Cesar Brod",
+      "vitae": "Diretor de Desenvolvimento Regional para o Brasil do Linux Professional Institute e seu trabalho consiste em promover a compreensão do LPI acerca das necessidades da região, a fim de fortalecer suas ações com relação à formação profissional em Linux e software livre, bem como como ampliar seu renomado programa de certificação no país.",
+      "speeche": "Respresentante LPI",
+      "summary": "",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://www.lpi.org/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/cesar.brod"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/cesarbrod/"
+        },
+        {
+          "title": "<i class=\"fa fa-umbrella\"></i>",
+          "link": "http://brodtec.com/"
+        }
+
+      ],
+      "avatar": "https://i.imgur.com/85aME9m.jpg?3",
+      "start": ""
+    }
+
+  ],
+  "Closing": [
+    {
+    "schedules": "11 horas de palestras e workshops*",
+    "speakers": "12 palestrantes",
+    "workshops": "9 palestras e 2 Workshops"
+  }
+]
+  }
+}
