@@ -1,4 +1,4 @@
-{{ range .GeneralConf }}
+{{ range .generalConf }}
 <div id="carousel-area">
   <div id="carousel-slider" class="carousel slide" data-ride="carousel">
 
@@ -153,7 +153,7 @@
 
 
 <!-- Insert gallery part -->
-{{ partial "base/gallery.html" . }}
+{{ partial "base/gallery.html" (dict "gallery" .gallery ) }}
 <!-- end of gallery part -->
 
 
