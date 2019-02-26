@@ -2,11 +2,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
+    {{ if .event}}
+    
     {{ range .event }}
       {{ range .Event }}
         <title>{{ .title }}</title>
       {{ end }}
+    {{ end }}
+
+    {{ else }}
+
+    {{ range .General}}
+      {{ range .Global}}
+        <title>{{ .Name }} - {{ .Short }}</title>
+        <meta name="description" content="{{ .Description }}" />
+      {{ end }}
+    {{ end }}
+    
     {{ end }}
 
     <link rel="icon" type="image/png" href="https://i.imgur.com/yFnbmL4.png" />
