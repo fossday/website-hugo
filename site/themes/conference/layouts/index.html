@@ -12,7 +12,6 @@
       {{ $year := now.Format "2006" }}
       {{ $city := $year | print $nick }}
       {{ $.Scratch.Add "a1" 1 }}
-      {{ $.Scratch.Get "a1"}}
 
 
       <!-- File cityCurrentYear.json exists? -->
@@ -63,6 +62,19 @@
             <!-- End of loop for range Event data in City file. (19) -->
             {{ end }}
 
+
+            {{ else }}
+            
+            {{ partial "global/head.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL ) }}
+            <body>
+            {{ partial "global/header.html" (dict "General" $.Site.Data.generalConf ) }}
+
+            {{ partial "base/home.html" (dict "generalConf" $.Site.Data.generalConf "gallery" $.Site.Data.Gallery ) }}
+
+            {{ partial "global/footer.html" (dict "General" $.Site.Data.generalConf ) }}
+
+            {{ partial "global/scripts.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL) }}
+
           <!-- End of loop for import and range City Current Year file "cityCurrentYear.json" -->
           {{ end }}
 
@@ -70,24 +82,6 @@
       {{ end }}
 
     <!-- End of loop for range Cities data in General file -->
-    {{ end }}
-
-    {{ if ge ($.Scratch.Get "a1") (len .Cities ) }}
-
-
-    {{ partial "global/head.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL ) }}
-    <body>
-    {{ partial "global/header.html" (dict "General" $.Site.Data.generalConf ) }}
-
-    {{ partial "base/home.html" (dict "generalConf" $.Site.Data.generalConf "gallery" $.Site.Data.Gallery ) }}
-
-    {{ partial "global/footer.html" (dict "General" $.Site.Data.generalConf ) }}
-
-    {{ partial "global/scripts.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL) }}
-
-    </body>
-    </html>
-
     {{ end }}
 
 <!-- End of import and range General Config Data file "generalConf.json" -->
