@@ -278,6 +278,7 @@ fieldset[disabled] .btn {
 .navbar-brand {
   position: relative;
   padding: 0px 15px;
+  top: 0.5em;
 }
 .navbar-nav a {
   -moz-transition: color .3s linear,background .3s linear;
