@@ -1,0 +1,554 @@
+{
+  "content": {
+  "Event": [
+    {
+      "title": "Primeiro FOSSDay Bento Gonçalves",
+      "description": "Palestras sobre tecnologia, Software Livre e Open Source. <br> O evento possui entrada gratuita, mas incentivamos a doação de 2kg de alimentos não perecíveis no momento da inscrição.",
+      "local": "Universidade de Caxias do Sul (Campus Carvi), Alameda João Dal Sasso, Bloco CD e Auditório do Bloco B.",
+      "address": "Alameda João Dal Sasso, 800 (2,12 km)",
+      "city":  "Bento Gonçalves",
+      "state": "Rio Grande do Sul",
+      "image": "/img/badge.jpg",
+      "GoogleMapsKey": "AIzaSyA_9UyjzjSRTztaUxRW0e7a5rshBjOCX7M",
+      "date": "2019-05-04",
+      "limitSubmit": "2019-04-06",
+      "linkSubmit": "https://docs.google.com/forms/d/1sm6GBZMZXweM0AQb2R3a7QFyuMBODuILtJHd-pOqTSo/edit",
+      "linkSubs": "https://www.sympla.com.br/foss-day-bento-goncalves__356202",
+      "limitSubs": "2019-05-04"
+    }
+  ],
+  "Slides": [
+    {
+      "title": "FOSSDay Bento Gonçalves",
+      "img": "https://i.imgur.com/wEnAyH6.jpg",
+      "blink": "https://www.sympla.com.br/foss-day-bento-goncalves__356202",
+      "btext": "Realizar inscrição",
+      "active": "active"
+    },
+    {
+      "title": "Linux Professional Institute",
+      "img": "https://i.imgur.com/y337vK6.jpg",
+      "blink": "#lpi",
+      "btext": "Saiba Mais",
+      "active": ""
+    }
+  ],
+  "Sponsors" : [
+    {
+      "title": "LPI - Linux Professional Institute",
+      "url": "http://www.lpi.org/pt/",
+      "short": "O LPI é o padrão global de certificação e organização de suporte de carreira para profissionais de código aberto.",
+      "logo": "https://i.imgur.com/GYaefDy.png"
+    },
+    {
+      "title": "Dose Extra Multimídia",
+      "url": "https://doseextra.com",
+      "short": "Desenvolvimento web e publicidade.",
+      "logo": "https://i.imgur.com/ew62Ksf.png"
+    },
+    {
+      "title": "Stefanini: inovação, tecnologia e talento",
+      "url": "https://stefanini.com/pt-br",
+      "short": "Nosso principal objetivo é ajudar você nos desafios do seu negócio. Presente em 40 países com mais de 25.000 funcionários, somos a quinta multinacional brasileira mais internacionalizada* e estamos entre as 100 maiores empresas de TI do mundo.",
+      "logo": "https://i.imgur.com/mjopntl.png"
+    },
+    {
+      "title": "Pastorello: Assistência Técnica",
+      "url": "https://www.facebook.com/PastorelloAssistenciaTecnica/",
+      "short": "Assistência Técnica em computadores e notebooks.",
+      "logo": "https://i.imgur.com/JOltunC.png"
+    },
+    {
+      "title": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc1VsjBFynaIuvE6_mBnLd_Cy2nljqHGKhA7ZrtXz5ttMtAKA/viewform",
+      "short": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "logo": "https://i.imgur.com/aTpvv71.png"
+    }
+  ],
+    "Partners":[
+    {
+      "title": "Universidade de Caxias do Sul (Carvi)",
+      "url": "https://ucs.br",
+      "short": "UCS - Campus de Bento Gonçalves (Carvi)",
+      "logo": "https://i.imgur.com/UEGm4zc.png"
+    },
+    {
+      "title": "DioStore",
+      "url": "http://www.diostore.com.br/",
+      "short": "DioStore - A sua loja Geek",
+      "logo": "https://i.imgur.com/dsrniul.png"
+    },
+    {
+      "title": "REDE NEURAL - Meetups sobre tecnologia",
+      "url": "https://t.me/redeneural",
+      "short": "REDE NEURAL - Meetups sobre tecnologia",
+      "logo": "https://i.imgur.com/q51sqfn.png"
+    },
+    {
+      "title": "Photoshop Bagual",
+      "url": "http://www.photoshopbagual.com.br",
+      "short": "Domini a edição de imagens",
+      "logo": "https://i.imgur.com/p2n1r46.png"
+    },
+    {
+      "title": "Ofitec",
+      "url": "http://www.ofitec.com.br/",
+      "short": "Ofitec - Agência Digital",
+      "logo": "https://i.imgur.com/E97qawx.png"
+    },
+    {
+      "title": "Devon Tecnologia",
+      "url": "https://www.devontecnologia.com.br/",
+      "short": "Agência de Desenvolvimento Web",
+      "logo": "https://i.imgur.com/1h3Yihu.png"
+    },
+    {
+      "title": "PyLadies Caxias do Sul",
+      "url": "https://pyladiescaxias.github.io/",
+      "short": "O PyLadies é uma comunidade mundial que foi trazida ao Brasil com o propósito de instigar mais mulheres a entrarem na área tecnológica.",
+      "logo": "https://i.imgur.com/dxZGhIi.png"
+    },
+    {
+      "title": "Happy Code - Caxias do Sul",
+      "url": "https://www.facebook.com/happycode.caxiasdosul",
+      "short": "Happy Code - Escola de Programação, Desenvolvimento de Games, Aplicativos, Robótica/Drones e Youtuber para Crianças de 5 à 17 anos.",
+      "logo": "https://i.imgur.com/e9dYSPD.jpg"
+    },
+    {
+      "title": "Leia Confecções",
+      "url": "https://www.facebook.com/leiaconfeccoes/",
+      "short": "Serigrafia, uniformes esportivos, camisetas personalizadas e mais.",
+      "logo": "https://i.imgur.com/zWSQZlO.png"
+    },
+    {
+      "title": "Editora Flyve",
+      "url": "https://www.facebook.com/editoraflyve/",
+      "short": "A Flyve é uma editora para autores nacionais que buscam a qualidade do tradicional e a liberdade do independente.",
+      "logo": "https://i.imgur.com/BPkCUgH.png"
+    },
+    {
+      "title": "Lucas de Lucca",
+      "url": "https://lucasdeluccablog.wordpress.com/",
+      "short": "Escritor, produtor e editor",
+      "logo": "https://i.imgur.com/RTVPAO7.png"
+    },
+    {
+      "title": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc1VsjBFynaIuvE6_mBnLd_Cy2nljqHGKhA7ZrtXz5ttMtAKA/viewform",
+      "short": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "logo": "https://i.imgur.com/aTpvv71.png"
+    }
+  ],
+  "Schedule":[
+    {
+      "name": "Abertura do evento",
+      "vitae": "out",
+      "speeche": "Recepção + Coffee",
+      "start": "08h30min",
+      "avatar": "https://i.imgur.com/yFnbmL4.png"
+    },
+    {
+      "name": "Fabio Beneditto",
+      "vitae": "Entusiasta de Software Livre desde 1999, Desenvolvedor Web desde 2008, Graduado em Sistemas para Internet em 2015, voluntário no SUMO (Suporte Mozilla) e no Tchelinux.",
+      "speeche": "...porque no MEU TEMPO",
+      "summary": "Voltada para todos os tipos de público, é uma apresentação / comparação sobre as tecnologias atuais em relação às disponíveis há 10 ou 15 anos atrás. Distribuições de Software, configuração de hardware, programas, redes sociais: o quanto isso pode mudar em 15 anos?",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/fabiobeneditto"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/FabioBeneditto"
+        },
+        {
+          "title": "<i class=\"fa fa-github\"></i>",
+          "link": "https://github.com/FabioBeneditto"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/fabiobeneditto/"
+        },
+        {
+          "title": "<i class=\"fa fa-users\"></i>",
+          "link": "https://about.me/fabiobeneditto"
+        }
+      ],
+      "avatar": "https://i.imgur.com/qliAYkY.jpg",
+      "start": "13h00min"
+    },
+    {
+      "name": "Dionatan Vidal Simioni",
+      "vitae": "Criador do blog e canal <a href=\"https://diolinux.com.br\" target=\"_blank\">Diolinux</a>, técnico de hardware e consultor de marketing.",
+      "speeche": "Como softwares Open Source podem ajudar a alavancar o seu negócio",
+      "summary": "A palestra fala sobre a utilização de softwares open source na construção de negócios, falando sobre empreendedorismo digital e como os softwares estão relacionados a isso.",
+      "level": "Intermediário",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://www.diolinux.com.br"
+        },
+        {
+          "title": "<i class=\"fa fa-youtube\"></i>",
+          "link": "https://www.youtube.com/user/Diolinux"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/dionatan.vs"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/dionatanvs"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/dionatan-simioni-59baa636/"
+        }
+
+      ],
+      "avatar": "https://i.imgur.com/forCRmF.png?1",
+      "start": "15h00min"
+    },
+    {
+      "name": "Anderson Porciuncula",
+      "vitae": "- Graduado em Analise e Desenvolvimentos de Sistemas - Pós-Graduando em Aprendizagens Ativas - Infraestrutura de TI / Manutenção de Computadores , Servidores e Firewalls. - Pesquisa sobre: Estratégias pedagógicas: o pensamento computacional como eixo interdisciplinar a partir da educação básica - Artigo; Monitoramento tecnológico escolar; Plataforma web para controle de acessos a Internet. (2011) Artigos no livro da Associação Educadora São Carlos - Porto Alegre escolas Caxias do Sul, Farroupilha e Santa Vitoria do Palmar. - APRENDIZAGEM BASEADA NA INVESTIGAÇÃO: UMA POSSIBILIDADE PARA AS AULAS DE LÍNGUA PORTUGUESA E MATEMÁTICA COM O USO DAS FERRAMENTAS DO SISTEMA ENDLESS (2018) - PENSAMENTO COMPUTACIONAL: UMA INSERÇÃO DOS CONCEITOS DA CIÊNCIA DA -COMPUTAÇÃO NA EDUCAÇÃO BÁSICA (2018). - 1º Seminário: O Pensamento Computacional como eixo interdisciplinar, Faculdade Murialdo Caxias do Sul, 2018. - TcheLinux - UCS Caxias do Sul (18/08/2018) - Entusiasta Software Livre - Membro Endless Community - Membro Mozilla L10n pt-BR Community - Usuário Debian - Projeto - Tecnologia para Educação / Technology for Education - UCS 2019",
+      "speeche": "Tecnologia na Educação EndlessOS",
+      "summary": "Levar a experiencia do trabalho diário com professores e alunos em torno de melhores soluções para produção de aulas significativas usando as tecnologias disponíveis tanto offline como online. Citações sobre: Alfabetização Web, Inclusão Digital, Ecossistema Digital. fôlder  oficial da Mozilla serão disponibilizados na palestra. Aguardando resposta da EndlessOS sobre material. Demonstração da Distro bem como ferramentas para educação, metodologias de pesquisa e games.",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "http://www.andersonlp.com.br/"
+        },
+        {
+          "title": "<i class=\"fa fa-github\"></i>",
+          "link": "https://github.com/ALPorciuncula"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/al.porciuncula"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/porciuncula85"
+        },
+        {
+          "title": "<i class=\"fa fa-youtube\"></i>",
+          "link": "https://www.youtube.com/channel/UChTb5Wa8xXzld1yxkiUu69Q"
+        }
+      ],
+      "avatar": "https://i.imgur.com/8YWfGsP.jpg?1",
+      "start": "16h00min"
+    },
+    {
+      "name": "Eduardo Paim Silveira",
+      "vitae": "Bacharel em Sistemas de Informação pela Universidade de Caxias do Sul, trabalha a 11 anos com servidores GNU/Linux, principalmente com gestão de Internet. Admirador do software livre, foi moderador do Viva o Linux durante quase 7 anos, entre 2009 e 2015. Também é podcaster e idealizador do site peloamordedeus.org.br.",
+      "speeche": "Ainda há espaço para o Squid?",
+      "summary": "Diante do desenvolvimento da tecnologia e o melhoramento da estrutura de Internet, a palestra tem como objetivo levantar uma reflexão sobre as vantagens e desvantagens do proxy Squid, comparando com a utilização de appliances e até mesmo cenários sem a utilização de proxy. A proposta não é definir respostas, mas exercitar a reflexão sobre perguntas como \"O proxy ainda é necessário?\" e \"O Squid ainda é uma boa opção?\".",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://saidecimadomuro.blogspot.com/"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/eduardopsilveira/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/silveira.eduardo"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/eddiethedrummer"
+        },
+        {
+          "title": "<i class=\"fa fa-feed\"></i>",
+          "link": "http://www.peloamordedeus.org.br/"
+        }
+      ],
+      "avatar": "https://i.imgur.com/AFftPBO.jpg?1",
+      "start": "14h00min"
+    },
+    {
+      "name": "Jônatas A. Chagas Júnior",
+      "vitae": "Dono da agência de desenvolvimento web e marketing digital <a href=\"http://www.ofitec.com.br\" target=\"_blank\">Ofitec - Agência digital</a>, conhecimento em front-end e vendas para web, trabalho com gerenciamento de redes sociais, design e vídeo.",
+      "speeche": "Para quem quer trabalhar em casa!",
+      "summary": "Passarei minhas experiências de trabalhar em uma agência no centro da cidade e depois de trabalhar com home office, migrei para essa forma de trabalho depois de 2 anos alugando um espaço no centro da cidade, falarei dos principais erros que as pessoas cometem quando migram para essa forma de trabalho, falarei do mercado de trabalho, freelance, projetos pessoais e como ser mais resiliente com teus projetos em casa, diferenciando o que é casa do que é trabalho.",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "http://www.ofitec.com.br/"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/jonatas032/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/jonatas032"
+        }
+      ],
+      "avatar": "https://i.imgur.com/a859lQ5.jpg?2",
+      "start": "11h00min"
+    },
+    {
+      "name": "Régis Tomkiel",
+      "vitae": "Sócio-fundador da <a href=\"https://doseextra.com\" target=\"_blank\">Dose Extra Multimídia</a>, desenvolvedor web, podcaster e co-organizador as edições de Bento Gonçalves do Tchelinux e Foss Day.",
+      "speeche": "Não! Use Wordpress.",
+      "summary": "Que tal repensar um pouco sobre como você está desenvolvendo os seus projetos web? Você desenvolve o seu framework PHP do zero? Usa Laravel? Já está migrando para o Node.js? Vamos conversar sobre como otimizar seu tempo de desenvolvimento, criar projetos seguros e que pagam boletos. ",
+      "level": "Intermediário",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://doseextra.com"
+        },
+        {
+          "title": "<i class=\"fa fa-github\"></i>",
+          "link": "https://github.com/rtomkiel"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/regis-tomkiel//"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/registomkiel"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/tomtomkiel"
+        }
+      ],
+      "avatar": "https://i.imgur.com/OuZxm3a.jpg",
+      "start": "09h00min"
+    },
+    {
+      "name": "Scheila de Avila e Silva",
+      "vitae": "Possui graduação em Gestão da Tecnologia da Informação pela Universidade do Vale do Rio dos Sinos (2014) e em Ciências Biológicas pela Universidade de Caxias do Sul (2004). A formação stricto sensu inclui mestrado em Computação Aplicada pela Universidade do Vale do Rio dos Sinos (2007) e doutorado em Biotecnologia pela Universidade de Caxias do Sul (2011). Atualmente é docente na Universidade de Caxias do Sul na área de Informática e atua como pesquisadora do Núcleo de pesquisa em Bioinformática e no Programa de Pós-Graduação em Biotecnologia da Instituição. O atual projeto de pesquisa está relacionado ao problema de predição de promotores utilizando técnicas de aprendizado de máquina.",
+      "speeche": "Pesquisa Científica e Software Livre: importância e aplicações",
+      "summary": "A palestra abordará algumas ferramentas computacionais livres que contribuem para a pesquisa científica e alguns exemplos de resultados publicados pela utilização destas ferramentas.",
+      "level": "Intermediário",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=N395049&idiomaExibicao=1"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/scheila-de-avila-silva-33167618/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/scheila.avilaesilva"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/scheila_as"
+        }
+      ],
+      "avatar": "https://i.imgur.com/x2qn3ks.jpg",
+      "start": "10h00min"
+    },
+    {
+      "name": "Lucas de Lucca",
+      "vitae": "Coordenador cultural e editor com mais de 30 projetos elaborados, fundador da Editora Flyve, atuando como editor e produtor editorial para escritores de todo o país e autor de obras de ficção que somam mais de 2 mil leitores.",
+      "speeche": "Leis de Incentivo e o setor da tecnologia",
+      "summary": "Na sua versão completa é explanado aos participantes as Leis de Incentivo, citando as principais leis brasileiras, como a Lei Rouanet, apontando suas formas de utilização em projetos culturais. Em seguida é utilizado um case de exemplo, uma pesquisa que se utiliza de equipamento e amostragem para chegar a um objetivo final que envolve arte e cultura, sendo viabilizado pela Lei Rouanet e outras leis de incentivo. A palestra tem como objetivo abrir mais uma porta para aqueles que possuem projetos interessantes, mas não sabem como angariar verbas para sua execução.",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "http://editoraflyve.com"
+        },
+        {
+          "title": "<i class=\"fa fa-wikipedia-w\"></i>",
+          "link": "http://pt-br.trilogia-das-plumas.wikia.com/wiki/Wiki_Trilogia_das_Plumas"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/scheila-de-avila-silva-33167618/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/lucas2vezes"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/Lucas2Vezes"
+        }
+      ],
+      "avatar": "https://i.imgur.com/GMi1oQt.jpg",
+      "start": "14h25min"
+    },
+    {
+      "name": "Roberto Soares",
+      "vitae": "Desenvolvedor web a mais de 5 anos, co-fundador da Devon Tecnologia, co-fundador do Meu Vestiba.",
+      "speeche": "Como o Laravel pode agilizar minha vida",
+      "summary": "Introdução ao Laravel Framework, como usar ele ao seu favor no desenvolvimento de softwares.",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "http://www.devontecnologia.com.br"
+        },
+        {
+          "title": "<i class=\"fa fa-instagram\"></i>",
+          "link": "https://instagram.com/robertosoares94"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/robertosoares94"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/robertosoaresdecarneiro"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/robertosoares94"
+        }
+      ],
+      "avatar": "https://i.imgur.com/iM95XEq.jpg",
+      "start": "11h25min"
+    },
+    {
+      "name": "Conversa final!",
+      "vitae": "out",
+      "speeche": "E os jogos?",
+      "summary": "Conversa sobre games, sorteio de brindes e encerramento do evento!",
+      "level": "iniciante",
+      "avatar": "https://i.imgur.com/yFnbmL4.png",
+      "start": "16h50min"
+    }
+
+  ],
+  "Workshops":[
+    {
+      "name": "Rafael Dutra",
+      "vitae": "Entusiasta da cultura DevOps e especialista em TI com foco em infraestrutura como código. Possui 13 anos de experiência atuando como SysAdmin em ambientes GNU/Linux. Atualmente trabalha pros gringos remotamente como Arquiteto SaaS para a Jive Software.",
+      "speeche": "Workshop sobre Docker",
+      "summary": "Se você é daqueles que já já ouviu falar ou tem pouco conhecimento em como iniciar usando Docker, seja sua área de desenvolvimento ou operações, aqui está sua oportunidade. Vamos neste workshop conhecer esta poderosa ferramenta que ganhou forte nome no mercado nos últimos anos. Iremos rodar comandos para manipular containers, gerar e utilizar imagens, levantar serviços e tentar entender como e onde ele pode encaixar no seu dia-a-dia.",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://rafaeldutra.me"
+        },
+        {
+          "title": "<i class=\"fa fa-github\"></i>",
+          "link": "https://github.com/raffaeldutra"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/rafaeldutra/"
+        },
+        {
+          "title": "<i class=\"fa fa-gitlab\"></i>",
+          "link": "https://gitlab.com/raffaeldutra"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/raffaeldutra"
+        }
+      ],
+      "avatar": "https://i.imgur.com/wdhkIiu.jpg?1",
+      "start": "10h00min"
+    },
+    {
+      "name": "Dirson Vinícius Arndt",
+      "vitae": "Gestor de Unidade de Negócios na Agência Batuca, co-fundador do Photoshop Bagual, especialista em pós-produção de imagens digitais e há 10 anos é facilitador no aprendizado em computação gráfica.",
+      "speeche": "Photoshop ou Gimp?",
+      "summary": "Nós entendemos que existem conceitos e técnicas de edição de imagens que vão além da máxima de qual programa usar. E, por isso, vamos nos desafiar a criar uma imagem no Gimp com os mesmos conceitos e qualidade que aplicamos no Photoshop. Acompanhe esse desafio com a gente!",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "http://www.agenciabatuca.com.br"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/dirsonvinicius.arndt"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/dirson-vin%C3%ADcius-arndt-90b207167//"
+        },
+        {
+          "title": "<i class=\"fa fa-umbrella\"></i>",
+          "link": "https://www.facebook.com/PSBagual/"
+        }
+
+      ],
+      "avatar": "https://i.imgur.com/FbdKtC8.jpg",
+      "start": "13h00min"
+    },
+    {
+      "name": "Augusto Tomasi",
+      "vitae": "Fotógrafo e videomaker na Vagão Filmes,  e co-fundador do Photoshop Bagual, iniciou sua carreira na área audiovisual em 2010. Com foco em fotografia publicitária e tratamento digital, desenvolveu estética e técnicas apuradas nesses anos trabalhando na indústria de imagens.",
+      "speeche": "Photoshop ou Gimp?",
+      "summary": "Nós entendemos que existem conceitos e técnicas de edição de imagens que vão além da máxima de qual programa usar. E, por isso, vamos nos desafiar a criar uma imagem no Gimp com os mesmos conceitos e qualidade que aplicamos no Photoshop. Acompanhe esse desafio com a gente!",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://www.facebook.com/birdfotografia"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/augustocdtomasi"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/augusto-tomasi-55447bb4/"
+        },
+        {
+          "title": "<i class=\"fa fa-umbrella\"></i>",
+          "link": "https://www.facebook.com/PSBagual/"
+        }
+
+      ],
+      "avatar": "https://i.imgur.com/HhxPokP.jpg?1",
+      "start": ""
+    },
+    {
+      "name": "Cesar Brod",
+      "vitae": "Diretor de Desenvolvimento Regional para o Brasil do Linux Professional Institute e seu trabalho consiste em promover a compreensão do LPI acerca das necessidades da região, a fim de fortalecer suas ações com relação à formação profissional em Linux e software livre, bem como como ampliar seu renomado programa de certificação no país.",
+      "speeche": "Respresentante LPI",
+      "summary": "",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://www.lpi.org/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/cesar.brod"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/cesarbrod/"
+        },
+        {
+          "title": "<i class=\"fa fa-umbrella\"></i>",
+          "link": "http://brodtec.com/"
+        }
+
+      ],
+      "avatar": "https://i.imgur.com/85aME9m.jpg?3",
+      "start": ""
+    }
+
+  ],
+  "Closing": [
+    {
+    "schedules": "11 horas de palestras e workshops*",
+    "speakers": "12 palestrantes",
+    "workshops": "9 palestras e 2 Workshops"
+  }
+]
+  }
+}
