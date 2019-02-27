@@ -32,7 +32,7 @@
                 {{ if lt $now $start }}
 
                   {{ partial "global/head.html" (dict "General" $.Site.Data.generalConf "event" (index $.Site.Data $city) "Site" $.Site.BaseURL ) }}
-                  <body>
+                    <body>
                   {{ partial "global/header.html" (dict "General" $.Site.Data.generalConf "event" (index $.Site.Data $city) ) }}
 
                     <!-- Current date ($now) is < (less than) event submit limit date ($submit)? -->
@@ -52,7 +52,7 @@
 
                   {{ partial "global/scripts.html" (dict "General" $.Site.Data.generalConf "event" (index $.Site.Data $city) "Site" $.Site.BaseURL) }}
 
-                </body>
+                  </body>
                 </html>
 
                 <!-- End of loop for event date. (27) -->
@@ -69,7 +69,7 @@
 
     <!-- End of loop for range Cities data in General file -->
     {{ end }}
-    
+
     {{ if ge ($.Scratch.Get "a1") (len .Cities ) }}
 
     {{ partial "global/head.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL ) }}
