@@ -67,10 +67,9 @@
       <!-- End of file cityCurrentYear.json exists verification. -->
       {{ end }}
 
-
     <!-- End of loop for range Cities data in General file -->
     {{ end }}
-
+          {{ $.Scratch.Get "a1"}}
     {{ if ge ($.Scratch.Get "a1") (len .Cities ) }}
 
     {{ partial "global/head.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL ) }}
