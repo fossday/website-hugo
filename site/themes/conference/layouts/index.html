@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
 {{ $.Scratch.Set "a1" 1 }}
 
+
 <!-- Import and range General Config Data file "generalConf.json" -->
 {{ range $.Site.Data.generalConf }}
 
@@ -11,6 +12,7 @@
       {{ $year := now.Format "2006" }}
       {{ $city := $year | print $nick }}
       {{ $.Scratch.Add "a1" 1 }}
+      {{ $.Scratch.Get "a1"}}
 
 
       <!-- File cityCurrentYear.json exists? -->
@@ -71,6 +73,7 @@
     {{ end }}
 
     {{ if ge ($.Scratch.Get "a1") (len .Cities ) }}
+
 
     {{ partial "global/head.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL ) }}
     <body>
