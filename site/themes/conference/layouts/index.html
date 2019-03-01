@@ -39,12 +39,12 @@
                     <!-- Current date ($now) is < (less than) event submit limit date ($submit)? -->
                      {{ if lt $now $submit }}
 
-                       {{ partial "submit/home.html" (dict "GeneralConf" $.Site.Data.generalConf "gallery" $.Site.Data.Gallery "event" (index $.Site.Data $city) ) }}
+                       {{ partial "submit/home.html" (dict "GeneralConf" $.Site.Data.generalConf "gallery" $.Site.Data.gallery "event" (index $.Site.Data $city)) }}
 
                     <!-- Current date ($now) is > (greater than) event submit limit date ($submit)? and current date ($now) is < (less than) event date ($start)?-->
                      {{ else if (and ((ge $now $submit) (le $now $start)))}}
 
-                        {{ partial "join/home.html" (dict "General" $.Site.Data.generalConf "event" (index $.Site.Data $city) ) }}
+                        {{ partial "join/home.html" (dict "General" $.Site.Data.generalConf "event" (index $.Site.Data $city)  "gallery" $.Site.Data.gallery) }}
 
                     <!-- End of loop for subscription date and submit date. (34) -->
                     {{ end }}
