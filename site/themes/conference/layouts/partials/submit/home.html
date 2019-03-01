@@ -84,7 +84,7 @@
               {{ range .Sponsors }}
               <div class="col-md-3 col-sm-6 col-xs-12">
                   <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.1s">
-                      <a href="#" title="{{ .title }} {{ .short}}" target="_blank"><img src="{{ .logo }}" alt="Logo {{ .title }}"></a>
+                      <a href="{{ . }}" title="{{ .title }} {{ .short}}" target="_blank"><img src="{{ .logo }}" alt="Logo {{ .title }}"></a>
                   </div>
               </div>
               {{ end }}
