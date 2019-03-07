@@ -44,7 +44,9 @@ a:hover{
 .navbar-event .navbar-nav li a:hover,
 .navbar-event .navbar-nav li .active > a,
 .navbar-event .navbar-nav li a:focus {
-  color: #00A456;
+  color: #fff;
+  background: #00A456 !important;
+  
 }
 .navbar-event .dropdown .dropdown-menu {
   border-color: #00A456;
