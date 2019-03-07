@@ -289,8 +289,11 @@ fieldset[disabled] .btn {
   text-transform: uppercase;
   margin-left: 0.3em;
 }
-.navbar-brand-div p:hover {
+.navbar-brand-div:hover p{
   color: #00A456 !important;
+}
+.navbar-brand-div:hover img {
+  opacity: .7;
 }
 .navbar-brand-div img {
   height: 2.5em;
