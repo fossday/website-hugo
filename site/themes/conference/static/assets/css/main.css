@@ -298,6 +298,9 @@ fieldset[disabled] .btn {
   top: 0.15em;
   padding: 0.1em;
 }
+.navbar-brand-pre {
+  height: 3em;
+}
 .navbar-nav a {
   -moz-transition: color .3s linear,background .3s linear;
   -webkit-transition: color .3s linear,background .3s linear;
