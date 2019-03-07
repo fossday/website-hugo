@@ -277,29 +277,31 @@ fieldset[disabled] .btn {
 }
 .navbar-brand-div {
   position: relative;
-  float: left;
+  display: flex;
+}
+.navbar-brand-div p {
   font-size: 2.5rem;
   line-height: 2.43em;
   font-weight: 500;
-  display: flex;
   padding: 0;
+  float: left;
+  flex: 1;
   text-transform: uppercase;
-  height: 2.43em;
 }
 .navbar-brand-div:hover {
   background: #00713b !IMPORTANT;
   color: darkgray !IMPORTANT;
 }
 .navbar-brand img {
-  height: 2em;
-  width: 2em;
+  height: 1.7em;
   /*position: absolute;*/
   left: -2.2em;
   top: 0.15em;
   padding: 0.1em;
+  flex: 1;
 }
 .navbar-brand-pre {
-  height: 3em;
+ 
 }
 .navbar-nav a {
   -moz-transition: color .3s linear,background .3s linear;
