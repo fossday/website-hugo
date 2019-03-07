@@ -284,6 +284,11 @@ fieldset[disabled] .btn {
   display: flex;
   padding: 0;
   text-transform: uppercase;
+  height: 2.43em;
+}
+.navbar-brand:hover {
+  background: #00713b !IMPORTANT;
+  color: darkgray !IMPORTANT;
 }
 .navbar-brand img {
   height: 2em;
