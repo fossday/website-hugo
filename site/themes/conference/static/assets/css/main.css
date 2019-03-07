@@ -275,7 +275,7 @@ fieldset[disabled] .btn {
   border: none;
   border-radius: 0;
 }
-.navbar-brand {
+.navbar-brand-div {
   position: relative;
   float: left;
   font-size: 2.5rem;
@@ -286,14 +286,14 @@ fieldset[disabled] .btn {
   text-transform: uppercase;
   height: 2.43em;
 }
-.navbar-brand:hover {
+.navbar-brand-div:hover {
   background: #00713b !IMPORTANT;
   color: darkgray !IMPORTANT;
 }
 .navbar-brand img {
   height: 2em;
   width: 2em;
-  position: absolute;
+  /*position: absolute;*/
   left: -2.2em;
   top: 0.15em;
   padding: 0.1em;
