@@ -277,19 +277,17 @@ fieldset[disabled] .btn {
 }
 .navbar-brand {
   position: relative;
-  padding: 0px 15px;
-  top: 0.5em;
   float: left;
-  padding: 15px 15px;
   font-size: 23px;
   line-height: 23px;
   font-weight: 500;
   display: flex;
-  padding: 1em;
+  padding: 0;
 }
 .navbar-brand img {
   height: 2em;
   width: 2em;
+  position: absolute;
 }
 .navbar-nav a {
   -moz-transition: color .3s linear,background .3s linear;
