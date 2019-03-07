@@ -8,6 +8,7 @@
 
 <a name="sobre-o-projeto"></a>
 ## Sobre o projeto
+O tema nomeado como **conference** é desenvolvido por colaboradores voluntários do grupo de entusiastas de tecnologias, ***Software Livre*** e ***Open Source***, [FossDay](https://fossday.org)
 
 [FossDay](https::fossday.org) 
 
