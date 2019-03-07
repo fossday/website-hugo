@@ -339,10 +339,10 @@ fieldset[disabled] .btn {
   color: #222222;
   padding: 0 20px;
   margin-right: 1px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 40px;
+  line-height: 4em;
   font-weight: 500;
+  height: 4em;
+
 }
 .navbar-event .navbar-nav li a:before {
   display: none;

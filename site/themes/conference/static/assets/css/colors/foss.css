@@ -68,7 +68,7 @@ a:hover{
 .navbar-event .navbar-nav > .open > a,
 .navbar-event .navbar-nav > .open > a:focus,
 .navbar-event .navbar-nav > .open > a:hover {
-  color: #00A456;
+  color: #fff;
 }
 .navbar-event .navbar-nav > .active > a,
 .navbar-event .navbar-nav > .active > a:hover{
