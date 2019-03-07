@@ -1,16 +1,15 @@
 # Site Foss Day
 
-- [Sobre este projeto](#sobre-este-projeto)
+- [Sobre o projeto](#sobre-o-projeto)
 - [Tecnologias utilizadas](#tecnologias-utilizadas)
 - [Arquivos de configuração](#arquivos)
 
 
 
-<a name="sobre-este-projeto"></a>
-## Sobre este projeto
+<a name="sobre-o-projeto"></a>
+## Sobre o projeto
 
- Aqui você pode encontrar o código fonte do site [Foss Day](https://fossday.org).   
- O site é mantido principalmete, pela equipe do projeto, mas qualquer um é livre para sugerir e principalmete, submeter melhorias, basta saber utilizar o [Git](https://git-scm.com/) e [GitHub](https://github).   
+[FossDay](https::fossday.org) 
 
  **...**
 
@@ -21,3 +20,5 @@ O projeto utiliza basicamente, Javascript, CSS e HTML, juntamente com o gerador 
 Todo conteúdo é gerado a partir de arquivos .json e podem ser alterados, independentemente do código fonte do projeto.   
 
 **em breve, mais documentação**
+
+
