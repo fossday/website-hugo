@@ -279,10 +279,11 @@ fieldset[disabled] .btn {
   position: relative;
   display: flex;
   padding: 0.38em;
+  height: 3.7em;
 }
 .navbar-brand-div p {
-  font-size: 2.5rem;
-  line-height: 2.43em;
+  font-size: 2rem;
+  line-height: 3em;
   font-weight: 500;
   padding: 0;
   float: left;
@@ -293,13 +294,9 @@ fieldset[disabled] .btn {
   background: #00713b !IMPORTANT;
   color: darkgray !IMPORTANT;
 }
-.navbar-brand img {
-  height: 1.7em;
+.navbar-brand-div img {
+  height: 3em;
   /*position: absolute;*/
-  left: -2.2em;
-  top: 0.15em;
-  padding: 0.1em;
-  flex: 1;
 }
 .navbar-brand-pre {
  
