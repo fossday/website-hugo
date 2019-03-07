@@ -438,11 +438,11 @@ fieldset[disabled] .btn {
 .caret:before {
   content: "\e604";
   font-family: 'Simple-Line-Icons';
-  left: -2px;
-  top: -20px;
+  left: -34px;
+  top: -12px;
   font-size: 11px;
   float: right;
-  position: absolute;
+  position: relative;
 }
 .wpb-mobile-menu {
   display: none;
