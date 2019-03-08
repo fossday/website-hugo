@@ -13,10 +13,31 @@ O site utiliza as tecnologias básicas para web, como HTML5, CCS3 e JavaScript. 
 O site é mantido com o gerador de sites [Hugo](https://gohugo.io/) e hospedado no [GitHub Pages](https://pages.github.com/). Para saber mais, sobre o processo de "***geração***" do site, acesse [esse link](https://github.com/fossday/site/blob/develop/readme.md).
 
 <a name="organizacao-dos-arquivos)"></a>  
-## Tecnologias utilizadas   
-O projeto utiliza basicamente, Javascript, CSS e HTML, juntamente com o gerador de sites [Hugo](https://blog.doseextra.com/comecando-com-o-hugo/).   
-Todo conteúdo é gerado a partir de arquivos .json e podem ser alterados, independentemente do código fonte do projeto.   
+## Organização dos arquivos   
 
-**em breve, mais documentação**
+O projeto utiliza a estrutura padrão de ***temas*** do [Hugo](), com pequenas adaptações.  
+Veja:  
 
+#### Raiz do projeto
 
+    - /
+    	- docs
+        - LICENSE.md
+        - readme.md
+        - release.md
+        - runme.sh
+        - site
+
+##### Raiz do site
+
+	- site
+    	- archetypes
+        - config-docker.toml
+        - config.toml
+        - content
+        - data
+        - LICENSE.md
+        - Readme.md
+        - resources
+        - static
+        - themes
