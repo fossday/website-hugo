@@ -100,64 +100,14 @@
               <div class="clearfix"></div>
             </li>
             {{ end }}
-            <li>
-              <div class="widget-thumb">
-                <a href="#"><img src="assets/img/blog/p2.jpg" alt="" /></a>
-              </div>
-              <div class="widget-content">
-                <a href="#">Brooklyn beta was the most</a>
-                <span><i class="icon-calendar"></i>2016/10/28</span>
-                <span><i class="icon-folder"></i>Blog</span>
-              </div>
-              <div class="clearfix"></div>
-            </li>
-            <li>
-              <div class="widget-thumb">
-                <a href="#"><img src="assets/img/blog/p3.jpg" alt="" /></a>
-              </div>
-              <div class="widget-content">
-                <a href="#">Brooklyn beta was the most</a>
-                <span><i class="icon-calendar"></i>2016/10/28</span>
-                <span><i class="icon-folder"></i>Blog</span>
-              </div>
-              <div class="clearfix"></div>
-            </li>
-            <li>
-              <div class="widget-thumb">
-                <a href="#"><img src="assets/img/blog/p4.jpg" alt="" /></a>
-              </div>
-              <div class="widget-content">
-                <a href="#">Brooklyn beta was the most</a>
-                <span><i class="icon-calendar"></i>2016/10/28</span>
-                <span><i class="icon-folder"></i>Blog</span>
-              </div>
-              <div class="clearfix"></div>
-            </li>
-            <li>
-              <div class="widget-thumb">
-                <a href="#"><img src="assets/img/blog/p5.jpg" alt="" /></a>
-              </div>
-              <div class="widget-content">
-                <a href="#">Brooklyn beta was the most</a>
-                <span><i class="icon-calendar"></i>2016/10/28</span>
-                <span><i class="icon-folder"></i>Blog</span>
-              </div>
-              <div class="clearfix"></div>
-            </li>
           </ul>
         </div>
 
         <div class="widget tag">
           <h5 class="widget-title">Categorias</h5>
-          <a href="#"><i class="fa fa-tag"></i> art</a>
-          <a href="#"><i class="fa fa-tag"></i> Camera</a>
-          <a href="#"><i class="fa fa-tag"></i> Coffee</a>
-          <a href="#"><i class="fa fa-tag"></i> design</a>
-          <a href="#"><i class="fa fa-tag"></i> gallery</a>
-          <a href="#"><i class="fa fa-tag"></i> life</a>
-          <a href="#"><i class="fa fa-tag"></i> lyrics</a>
-          <a href="#"><i class="fa fa-tag"></i> photography</a>
-          <a href="#"><i class="fa fa-tag"></i> record</a>
+          {{ range .Params.tags }}
+          <a href="#"><i class="fa fa-tag"></i> {{ . }}</a>
+          {{ end }}
         </div>
       </aside>
 
