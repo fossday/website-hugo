@@ -21,16 +21,6 @@
             "avatar": "https://i.imgur.com/tFikdIV.jpg"
         },
         {
-            "name": "Rafael Dutra",
-            "description": "Battlefield, Heavy Metal and SysAdmin. ",
-            "bio": "",
-            "facebook": "",
-            "twitter": "https://twitter.com/raffaeldutra",
-            "linkedin": "https://www.linkedin.com/in/rafaeldutra/",
-            "github": "https://github.com/raffaeldutra",
-            "avatar": "https://i.imgur.com/IaLHLrC.jpg"
-        },
-        {
             "name": "Régis Tomkiel",
             "description": "O cara do site e coorganizador da edição de Bento Gonçalves.",
             "bio": "Desenvolvedor Web e administrador de sistemas unix-like (*bsd e GNU/Linux). Skills interessantes em PHP, Shell Script, Go, Wordpress*, Hugo e SEO.",
@@ -39,6 +29,16 @@
             "linkedin": "https://www.linkedin.com/in/regis-tomkiel/",
             "github": "https://github.com/rtomkiel",
             "avatar": "https://i.imgur.com/8IbmCw9.jpg"
+        },
+        {
+            "name": "Rafael Dutra",
+            "description": "Battlefield, Heavy Metal and SysAdmin. ",
+            "bio": "",
+            "facebook": "",
+            "twitter": "https://twitter.com/raffaeldutra",
+            "linkedin": "https://www.linkedin.com/in/rafaeldutra/",
+            "github": "https://github.com/raffaeldutra",
+            "avatar": "https://i.imgur.com/IaLHLrC.jpg"
         }
     ]
 }

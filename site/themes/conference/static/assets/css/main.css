@@ -1390,6 +1390,7 @@ h1 {
   -moz-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
   -o-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
   transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  max-height: 18em;
 }
 #team .single-member:hover {
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.14);
