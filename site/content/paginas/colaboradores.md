@@ -1,4 +1,4 @@
 ---
 title: "Colaboradores"
-id: "collaborator"
+id: "team"
 ---
