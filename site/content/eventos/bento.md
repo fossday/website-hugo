@@ -6,6 +6,12 @@ author: "Rágis Tomkiel"
 categories:
   - Eventos
   - OpenSource
+tags:
+    - Software Livre
+    - Open Source
+    - Inovação
+    - Tecnologia
+    - desenvolvimento
 ---
 
 ### FOSSDay Bento Gonçalves 2018

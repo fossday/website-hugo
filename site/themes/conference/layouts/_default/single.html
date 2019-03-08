@@ -90,12 +90,13 @@
               {{ range first 4 ( where ( where .Site.Pages.ByDate.Reverse ".Params.categories" "intersect" .Params.categories ) "Permalink" "!=" .Permalink ) }}
             <li>
               <div class="widget-thumb">
-                <a href="#"><img src="assets/img/blog/p1.jpg" alt="" /></a>
+                <a href="{{ .RelPermalink }}">
+                  <img src="{{ .Params.thumbnail }}" alt="" />
+                </a>
               </div>
               <div class="widget-content">
-                <a href="#">Brooklyn beta was the most</a>
+                <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
                 <span><i class="icon-calendar"></i>2016/10/28</span>
-                <span><i class="icon-folder"></i>Blog</span>
               </div>
               <div class="clearfix"></div>
             </li>
