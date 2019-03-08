@@ -10,7 +10,7 @@
         <li class="page">{{ .Params.title }}</li>
       </ol>
       <h1 class="page-title wow fadeInRight" data-wow-delay="300ms">
-          {{ .Params.title }}
+        {{ .Params.title }}
       </h1>
     </div>
   </div>
@@ -26,8 +26,7 @@
 
           <div class="feature-inner">
             <a class="lightbox" href="assets/img/blog/bloglarge-1.jpg">
-              <img src="assets/img/blog/bloglarge-1.jpg"
-                alt=""></a>
+              <img src="assets/img/blog/bloglarge-1.jpg" alt=""></a>
           </div>
 
 
@@ -45,7 +44,7 @@
               <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25, 2015</a></span>
               <span class="meta-part"><a href="#"><i class="icon-event"></i> Eventos</a></span>
             </div>
-            
+
             {{ .Content }}
 
             <div class="share">
@@ -67,84 +66,19 @@
 
 
         <div id="comments">
-          <h2 class="comments-title"><i class="icon-bubbles"></i> Comments</h2>
-          <ol class="comments-list">
-            <li>
-              <div class="comment-box clearfix">
-                <div class="avatar"><a href="#"><img alt="" src="assets/img/blog/user1.jpg" /></a></div>
-                <div class="comment-content">
-                  <div class="comment-meta">
-                    <h4 class="comment-by">
-                      <a href="#">John Doe</a>
-                    </h4>
-                    <span class="comment-date">August 27,2016 at 02:30am | <a href="#" class="reply-link"><i
-                          class="icon-action-undo"></i></a></span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.</p>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  <div class="comment-box clearfix">
-                    <div class="avatar">
-                      <a href="#"><img alt="" src="assets/img/blog/user2.jpg" /></a>
-                    </div>
-                    <div class="comment-content">
-                      <div class="comment-meta">
-                        <h4 class="comment-by">
-                          <a href="#">Jane Smith</a>
-                        </h4>
-                        <span class="comment-date">May 15, 2015 at 7:39 pm | <a href="#" class="reply-link"><i
-                              class="icon-action-undo"></i></a></span>
-                      </div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div class="comment-box clearfix">
-                <div class="avatar"><a href="#"><img alt="" src="assets/img/blog/user3.jpg" /></a></div>
-                <div class="comment-content">
-                  <div class="comment-meta">
-                    <h4 class="comment-by">
-                      <a href="#">Jane Smith</a>
-                    </h4>
-                    <span class="comment-date">May 15, 2015 at 7:39 pm | <a href="#" class="reply-link"><i
-                          class="icon-action-undo"></i></a></span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.</p>
-                </div>
-              </div>
-            </li>
-          </ol>
+          <h2 class="comments-title"><i class="icon-bubbles"></i> Comentários</h2>
+          <div id="disqus_thread"></div>
+          <script>
+            (function () { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://fossday.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+              Disqus.</a></noscript>
 
-          <div id="respond">
-            <form action="#">
-              <div class="row">
-                <div class="col-md-4">
-                  <input id="author" class="form-control" name="author" type="text" value="" size="30"
-                    placeholder="Full Name">
-                </div>
-                <div class="col-md-4">
-                  <input id="email" class="form-control" name="author" type="text" value="" size="30"
-                    placeholder="Email Address">
-                </div>
-                <div class="col-md-4">
-                  <input id="url" class="form-control" name="url" type="text" value="" size="30" placeholder="Website">
-                </div>
-                <div class="col-md-12">
-                  <textarea id="comment" class="form-control" name="comment" cols="102" rows="8"
-                    placeholder="Messages"></textarea>
-                  <button type="submit" id="submit" class="btn btn-common">Submit Review</button>
-                </div>
-              </div>
-            </form>
-          </div>
 
         </div>
 
@@ -152,15 +86,8 @@
 
       <aside id="sidebar" class="col-md-4 right-sidebar">
 
-        <div class="widget widget-search">
-          <form action="#">
-            <input class="form-control" type="search" placeholder="Start Searching..." />
-            <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-
         <div class="widget widget-popular-posts">
-          <h5 class="widget-title">Recent Posts</h5>
+          <h5 class="widget-title">Postagens recentes</h5>
           <ul class="posts-list">
             <li>
               <div class="widget-thumb">
