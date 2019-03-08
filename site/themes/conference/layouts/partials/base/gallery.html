@@ -6,7 +6,26 @@
     </div>
     <div class="gallery-wrap wow fadeInDown">
       {{ range .gallery }}
-        {{ . }}
+        {{ range .data }}
+        {{ $title := .title }}
+        {{ $link := .link }}
+          {{ range first 9 .images }}
+            <div class="col-md-4 col-sm-4 col-xs-12 gellery-pn">
+              <div class="gallery-item">
+                <a href="#" title="{{ $title }}"><img src="{{ .link }}" alt="{{ $title }}"></a>
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="preview lightbox" href="{{ .link }}" title="{{ $title }}"><i class="icon-eye"></i></a>
+                    <a class="link" href="{{ .link }}" title="Abrir em nova aba"><i class="icon-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+          <div class="more-btn">
+            <a href="{{ $link }}" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s" target="_blank">Ver mais</a>
+          </div>
+      {{ end }}
     {{ end }}
     </div>
   </div>
