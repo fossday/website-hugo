@@ -25,8 +25,8 @@
         <div class="blog-post single-gallery">
 
           <div class="feature-inner">
-            <a class="lightbox" href="assets/img/blog/bloglarge-1.jpg">
-              <img src="assets/img/blog/bloglarge-1.jpg" alt=""></a>
+            <a class="lightbox" href="{{ .Params.thumbnail }}">
+              <img src="{{ .Params.thumbnail }}" alt=""></a>
           </div>
 
 
@@ -49,8 +49,8 @@
 
             <div class="share">
               <div class="social-link">
-                <span>Share this Post</span>
-                <a class="twitter" target="_blank" data-original-title="twitter" href="#" data-toggle="tooltip"
+                <span>Compartilhe</span>
+                <a class="twitter" target="_blank" data-original-title="twitter" href="//www.facebook.com/sharer/sharer.php?u={{ .Permalink | safeHTML }}" data-toggle="tooltip"
                   data-placement="top"><i class="fa fa-twitter"></i></a>
                 <a class="facebook" target="_blank" data-original-title="facebook" href="#" data-toggle="tooltip"
                   data-placement="top"><i class="fa fa-facebook"></i></a>
@@ -147,50 +147,8 @@
           </ul>
         </div>
 
-        <div class="widget">
-          <h5 class="widget-title">Post Carousel</h5>
-          <div id="post-carousel" class="post-slide owl-carousel" data-slider-pagination="true">
-            <div class="item">
-              <a class="lightbox" href="assets/img/blog/img1.jpg"><img src="assets/img/blog/img1.jpg" alt=""></a>
-              <div class="post-content">
-                <h3><a href="#">Brooklyn Beta was the most important conference</a></h3>
-                <div class="meta">
-                  <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25, 2015</a></span>
-                  <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quo harum ipsa eaque laudantium
-                  sed eligendi nostrum nemo tempore recusandae.</p>
-              </div>
-            </div>
-            <div class="item">
-              <a class="lightbox" href="assets/img/blog/img4.jpg"><img src="assets/img/blog/img4.jpg" alt=""></a>
-              <div class="post-content">
-                <h3><a href="#">Brooklyn Beta was the most important conference</a></h3>
-                <div class="meta">
-                  <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25, 2015</a></span>
-                  <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quo harum ipsa eaque laudantium
-                  sed eligendi nostrum nemo tempore recusandae.</p>
-              </div>
-            </div>
-            <div class="item">
-              <a class="lightbox" href="assets/img/blog/img5.jpg"><img src="assets/img/blog/img5.jpg" alt=""></a>
-              <div class="post-content">
-                <h3><a href="#">Brooklyn Beta was the most important conference</a></h3>
-                <div class="meta">
-                  <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25, 2015</a></span>
-                  <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quo harum ipsa eaque laudantium
-                  sed eligendi nostrum nemo tempore recusandae.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="widget tag">
-          <h5 class="widget-title">Tag Cloud</h5>
+          <h5 class="widget-title">Categorias</h5>
           <a href="#"><i class="fa fa-tag"></i> art</a>
           <a href="#"><i class="fa fa-tag"></i> Camera</a>
           <a href="#"><i class="fa fa-tag"></i> Coffee</a>
