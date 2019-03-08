@@ -21,147 +21,80 @@
 
             <div class="col-md-8">
 
-                <div class="blog-post">
 
-                    <div class="feature-inner">
-                        <a class="lightbox" href="assets/img/blog/bloglarge-1.jpg"><img
-                                src="assets/img/blog/bloglarge-1.jpg" alt=""></a>
-                    </div>
+                    {{ if $.Scratch.Get "category" }}
+
+                        <div class="blog-post">
+
+                            <div class="feature-inner">
+                                <a class="lightbox" href="{{ .Params.thumbnail }}"><img
+                                        src="{{ .Params.thumbnail }}" alt=""></a>
+                            </div>
 
 
-                    <div class="post-format">
-                        <span>
-                            <a href="#"><i class="icon-picture"></i></a>
-                        </span>
-                    </div>
+                            <div class="post-format">
+                                <span>
+                                    <a href="#"><i class="icon-picture"></i></a>
+                                </span>
+                            </div>
 
-                    <div class="post-content">
-                        <h3 class="post-title"><a href="#">Brooklyn Beta was the most important <br>conference Everyone
-                                had been</a></h3>
-                        <div class="meta">
-                            <span class="meta-part"><a href="#"><i class="icon-user"></i> Admin</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
-                                    2015</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-bubbles"></i> John Doe</a></span>
+                            <div class="post-content">
+                                <h3 class="post-title"><a href="#">Brooklyn Beta was the most important <br>conference Everyone
+                                        had been</a></h3>
+                                <div class="meta">
+                                    <span class="meta-part"><a href="#"><i class="icon-user"></i> Admin</a></span>
+                                    <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
+                                            2015</a></span>
+                                    <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
+                                    <span class="meta-part"><a href="#"><i class="icon-bubbles"></i> John Doe</a></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis possimus quo cum
+                                    delectus itaque! Soluta id a laudantium error omnis totam suscipit doloremque quam nostrum
+                                    provident minus consectetur, debitis! Itaque ipsam consequuntur minus aut iusto, in earum
+                                    dolores adipisci quis rerum, cum animi voluptate provident deserunt assumenda sequi pariatur
+                                    molestias commodi.</p>
+                                <a class="btn btn-common btn-small" href="#">Continue Reading</a>
+                            </div>
+
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis possimus quo cum
-                            delectus itaque! Soluta id a laudantium error omnis totam suscipit doloremque quam nostrum
-                            provident minus consectetur, debitis! Itaque ipsam consequuntur minus aut iusto, in earum
-                            dolores adipisci quis rerum, cum animi voluptate provident deserunt assumenda sequi pariatur
-                            molestias commodi.</p>
-                        <a class="btn btn-common btn-small" href="#">Continue Reading</a>
-                    </div>
 
-                </div>
+                        {{else}}
 
+                        <div class="blog-post">
 
-                <div class="blog-post">
+                                <div class="feature-inner">
+                                    <a class="lightbox" href="{{ .Params.thumbnail }}">
+                                        <img src="{{ .Params.thumbnail }}" alt=""></a>
+                                </div>
+    
+    
+                                <div class="post-format">
+                                    <span>
+                                        <a href="#"><i class="icon-picture"></i></a>
+                                    </span>
+                                </div>
+    
+                                <div class="post-content">
+                                    <h3 class="post-title"><a href="#">Brooklyn Beta was the most important <br>conference Everyone
+                                            had been</a></h3>
+                                    <div class="meta">
+                                        <span class="meta-part"><a href="#"><i class="icon-user"></i> Admin</a></span>
+                                        <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
+                                                2015</a></span>
+                                        <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
+                                        <span class="meta-part"><a href="#"><i class="icon-bubbles"></i> John Doe</a></span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis possimus quo cum
+                                        delectus itaque! Soluta id a laudantium error omnis totam suscipit doloremque quam nostrum
+                                        provident minus consectetur, debitis! Itaque ipsam consequuntur minus aut iusto, in earum
+                                        dolores adipisci quis rerum, cum animi voluptate provident deserunt assumenda sequi pariatur
+                                        molestias commodi.</p>
+                                    <a class="btn btn-common btn-small" href="#">Continue Reading</a>
+                                </div>
+    
+                            </div>
 
-                    <div class="feature-inner">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kpmTSQyET2A"
-                                frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-
-                    <div class="post-format">
-                        <span>
-                            <a href="#"><i class="icon-camrecorder"></i></a>
-                        </span>
-                    </div>
-
-                    <div class="post-content">
-                        <h3 class="post-title"><a href="#">Brooklyn Beta was the most important <br>conference Everyone
-                                had been</a></h3>
-                        <div class="meta">
-                            <span class="meta-part"><a href="#"><i class="icon-user"></i> Admin</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
-                                    2015</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-bubbles"></i> John Doe</a></span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis possimus quo cum
-                            delectus itaque! Soluta id a laudantium error omnis totam suscipit doloremque quam nostrum
-                            provident minus consectetur, debitis! Itaque ipsam consequuntur minus aut iusto, in earum
-                            dolores adipisci quis rerum, cum animi voluptate provident deserunt assumenda sequi pariatur
-                            molestias commodi.</p>
-                        <a class="btn btn-common btn-small" href="#">Continue Reading</a>
-                    </div>
-
-                </div>
-
-
-                <div class="blog-post">
-
-                    <div class="feature-inner">
-                        <a class="lightbox" href="assets/img/blog/bloglarge-2.jpg"><img
-                                src="assets/img/blog/bloglarge-2.jpg" alt=""></a>
-                    </div>
-
-
-                    <div class="post-format">
-                        <span>
-                            <a href="#"><i class="icon-flag"></i></a>
-                        </span>
-                    </div>
-
-                    <div class="post-content">
-                        <h3 class="post-title"><a href="#">Brooklyn Beta was the most important <br>conference Everyone
-                                had been</a></h3>
-                        <div class="meta">
-                            <span class="meta-part"><a href="#"><i class="icon-user"></i> Admin</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
-                                    2015</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-bubbles"></i> John Doe</a></span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis possimus quo cum
-                            delectus itaque! Soluta id a laudantium error omnis totam suscipit doloremque quam nostrum
-                            provident minus consectetur, debitis! Itaque ipsam consequuntur minus aut iusto, in earum
-                            dolores adipisci quis rerum, cum animi voluptate provident deserunt assumenda sequi pariatur
-                            molestias commodi.</p>
-                        <a class="btn btn-common btn-small" href="#">Continue Reading</a>
-                    </div>
-
-                </div>
-
-
-                <div class="blog-post">
-
-                    <div class="feature-inner">
-                        <a class="lightbox" href="assets/img/blog/bloglarge-3.jpg"><img
-                                src="assets/img/blog/bloglarge-3.jpg" alt=""></a>
-                    </div>
-
-
-                    <div class="post-format">
-                        <span>
-                            <a href="#"><i class="icon-microphone"></i></a>
-                        </span>
-                    </div>
-
-                    <div class="post-content">
-                        <h3 class="post-title"><a href="#">Brooklyn Beta was the most important <br>conference Everyone
-                                had been</a></h3>
-                        <div class="meta">
-                            <span class="meta-part"><a href="#"><i class="icon-user"></i> Admin</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
-                                    2015</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                            <span class="meta-part"><a href="#"><i class="icon-bubbles"></i> John Doe</a></span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis possimus quo cum
-                            delectus itaque! Soluta id a laudantium error omnis totam suscipit doloremque quam nostrum
-                            provident minus consectetur, debitis! Itaque ipsam consequuntur minus aut iusto, in earum
-                            dolores adipisci quis rerum, cum animi voluptate provident deserunt assumenda sequi pariatur
-                            molestias commodi.</p>
-                        <a class="btn btn-common btn-small" href="#">Continue Reading</a>
-                    </div>
-
-                </div>
-
+                    {{ end }}
 
                 <div id="pagination">
                     <a class="page-num" href="#"><i class="icon-arrow-left-circle"></i></a>
