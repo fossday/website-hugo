@@ -8,10 +8,9 @@
             "twitter": "https://twitter.com/cleomarsch666",
             "linkedin": "https://www.linkedin.com/in/cleomarschmitzhaus/",
             "github": "https://github.com/cleomarschmitzhaus",
-            "avatar": ""
-
-         },
-         {
+            "avatar": "https://i.imgur.com/D3h5gR0.jpg"
+        },
+        {
             "name": "Eduarda Nicaretta",
             "description": "",
             "bio": "",
@@ -19,10 +18,9 @@
             "twitter": "https://twitter.com/dudanicaretta",
             "linkedin": "https://www.linkedin.com/in/dudanicaretta/",
             "github": "",
-            "avatar": ""
-
-         },
-         {
+            "avatar": "https://i.imgur.com/tFikdIV.jpg"
+        },
+        {
             "name": "Rafael Dutra",
             "description": "Battlefield, Heavy Metal and SysAdmin. ",
             "bio": "",
@@ -30,10 +28,9 @@
             "twitter": "https://twitter.com/raffaeldutra",
             "linkedin": "https://www.linkedin.com/in/rafaeldutra/",
             "github": "https://github.com/raffaeldutra",
-            "avatar": ""
-
-         },
-         {
+            "avatar": "https://i.imgur.com/IaLHLrC.jpg"
+        },
+        {
             "name": "Régis Tomkiel",
             "description": "O cara do site e coorganizador da edição de Bento Gonçalves.",
             "bio": "Desenvolvedor Web e administrador de sistemas unix-like (*bsd e GNU/Linux). Skills interessantes em PHP, Shell Script, Go, Wordpress*, Hugo e SEO.",
@@ -41,10 +38,7 @@
             "twitter": "https://twitter.com/tomtomkiel",
             "linkedin": "https://www.linkedin.com/in/regis-tomkiel/",
             "github": "https://github.com/rtomkiel",
-            "avatar": ""
-
-         }
-
-]
-
+            "avatar": "https://i.imgur.com/8IbmCw9.jpg"
+        }
+    ]
 }
