@@ -38,35 +38,15 @@
           </div>
 
           <div class="post-content">
-            <h3 class="post-title"><a href="#">Brooklyn Beta was the most important <br>conference Everyone had been</a>
+            <h3 class="post-title"><a>{{ .Params.subtitle }}</a>
             </h3>
             <div class="meta">
               <span class="meta-part"><a href="#"><i class="icon-user"></i> {{ .Params.author}}</a></span>
               <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25, 2015</a></span>
-              <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-              <span class="meta-part"><a href="#"><i class="icon-bubbles"></i> John Doe</a></span>
+              <span class="meta-part"><a href="#"><i class="icon-event"></i> Eventos</a></span>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis possimus quo cum delectus itaque!
-              Soluta id a laudantium error omnis totam suscipit doloremque quam nostrum provident minus consectetur,
-              debitis! Itaque ipsam consequuntur minus aut iusto, in earum dolores adipisci quis rerum, cum animi
-              voluptate provident deserunt assumenda sequi pariatur molestias commodi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-              non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-            <blockquote>
-              <i class="fa fa-quote-right"></i>
-              <span class="quote-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea totam iure ullam dolore eum, accusamus enim
-                libero magnam ipsa aspernatur porro. Maiores temporibus laborum quidem explicabo voluptatibus eum
-                dolores ratione.
-              </span>
-            </blockquote>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            
+            {{ .Content }}
 
             <div class="share">
               <div class="social-link">
