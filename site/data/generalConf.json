@@ -29,11 +29,11 @@
       },
       {
         "text": "Cidades",
-        "link":"https://fossday.org/",
+        "link":"https://fossday.org/eventos/",
         "sub":[
           {
             "text": "Adicione sua cidade",
-            "link": "#"
+            "link": "https://fossday.org/adicione-sua-cidade"
           }
         ]
       },
@@ -51,7 +51,7 @@
       },
       {
         "text": "Inscreva-se",
-        "link":"https://www.sympla.com.br/foss-day-bento-goncalves__356202"
+        "link":""
       }
     ],
     "FooterMenu":[
