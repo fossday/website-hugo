@@ -58,8 +58,18 @@ Veja:
 	- themes
     	- conference
 			- archetypes
+				- default.md
             - layouts
+            	- 404.html
+                - _default
+                - index.html
+                - partials
             - LICENSE.md
             - static
+            	- assets
+            		- css
+                    - fonts
+                    - img
+                    - js
             - theme.toml
 
