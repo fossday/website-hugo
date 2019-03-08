@@ -7,6 +7,7 @@ id: "singleContent"
 
 categories:
   - Eventos
+  - Bento
 tags:
     - Software Livre
     - Open Source

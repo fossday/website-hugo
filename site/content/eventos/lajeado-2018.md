@@ -1,12 +1,13 @@
 ---
-title: "FOSSDay Pelotas 2018"
-subtitle: "Primeiro FOSSDay de Pelotas, Rio Grande do Sul"
+title: "FOSSDay Lajeado 2018"
+subtitle: "Primeiro FOSSDay de Lajeado, Rio Grande do Sul"
 thumbnail: "https://i.imgur.com/XNzH2Sf.jpg"
 author: "Rágis Tomkiel"
 id: "singleContent"
 
 categories:
   - Eventos
+  - Lajeado
 
 tags:
     - Software Livre
@@ -16,4 +17,4 @@ tags:
     - desenvolvimento
 ---
 
-### FOSSDay Pelotas 2018
+### FOSSDay Lajeado 2018
