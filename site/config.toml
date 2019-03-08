@@ -1,6 +1,6 @@
 baseURL = "https://fossday.org"
 languageCode = "pt-br"
-title = "FOSS Day"
+title = "FOSSDay"
 theme = "conference"
 dataDir = "data"
 
