@@ -1,3 +1,27 @@
 {
-    
+    "team": [
+        {
+            "name": "Cleomar Schmitzhaus",
+            "description": "Baixista da banda Atropina",
+            "bio": "",
+            "facebook": "https://www.facebook.com/cleomar.schmitzhaus",
+            "twitter": "https://twitter.com/cleomarsch666",
+            "linkedin": "",
+            "github": "https://github.com/cleomarschmitzhaus",
+            "avatar": ""
+
+         },
+         {
+            "name": "",
+            "description": "",
+            "bio": "",
+            "facebook": "",
+            "twitter": "",
+            "linkedin": "",
+            "github": ""
+
+         }
+
+]
+
 }
