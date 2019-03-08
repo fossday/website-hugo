@@ -60,15 +60,15 @@
         "submenu":[
           {
             "text": "Organize um evento",
-            "link":"#"
+            "link":"https://fossday.org/adicione-sua-cidade"
           },
           {
-            "text": "Seja voluntário",
-            "link":"https://github.com/fossday"
+            "text": "FOSSDay Lajeado 2018",
+            "link":"https://fossday.org/lajeado-2018"
           },
           {
-            "text": "Espalhe a palavra",
-            "link":"https://www.facebook.com/fossday"
+            "text": "Bento Gonçalves",
+            "link":"https://fossday.org/bento2018"
           }
         ]
       },
@@ -77,15 +77,7 @@
         "submenu":[
           {
             "text": "Colaboradores",
-            "link":"#"
-          },
-          {
-            "text": "Blog",
-            "link":"#"
-          },
-          {
-            "text": "Eventos realizados",
-            "link":"#"
+            "link":"https://fossday.org/colaboradores"
           },
           {
             "text": "Repositórios",
@@ -106,7 +98,7 @@
           },
           {
             "text": "Apoie",
-            "link":"https://docs.google.com/forms/d/e/1FAIpQLSc1VsjBFynaIuvE6_mBnLd_Cy2nljqHGKhA7ZrtXz5ttMtAKA/viewform"
+            "link":"https://www.facebook.com/apoie"
           }
         ]
       }
