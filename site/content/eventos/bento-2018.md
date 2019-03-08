@@ -4,6 +4,7 @@ subtitle: "Primeiro FOSSDay  de Bento Gonçalves, Rio Grande do Sul"
 thumbnail: "https://i.imgur.com/XNzH2Sf.jpg"
 author: "Rágis Tomkiel"
 id: "singleContent"
+type: "event"
 
 categories:
   - Eventos
