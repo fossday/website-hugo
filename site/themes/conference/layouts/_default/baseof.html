@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-<head>{{ partial "global/head.html" . }}</head>
-<body>
-{{ partial "global/header/header.html" . }}
-{{ block "main" . }}
-{{ end }}
-{{ partial "global/footer.html" . }}
 
-{{ partial "global/scripts.html" . }}
-{{ if .IsHome }} {{ else }} {{ if .IsPage }}
-  {{ end}} {{ end }}
+{{ partial "global/head.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL ) }}
+
+<body>
+
+    {{ partial "global/header.html" (dict "General" $.Site.Data.generalConf ) }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ partial "global/footer.html" (dict "General" $.Site.Data.generalConf ) }}
+
+    {{ partial "global/scripts.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL) }}
+
+    {{ if .IsHome }} {{ else }} {{ if .IsPage }}
+    {{ end}} {{ end }}
 </body>
+
 </html>
