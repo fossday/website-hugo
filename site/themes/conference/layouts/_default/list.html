@@ -39,8 +39,7 @@
                             </div>
 
                             <div class="post-content">
-                                <h3 class="post-title"><a href="#">Brooklyn Beta was the most important <br>conference Everyone
-                                        had been</a></h3>
+                                <h3 class="post-title"><a href="#">{{ .Params.title }}</a></h3>
                                 <div class="meta">
                                     <span class="meta-part"><a href="#"><i class="icon-user"></i> Admin</a></span>
                                     <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
@@ -60,6 +59,7 @@
 
                         {{else}}
 
+                        {{ range first 2 (where .Data.Pages.ByDate.Reverse "Section" "singleContent") }}
                         <div class="blog-post">
 
                                 <div class="feature-inner">
@@ -75,8 +75,7 @@
                                 </div>
     
                                 <div class="post-content">
-                                    <h3 class="post-title"><a href="#">Brooklyn Beta was the most important <br>conference Everyone
-                                            had been</a></h3>
+                                    <h3 class="post-title"><a href="#">{{ .Params.title }}</a></h3>
                                     <div class="meta">
                                         <span class="meta-part"><a href="#"><i class="icon-user"></i> Admin</a></span>
                                         <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
@@ -93,6 +92,7 @@
                                 </div>
     
                             </div>
+                            {{ end }}
 
                     {{ end }}
 
