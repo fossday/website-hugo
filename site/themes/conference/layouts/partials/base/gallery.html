@@ -5,9 +5,9 @@
       <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Veja fotos de outras edições do evento.</p>
     </div>
     <div class="gallery-wrap wow fadeInDown">
-      {{ range sort .gallery }}
-       {{ .Title }}
-    {{ end }}
+      {{ .gallery.data.title}}
+     
+
     </div>
   </div>
 </section>
