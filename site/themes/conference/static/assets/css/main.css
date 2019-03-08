@@ -1201,8 +1201,6 @@ fieldset[disabled] .btn {
 .ready-to-play {
   height: 560px;
   width: 100%;
-  overflow: hidden;
-  position: relative;
   z-index: 2;
 }
 .ready-to-play:before {
@@ -1211,9 +1209,7 @@ fieldset[disabled] .btn {
   display: block;
   left: 0px;
   top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+  z-index: -999999990;
   opacity: 0.70;
 }
 video {
