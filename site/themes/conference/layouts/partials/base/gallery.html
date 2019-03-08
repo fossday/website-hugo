@@ -7,7 +7,7 @@
     <div class="gallery-wrap wow fadeInDown">
         {{ $title := .gallery.data.title }}
         {{ $link := .gallery.data.link }}
-          {{ range first 9 .gallery.data.images }}
+          {{ range first 10 .gallery.data.images }}
             <div class="col-md-4 col-sm-4 col-xs-12 gellery-pn">
               <div class="gallery-item">
                 <a href="#" title="{{ $title }}"><img src="{{ .link }}" alt="{{ $title }}"></a>
