@@ -5,7 +5,6 @@ thumbnail: "https://i.imgur.com/XNzH2Sf.jpg"
 author: "Rágis Tomkiel"
 categories:
   - Eventos
-  - OpenSource
 
 tags:
     - Software Livre

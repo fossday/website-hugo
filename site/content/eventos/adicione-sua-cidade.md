@@ -1,10 +1,11 @@
 ---
-title: "FOSSDay Bento Gonçalves 2018"
-subtitle: "Primeiro FOSSDay  de Bento Gonçalves, Rio Grande do Sul"
+title: "Organize um evento"
+subtitle: "Organize um FOSSDay na sua cidade"
 thumbnail: "https://i.imgur.com/XNzH2Sf.jpg"
 author: "Rágis Tomkiel"
 categories:
   - Eventos
+
 tags:
     - Software Livre
     - Open Source
@@ -13,4 +14,4 @@ tags:
     - desenvolvimento
 ---
 
-### FOSSDay Bento Gonçalves 2018
+### Organize um FOSSDay na sua cidade
