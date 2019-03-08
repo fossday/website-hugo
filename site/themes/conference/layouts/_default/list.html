@@ -5,10 +5,10 @@
         <div class="page-header-inner">
             <ol class="breadcrumb wow fadeInDown" data-wow-delay="300ms">
                 <li><a href="index.html">Home</a></li>
-                <li class="page">Blog</li>
+                <li class="page">{{ .Title }}</li>
             </ol>
             <h1 class="page-title wow fadeInRight" data-wow-delay="300ms">
-                Blog
+                    {{ .Title }}
             </h1>
         </div>
     </div>
@@ -59,7 +59,7 @@
 
                         {{else}}
 
-                        {{ range first 2 (where .Data.Pages.ByDate.Reverse "Section" "event") }}
+                        {{ range first 2 (where .Data.Pages.ByDate.Reverse "Section" "eventos") }}
                         <div class="blog-post">
 
                                 <div class="feature-inner">
@@ -77,18 +77,13 @@
                                 <div class="post-content">
                                     <h3 class="post-title"><a href="#">{{ .Params.title }}</a></h3>
                                     <div class="meta">
-                                        <span class="meta-part"><a href="#"><i class="icon-user"></i> Admin</a></span>
+                                        <span class="meta-part"><a href="#"><i class="icon-user"></i> {{ .Params.author }}</a></span>
                                         <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
                                                 2015</a></span>
-                                        <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                                        <span class="meta-part"><a href="#"><i class="icon-bubbles"></i> John Doe</a></span>
+                                        <span class="meta-part"><a href="#"><i class="icon-event"></i> Eventos</a></span>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis possimus quo cum
-                                        delectus itaque! Soluta id a laudantium error omnis totam suscipit doloremque quam nostrum
-                                        provident minus consectetur, debitis! Itaque ipsam consequuntur minus aut iusto, in earum
-                                        dolores adipisci quis rerum, cum animi voluptate provident deserunt assumenda sequi pariatur
-                                        molestias commodi.</p>
-                                    <a class="btn btn-common btn-small" href="#">Continue Reading</a>
+                                    <p>{{ .Content }}</p>
+                                    <a class="btn btn-common btn-small" href="{{ .Permalink }}">Continue Reading</a>
                                 </div>
     
                             </div>
@@ -107,178 +102,7 @@
             </div>
 
 
-            <aside id="sidebar" class="col-md-4 right-sidebar">
-
-                <div class="widget widget-search">
-                    <form action="#">
-                        <input class="form-control" type="search" placeholder="Start Searching..." />
-                        <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-
-                <div class="widget widget-popular-posts">
-                    <h5 class="widget-title">Recent Posts</h5>
-                    <ul class="posts-list">
-                        <li>
-                            <div class="widget-thumb">
-                                <a href="#"><img src="assets/img/blog/p1.jpg" alt="" /></a>
-                            </div>
-                            <div class="widget-content">
-                                <a href="#">Brooklyn beta was the most</a>
-                                <span><i class="icon-calendar"></i>2016/10/28</span>
-                                <span><i class="icon-folder"></i>Blog</span>
-                            </div>
-                            <div class="clearfix"></div>
-                        </li>
-                        <li>
-                            <div class="widget-thumb">
-                                <a href="#"><img src="assets/img/blog/p2.jpg" alt="" /></a>
-                            </div>
-                            <div class="widget-content">
-                                <a href="#">Brooklyn beta was the most</a>
-                                <span><i class="icon-calendar"></i>2016/10/28</span>
-                                <span><i class="icon-folder"></i>Blog</span>
-                            </div>
-                            <div class="clearfix"></div>
-                        </li>
-                        <li>
-                            <div class="widget-thumb">
-                                <a href="#"><img src="assets/img/blog/p3.jpg" alt="" /></a>
-                            </div>
-                            <div class="widget-content">
-                                <a href="#">Brooklyn beta was the most</a>
-                                <span><i class="icon-calendar"></i>2016/10/28</span>
-                                <span><i class="icon-folder"></i>Blog</span>
-                            </div>
-                            <div class="clearfix"></div>
-                        </li>
-                        <li>
-                            <div class="widget-thumb">
-                                <a href="#"><img src="assets/img/blog/p4.jpg" alt="" /></a>
-                            </div>
-                            <div class="widget-content">
-                                <a href="#">Brooklyn beta was the most</a>
-                                <span><i class="icon-calendar"></i>2016/10/28</span>
-                                <span><i class="icon-folder"></i>Blog</span>
-                            </div>
-                            <div class="clearfix"></div>
-                        </li>
-                        <li>
-                            <div class="widget-thumb">
-                                <a href="#"><img src="assets/img/blog/p5.jpg" alt="" /></a>
-                            </div>
-                            <div class="widget-content">
-                                <a href="#">Brooklyn beta was the most</a>
-                                <span><i class="icon-calendar"></i>2016/10/28</span>
-                                <span><i class="icon-folder"></i>Blog</span>
-                            </div>
-                            <div class="clearfix"></div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="widget widget-categories">
-                    <h5 class="widget-title">Categories</h5>
-                    <ul class="cat-list">
-                        <li>
-                            <a href="#">Life Style</a>
-                            <span class="num-posts">09</span>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                            <span class="num-posts">15</span>
-                        </li>
-                        <li>
-                            <a href="#">Fasion</a>
-                            <span class="num-posts">21</span>
-                        </li>
-                        <li>
-                            <a href="#">Sports</a>
-                            <span class="num-posts">05</span>
-                        </li>
-                        <li>
-                            <a href="#">Finance</a>
-                            <span class="num-posts">29</span>
-                        </li>
-                        <li>
-                            <a href="#">Political</a>
-                            <span class="num-posts">17</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="widget">
-                    <h5 class="widget-title">Post Carousel</h5>
-                    <div id="post-carousel" class="post-slide owl-carousel" data-slider-pagination="true">
-                        <div class="item">
-                            <a class="lightbox" href="assets/img/blog/img1.jpg"><img src="assets/img/blog/img1.jpg"
-                                    alt=""></a>
-                            <div class="post-content">
-                                <h3><a href="#">Brooklyn Beta was the most important conference</a></h3>
-                                <div class="meta">
-                                    <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
-                                            2015</a></span>
-                                    <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quo harum ipsa
-                                    eaque laudantium sed eligendi nostrum nemo tempore recusandae.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="lightbox" href="assets/img/blog/img4.jpg"><img src="assets/img/blog/img4.jpg"
-                                    alt=""></a>
-                            <div class="post-content">
-                                <h3><a href="#">Brooklyn Beta was the most important conference</a></h3>
-                                <div class="meta">
-                                    <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
-                                            2015</a></span>
-                                    <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quo harum ipsa
-                                    eaque laudantium sed eligendi nostrum nemo tempore recusandae.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="lightbox" href="assets/img/blog/img5.jpg"><img src="assets/img/blog/img5.jpg"
-                                    alt=""></a>
-                            <div class="post-content">
-                                <h3><a href="#">Brooklyn Beta was the most important conference</a></h3>
-                                <div class="meta">
-                                    <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
-                                            2015</a></span>
-                                    <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quo harum ipsa
-                                    eaque laudantium sed eligendi nostrum nemo tempore recusandae.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="widget widget-social">
-                    <h5 class="widget-title">Social Media</h5>
-                    <div class="social-link">
-                        <a class="twitter" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
-                        <a class="facebook" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
-                        <a class="google" target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
-                        <a class="linkedin" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="widget tag">
-                    <h5 class="widget-title">Tag Cloud</h5>
-                    <a href="#"><i class="fa fa-tag"></i> art</a>
-                    <a href="#"><i class="fa fa-tag"></i> Camera</a>
-                    <a href="#"><i class="fa fa-tag"></i> Coffee</a>
-                    <a href="#"><i class="fa fa-tag"></i> design</a>
-                    <a href="#"><i class="fa fa-tag"></i> gallery</a>
-                    <a href="#"><i class="fa fa-tag"></i> life</a>
-                    <a href="#"><i class="fa fa-tag"></i> lyrics</a>
-                    <a href="#"><i class="fa fa-tag"></i> photography</a>
-                    <a href="#"><i class="fa fa-tag"></i> record</a>
-                </div>
-            </aside>
-
+            
         </div>
     </div>
 </section>
