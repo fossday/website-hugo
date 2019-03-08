@@ -8,3 +8,6 @@ dataDir = "data"
   paginas = "/:filename"
   eventos = "/:filename"
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"

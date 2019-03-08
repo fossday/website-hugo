@@ -155,19 +155,19 @@
         {
           "name": "Lajeado",
           "nick":"lajeado",
-          "link":"https://fossday.org/lajeado",
+          "link":"https://fossday.org/categories/lajeado",
           "date": "2019-05-04"
         },
         {
           "name": "Bento Gonçalves",
           "nick": "bento",
-          "link":"https://fossday.org/bento",
+          "link":"https://fossday.org/categories/bento",
           "date": "2018-09-22"
         },
         {
           "name": "Pelotas",
           "nick": "pelotas",
-          "link":"https://fossday.org/pelotas",
+          "link":"https://fossday.org/categories/pelotas",
           "date": ""
         }
     ]
