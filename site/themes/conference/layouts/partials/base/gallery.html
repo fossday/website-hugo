@@ -6,9 +6,7 @@
     </div>
     <div class="gallery-wrap wow fadeInDown">
       {{ range .gallery }}
-        {{ range .data }}
-        {{ $title := .title }}
-        {{ $link := .link }}
+
           {{ range first 9 .images }}
             <div class="col-md-4 col-sm-4 col-xs-12 gellery-pn">
               <div class="gallery-item">
@@ -25,7 +23,7 @@
           <div class="more-btn">
             <a href="{{ $link }}" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s" target="_blank">Ver mais</a>
           </div>
-      {{ end }}
+
     {{ end }}
     </div>
   </div>
