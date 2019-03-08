@@ -53,7 +53,7 @@ a:hover{
 }
 .navbar-event .dropdown .dropdown-menu > li > a:hover,
 .navbar-event .dropdown .dropdown-menu > li > a .active {
-  color: #00A456;
+  color: #fff;
 }
 .navbar-event .dropdown .dropdown-menu > li.active > a {
   background: #00A456 !important;
