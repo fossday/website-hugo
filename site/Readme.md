@@ -18,7 +18,7 @@ O site é mantido com o gerador de sites [Hugo](https://gohugo.io/) e hospedado 
 O projeto utiliza a estrutura padrão de ***temas*** do [Hugo](), com pequenas adaptações.  
 Veja:  
 
-#### Raiz do projeto
+##### Raiz do projeto
 
     - /
     	- docs
@@ -41,3 +41,25 @@ Veja:
         - resources
         - static
         - themes
+
+##### Archetypes
+		
+    - archetypes
+     	- default.md
+
+##### Content
+
+	- content
+    	- eventos
+		- paginas
+
+##### Themes
+
+	- themes
+    	- conference
+			- archetypes
+            - layouts
+            - LICENSE.md
+            - static
+            - theme.toml
+
