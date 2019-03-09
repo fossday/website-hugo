@@ -15,7 +15,7 @@
 
 
       <!-- File cityCurrentYear.json exists? -->
-      {{ if fileExists (print "data/" $city ".json") }}
+      {{ if fileExists (print "/src/data/" $city ".json") }}
 
       {{ $.Scratch.Add "a1" 1 }}
 
