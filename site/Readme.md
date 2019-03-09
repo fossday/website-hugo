@@ -20,7 +20,7 @@ Veja:
 
 ##### Raiz do projeto
 
-    - /
+    - /  
     	- docs
         - LICENSE.md
         - readme.md
@@ -30,7 +30,7 @@ Veja:
 
 ##### Raiz do site
 
-	- site
+	- site  
     	- archetypes
         - config-docker.toml
         - config.toml
@@ -42,8 +42,8 @@ Veja:
         - static
         - themes
 
-##### Archetypes
-		
+##### Archetypes  
+
     - archetypes
      	- default.md
 
@@ -59,16 +59,16 @@ Veja:
     	- conference
 			- archetypes
 				- default.md
-            - layouts
-            	- 404.html
+            - layouts  
+                - 404.html
                 - _default
                 - index.html
                 - partials
             - LICENSE.md
             - static
             	- assets
-            		- css
-            			- animate.css
+            		- css  
+                        - animate.css
                         - blogpage.css
                         - bootstrap.min.css
                         - carousel-slider.css
@@ -85,8 +85,8 @@ Veja:
                         - slicknav.css
                     - fonts
                     - img
-                    - js
-                    	- bootstrap.min.js
+                    - js  
+                        - bootstrap.min.js
                         - color-switcher.js
                         - contact-form-script.js
                         - form-validator.min.js
@@ -101,7 +101,7 @@ Veja:
                         - owl.carousel.min.js
                         - smooth-scroll.js
                         - video.js
-                        - wow.js 
+                        - wow.js
             - theme.toml
 
 
