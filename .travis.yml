@@ -20,7 +20,6 @@ jobs:
           -itd \
           -v $(pwd)/site:/src \
           -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
-        - curl -s http://127.0.0.1:1313 | grep i.imgur.com
     - stage: publish
       script:
         - |
@@ -39,5 +38,6 @@ jobs:
         verbose: true
         target_branch: master
         on:
-          branch: develop
+          tags: true
+          #branch: develop
         fqdn: fossday.org
