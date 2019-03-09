@@ -1,8 +1,13 @@
 baseURL = "https://fossday.org"
 languageCode = "pt-br"
-title = "FOSS Day"
+title = "FOSSDay"
 theme = "conference"
+dataDir = "data"
 
 [permalinks]
   paginas = "/:filename"
   eventos = "/:filename"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"

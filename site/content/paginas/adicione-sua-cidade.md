@@ -1,12 +1,11 @@
 ---
-title: "Apoie o FOSSDay"
-subtitle: "Ajude a divulgar e promover o FOSSDay"
+title: "Organize um evento"
+subtitle: "Organize um FOSSDay na sua cidade"
 thumbnail: "https://i.imgur.com/XNzH2Sf.jpg"
 author: "Rágis Tomkiel"
 id: "singleContent"
-
 categories:
-  - Institucional
+  - Eventos
 tags:
     - Software Livre
     - Open Source
@@ -15,4 +14,4 @@ tags:
     - desenvolvimento
 ---
 
-### Ajude a divulgar e promover o FOSSDay
+### Organize um FOSSDay na sua cidade

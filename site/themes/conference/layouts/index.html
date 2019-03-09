@@ -1,45 +1,88 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-{{ range $.Site.Data.GeneralConf }}
-  {{ range .Cities }}
-    {{ $nick := .nick }}
-    {{ $year := now.Format "2006" }}
-    {{ $city := $year | print $nick }}
+{{ $.Scratch.Set "a1" 1 }}
 
-      {{ range (index $.Site.Data $city) }}
-        {{ range .Event }}
-          {{ $now := now.Format "2006-01-02" }}
-          {{ $submit := (dateFormat "2006-01-02" .limitSubmit) }}
-          {{ $start := (dateFormat "2006-01-02" .date) }}
 
-            {{ if lt $now $start }}
+<!-- Import and range General Config Data file "generalConf.json" -->
+{{ range $.Site.Data.generalConf }}
 
-              {{ partial "global/head.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) "Site" $.Site.BaseURL ) }}
-                <body>
-                  {{ partial "global/header.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) ) }}
+  <!-- Range Cities data in General file -->
+    {{ range .Cities }}
+      {{ $nick := .nick }}
+      {{ $year := now.Format "2006" }}
+      {{ $city := $year | print $nick }}
+      {{ $.Scratch.Add "a1" 1 }}
 
-               {{ if lt $now $submit }}
 
-                 {{ partial "submit/home.html" (dict "GeneralConf" $.Site.Data.GeneralConf "gallery" $.Site.Data.Gallery "event" (index $.Site.Data $city) ) }}
+      <!-- File cityCurrentYear.json exists? -->
+      {{ if fileExists (print "data/" $city ".json") }}
 
-               {{ else if (and ((ge $now $submit) (le $now $start)))}}
+      {{ $.Scratch.Add "a1" 1 }}
 
-                  {{ partial "join/home.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) ) }}
+          <!-- Import and range City Current Year file "cityCurrentYear.json" -->
+          {{ range (index $.Site.Data $city) }}
 
-               {{ else if gt $now $start }}
+            <!-- Range Event data in City file -->
+            {{ range .Event }}
 
-                  {{ partial "base/home.html" . }}
+              {{ $now := now.Format "2006-01-02" }}
+              {{ $submit := (dateFormat "2006-01-02" .limitSubmit) }}
+              {{ $start := (dateFormat "2006-01-02" .date) }}
 
-              {{ end }}
+                <!-- Current date ($now) is < (less than) event date ($start)? -->
+                {{ if lt $now $start }}
 
-              {{ partial "global/footer.html" (dict "General" $.Site.Data.GeneralConf ) }}
+                  {{ partial "global/head.html" (dict "General" $.Site.Data.generalConf "event" (index $.Site.Data $city) "Site" $.Site.BaseURL ) }}
+                    <body>
+                  {{ partial "global/header.html" (dict "General" $.Site.Data.generalConf "event" (index $.Site.Data $city) ) }}
 
-              {{ partial "global/scripts.html" (dict "General" $.Site.Data.GeneralConf "event" (index $.Site.Data $city) "Site" $.Site.BaseURL) }}
+                    <!-- Current date ($now) is < (less than) event submit limit date ($submit)? -->
+                     {{ if lt $now $submit }}
 
-           {{ end }}
-        {{ end }}
+                       {{ partial "submit/home.html" (dict "GeneralConf" $.Site.Data.generalConf "gallery" $.Site.Data.gallery "event" (index $.Site.Data $city)) }}
+
+                    <!-- Current date ($now) is > (greater than) event submit limit date ($submit)? and current date ($now) is < (less than) event date ($start)?-->
+                     {{ else if (and ((ge $now $submit) (le $now $start)))}}
+
+                        {{ partial "join/home.html" (dict "General" $.Site.Data.generalConf "event" (index $.Site.Data $city)  "gallery" $.Site.Data.gallery) }}
+
+                    <!-- End of loop for subscription date and submit date. (34) -->
+                    {{ end }}
+
+                  {{ partial "global/footer.html" (dict "General" $.Site.Data.generalConf ) }}
+
+                  {{ partial "global/scripts.html" (dict "General" $.Site.Data.generalConf "event" (index $.Site.Data $city) "Site" $.Site.BaseURL) }}
+
+                  </body>
+                </html>
+
+                <!-- End of loop for event date. (27) -->
+                {{ end }}
+
+            <!-- End of loop for range Event data in City file. (19) -->
+            {{ end }}
+
+
+            {{ else }}
+            
+            {{ partial "global/head.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL ) }}
+            <body>
+            {{ partial "global/header.html" (dict "General" $.Site.Data.generalConf ) }}
+
+            {{ partial "base/home.html" (dict "generalConf" $.Site.Data.generalConf "gallery" $.Site.Data.Gallery ) }}
+
+            {{ partial "global/footer.html" (dict "General" $.Site.Data.generalConf ) }}
+
+            {{ partial "global/scripts.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL) }}
+
+          <!-- End of loop for import and range City Current Year file "cityCurrentYear.json" -->
+          {{ end }}
+
+      <!-- End of file cityCurrentYear.json exists verification. -->
       {{ end }}
-  {{ end }}
+
+    <!-- End of loop for range Cities data in General file -->
+    {{ end }}
+
+<!-- End of import and range General Config Data file "generalConf.json" -->
 {{ end }}
-</body>
-</html>
