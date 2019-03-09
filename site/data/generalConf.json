@@ -5,7 +5,7 @@
       "Name": "FOSSDay",
       "Short": "Grupo de entusiastas de tecnologia, Software Livre e Open Source.",
       "Description": "FOSSDay é a iniciativa de promover tecnologia, Software Livre, Open Source e cidadania através de palestras organizadas por voluntários.",
-      "Logo": "https://i.imgur.com/qsEKxRC.png",
+      "Logo": "https://i.imgur.com/an3ytFS.png",
       "Favicon": "https://i.imgur.com/yFnbmL4.png",
       "History": "",
       "Social": [
@@ -29,21 +29,21 @@
       },
       {
         "text": "Cidades",
-        "link":"https://fossday.org/",
+        "link":"https://fossday.org/eventos/",
         "sub":[
           {
             "text": "Adicione sua cidade",
-            "link": "#"
+            "link": "https://fossday.org/adicione-sua-cidade"
           }
         ]
       },
       {
         "text": "Apoie",
-        "link": "#sponsors"
+        "link": "https://fossday.org/apoie"
       },
       {
         "text": "Participe",
-        "link":"#submit"
+        "link":"https://fossday.org/#submit"
       },
       {
         "text": "Grade de Palestras",
@@ -51,7 +51,7 @@
       },
       {
         "text": "Inscreva-se",
-        "link":"https://www.sympla.com.br/foss-day-bento-goncalves__356202"
+        "link":""
       }
     ],
     "FooterMenu":[
@@ -60,15 +60,15 @@
         "submenu":[
           {
             "text": "Organize um evento",
-            "link":"#"
+            "link":"https://fossday.org/adicione-sua-cidade"
           },
           {
-            "text": "Seja voluntário",
-            "link":"https://github.com/fossday"
+            "text": "FOSSDay Lajeado 2018",
+            "link":"https://fossday.org/lajeado-2018"
           },
           {
-            "text": "Espalhe a palavra",
-            "link":"https://www.facebook.com/fossday"
+            "text": "Bento Gonçalves",
+            "link":"https://fossday.org/bento-2018"
           }
         ]
       },
@@ -77,15 +77,7 @@
         "submenu":[
           {
             "text": "Colaboradores",
-            "link":"#"
-          },
-          {
-            "text": "Blog",
-            "link":"#"
-          },
-          {
-            "text": "Eventos realizados",
-            "link":"#"
+            "link":"https://fossday.org/colaboradores"
           },
           {
             "text": "Repositórios",
@@ -106,7 +98,7 @@
           },
           {
             "text": "Apoie",
-            "link":"https://docs.google.com/forms/d/e/1FAIpQLSc1VsjBFynaIuvE6_mBnLd_Cy2nljqHGKhA7ZrtXz5ttMtAKA/viewform"
+            "link":"https://fossday.org/apoie"
           }
         ]
       }
@@ -163,17 +155,20 @@
         {
           "name": "Lajeado",
           "nick":"lajeado",
-          "link":"https://fossday.org/lajeado"
+          "link":"https://fossday.org/categories/lajeado",
+          "date": "2019-05-04"
         },
         {
           "name": "Bento Gonçalves",
           "nick": "bento",
-          "link":"https://fossday.org/bento"
+          "link":"https://fossday.org/categories/bento",
+          "date": "2018-09-22"
         },
         {
           "name": "Pelotas",
           "nick": "pelotas",
-          "link":"https://fossday.org/pelotas"
+          "link":"https://fossday.org/categories/pelotas",
+          "date": ""
         }
     ]
   }

@@ -1,0 +1,112 @@
+{{ define "main"}}
+
+<div class="page-header">
+    <div class="container">
+        <div class="page-header-inner">
+            <ol class="breadcrumb wow fadeInDown" data-wow-delay="300ms">
+                <li><a href="index.html">Home</a></li>
+                <li class="page">{{ .Title }}</li>
+            </ol>
+            <h1 class="page-title wow fadeInRight" data-wow-delay="300ms">
+                    {{ .Title }}
+            </h1>
+        </div>
+    </div>
+</div>
+
+
+<section id="content" class="section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8">
+
+
+                    {{ if $.Scratch.Get "category" }}
+
+                        <div class="blog-post">
+
+                            <div class="feature-inner">
+                                <a class="lightbox" href="{{ .Params.thumbnail }}"><img
+                                        src="{{ .Params.thumbnail }}" alt=""></a>
+                            </div>
+
+
+                            <div class="post-format">
+                                <span>
+                                    <a href="#"><i class="icon-picture"></i></a>
+                                </span>
+                            </div>
+
+                            <div class="post-content">
+                                <h3 class="post-title"><a href="#">{{ .Params.title }}</a></h3>
+                                <div class="meta">
+                                    <span class="meta-part"><a href="#"><i class="icon-user"></i> Admin</a></span>
+                                    <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
+                                            2015</a></span>
+                                    <span class="meta-part"><a href="#"><i class="icon-event"></i> Events</a></span>
+                                    <span class="meta-part"><a href="#"><i class="icon-bubbles"></i> John Doe</a></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis possimus quo cum
+                                    delectus itaque! Soluta id a laudantium error omnis totam suscipit doloremque quam nostrum
+                                    provident minus consectetur, debitis! Itaque ipsam consequuntur minus aut iusto, in earum
+                                    dolores adipisci quis rerum, cum animi voluptate provident deserunt assumenda sequi pariatur
+                                    molestias commodi.</p>
+                                <a class="btn btn-common btn-small" href="#">Continue Reading</a>
+                            </div>
+
+                        </div>
+
+                        {{else}}
+
+                        {{ range first 2 (where .Data.Pages.ByDate.Reverse "Section" "eventos") }}
+                        <div class="blog-post">
+
+                                <div class="feature-inner">
+                                    <a class="lightbox" href="{{ .Params.thumbnail }}">
+                                        <img src="{{ .Params.thumbnail }}" alt=""></a>
+                                </div>
+    
+    
+                                <div class="post-format">
+                                    <span>
+                                        <a href="#"><i class="icon-picture"></i></a>
+                                    </span>
+                                </div>
+    
+                                <div class="post-content">
+                                    <h3 class="post-title"><a href="#">{{ .Params.title }}</a></h3>
+                                    <div class="meta">
+                                        <span class="meta-part"><a href="#"><i class="icon-user"></i> {{ .Params.author }}</a></span>
+                                        <span class="meta-part"><a href="#"><i class="icon-calendar"></i> Fabruary 25,
+                                                2015</a></span>
+                                        <span class="meta-part"><a href="#"><i class="icon-event"></i> Eventos</a></span>
+                                    </div>
+                                    <p>{{ .Content }}</p>
+                                    <a class="btn btn-common btn-small" href="{{ .Permalink }}">Continue Reading</a>
+                                </div>
+    
+                            </div>
+                            {{ end }}
+
+                    {{ end }}
+
+                <div id="pagination">
+                    <a class="page-num" href="#"><i class="icon-arrow-left-circle"></i></a>
+                    <a class="current page-num" href="#">1</a>
+                    <a class="page-num" href="#">2</a>
+                    <a class="page-num" href="#">3</a>
+                    <a class="next-page" href="#"><i class="icon-arrow-right-circle"></i></a>
+                </div>
+
+            </div>
+
+
+            
+        </div>
+    </div>
+</section>
+
+
+
+{{ end }}

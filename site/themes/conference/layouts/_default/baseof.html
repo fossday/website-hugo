@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+{{ partial "global/head.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL ) }}
+
+<body>
+
+    {{ partial "global/header.html" (dict "General" $.Site.Data.generalConf ) }}
+
+        {{ block "main" . }}{{ end }}
+
+    {{ partial "global/footer.html" (dict "General" $.Site.Data.generalConf ) }}
+
+    {{ partial "global/scripts.html" (dict "General" $.Site.Data.generalConf "Site" $.Site.BaseURL) }}
+
+    {{ if .IsHome }} {{ else }} {{ if .IsPage }}
+    {{ end}} {{ end }}
+</body>
+
+</html>

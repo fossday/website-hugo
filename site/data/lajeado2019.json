@@ -1,0 +1,150 @@
+{
+  "content": {
+  "Event": [
+    {
+      "title": "Segundo FOSSDay Lajeado",
+      "description": "Palestras sobre tecnologia, Software Livre e Open Source. O evento possui entrada gratuita, mas incentivamos a doação de 2kg de alimentos não perecíveis no momento da inscrição.",
+      "local": "Univates - Universidade do Vale do Taquari, Av. Avelino Talini, 171 - Universitário, Lajeado - RS",
+      "address": "Av. Avelino Talini, 171 - Universitário, Lajeado - RS",
+      "city":  "Lajeado",
+      "state": "Rio Grande do Sul",
+      "image": "/img/badge.jpg",
+      "GoogleMapsKey": "AIzaSyA_9UyjzjSRTztaUxRW0e7a5rshBjOCX7M",
+      "date": "2019-05-04",
+      "limitSubmit": "2019-04-06",
+      "linkSubmit": "https://goo.gl/forms/sO7xoH4ja7If7KjR2",
+      "linkSubs": "#",
+      "limitSubs": "2019-05-04"
+    }
+  ],
+  "Slides": [
+    {
+      "title": "FOSSDay Lajeado",
+      "img": "https://i.imgur.com/wEnAyH6.jpg",
+      "blink": "#",
+      "btext": "Realizar inscrição",
+      "active": "active"
+    },
+    {
+      "title": "Linux Professional Institute",
+      "img": "https://i.imgur.com/y337vK6.jpg",
+      "blink": "https://www.lpi.org/",
+      "btext": "Saiba Mais",
+      "active": ""
+    }
+  ],
+  "Sponsors" : [
+    {
+      "title": "LPI - Linux Professional Institute",
+      "url": "https://www.lpi.org/",
+      "short": "O LPI é o padrão global de certificação e organização de suporte de carreira para profissionais de código aberto.",
+      "logo": "https://i.imgur.com/GYaefDy.png"
+    },
+    {
+      "title": "Dose Extra Multimídia",
+      "url": "https://doseextra.com",
+      "short": "Desenvolvimento web e publicidade.",
+      "logo": "https://i.imgur.com/ew62Ksf.png"
+    },
+    {
+      "title": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "url": "https://goo.gl/forms/FZWI4VC2joiHDh1D3",
+      "short": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "logo": "https://i.imgur.com/aTpvv71.png"
+    }
+  ],
+    "Partners":[
+    {
+      "title": "Univates -  Universidade do vale do taquari",
+      "url": "https://www.univates.br/",
+      "short": "UCS - Campus de Bento Gonçalves (Carvi)",
+      "logo": "https://i.imgur.com/UEGm4zc.png"
+    },
+    {
+      "title": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "url": "https://goo.gl/forms/FZWI4VC2joiHDh1D3",
+      "short": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "logo": "https://i.imgur.com/aTpvv71.png"
+    }
+  ],
+  "Schedule":[
+    {
+      "name": "Abertura do evento",
+      "vitae": "out",
+      "speeche": "Recepção + Coffee",
+      "start": "08h30min",
+      "avatar": "https://i.imgur.com/yFnbmL4.png"
+    },
+    {
+      "name": "Régis Tomkiel",
+      "vitae": "Sócio-fundador da <a href=\"https://doseextra.com\" target=\"_blank\">Dose Extra Multimídia</a>, desenvolvedor web, podcaster e co-organizador as edições de Bento Gonçalves do Tchelinux e Foss Day.",
+      "speeche": "Não! Use Wordpress.",
+      "summary": "Que tal repensar um pouco sobre como você está desenvolvendo os seus projetos web? Você desenvolve o seu framework PHP do zero? Usa Laravel? Já está migrando para o Node.js? Vamos conversar sobre como otimizar seu tempo de desenvolvimento, criar projetos seguros e que pagam boletos. ",
+      "level": "Intermediário",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://doseextra.com"
+        },
+        {
+          "title": "<i class=\"fa fa-github\"></i>",
+          "link": "https://github.com/rtomkiel"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/regis-tomkiel//"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/registomkiel"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/tomtomkiel"
+        }
+      ],
+      "avatar": "https://i.imgur.com/OuZxm3a.jpg",
+      "start": "09h00min"
+    }
+
+  ],
+  "Workshops":[
+    {
+      "name": "Cesar Brod",
+      "vitae": "Diretor de Desenvolvimento Regional para o Brasil do Linux Professional Institute e seu trabalho consiste em promover a compreensão do LPI acerca das necessidades da região, a fim de fortalecer suas ações com relação à formação profissional em Linux e software livre, bem como como ampliar seu renomado programa de certificação no país.",
+      "speeche": "Respresentante LPI",
+      "summary": "",
+      "level": "iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://www.lpi.org/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/cesar.brod"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/cesarbrod/"
+        },
+        {
+          "title": "<i class=\"fa fa-umbrella\"></i>",
+          "link": "http://brodtec.com/"
+        }
+
+      ],
+      "avatar": "https://i.imgur.com/85aME9m.jpg?3",
+      "start": "08h30min"
+    }
+
+  ],
+  "Closing": [
+    {
+    "schedules": "X horas de palestras e workshops*",
+    "speakers": "X palestrantes",
+    "workshops": "X palestras e X Workshops"
+  }
+]
+  }
+}

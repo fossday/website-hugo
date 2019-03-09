@@ -1,3 +1,0 @@
----
-title: "Organize um evento"
----

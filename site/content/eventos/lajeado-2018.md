@@ -1,12 +1,14 @@
 ---
-title: "Apoie o FOSSDay"
-subtitle: "Ajude a divulgar e promover o FOSSDay"
+title: "FOSSDay Lajeado 2018"
+subtitle: "Primeiro FOSSDay de Lajeado, Rio Grande do Sul"
 thumbnail: "https://i.imgur.com/XNzH2Sf.jpg"
 author: "Rágis Tomkiel"
 id: "singleContent"
 
 categories:
-  - Institucional
+  - Eventos
+  - Lajeado
+
 tags:
     - Software Livre
     - Open Source
@@ -15,4 +17,4 @@ tags:
     - desenvolvimento
 ---
 
-### Ajude a divulgar e promover o FOSSDay
+### FOSSDay Lajeado 2018
