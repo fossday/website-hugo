@@ -2,7 +2,6 @@ baseURL = "https://fossday.org"
 languageCode = "pt-br"
 title = "FOSSDay"
 theme = "conference"
-dataDir = "data"
 
 [permalinks]
   paginas = "/:filename"
