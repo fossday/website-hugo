@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on FOSS Day</title>
+    <title>Tags on FOSSDay</title>
     <link>https://fossday.org/tags/</link>
-    <description>Recent content in Tags on FOSS Day</description>
+    <description>Recent content in Tags on FOSSDay</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     
 	<atom:link href="https://fossday.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Desenvolvimento</title>
+      <link>https://fossday.org/tags/desenvolvimento/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fossday.org/tags/desenvolvimento/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inovação</title>
+      <link>https://fossday.org/tags/inova%C3%A7%C3%A3o/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fossday.org/tags/inova%C3%A7%C3%A3o/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://fossday.org/tags/open-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fossday.org/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Livre</title>
+      <link>https://fossday.org/tags/software-livre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fossday.org/tags/software-livre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnologia</title>
+      <link>https://fossday.org/tags/tecnologia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fossday.org/tags/tecnologia/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

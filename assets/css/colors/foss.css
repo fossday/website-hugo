@@ -44,14 +44,16 @@ a:hover{
 .navbar-event .navbar-nav li a:hover,
 .navbar-event .navbar-nav li .active > a,
 .navbar-event .navbar-nav li a:focus {
-  color: #00A456;
+  color: #fff;
+  background: #00A456 !important;
+  
 }
 .navbar-event .dropdown .dropdown-menu {
   border-color: #00A456;
 }
 .navbar-event .dropdown .dropdown-menu > li > a:hover,
 .navbar-event .dropdown .dropdown-menu > li > a .active {
-  color: #00A456;
+  color: #fff;
 }
 .navbar-event .dropdown .dropdown-menu > li.active > a {
   background: #00A456 !important;
@@ -64,9 +66,11 @@ a:hover{
   color: #fff;
 }
 .navbar-event .navbar-nav > .open > a,
-.navbar-event .navbar-nav > .open > a:focus,
+.navbar-event .navbar-nav > .open > a:focus{
+  color: #222222;
+}
 .navbar-event .navbar-nav > .open > a:hover {
-  color: #00A456;
+  color: #fff;
 }
 .navbar-event .navbar-nav > .active > a,
 .navbar-event .navbar-nav > .active > a:hover{
@@ -151,7 +155,7 @@ a:hover{
 }
 /* Speakers others */
 #team .team-img::before{
-  background: rgba(233, 30, 99, 0.7);
+  background: rgba(76, 182, 125, 0.6);
 }
 
 /* Blog page */

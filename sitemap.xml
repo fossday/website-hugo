@@ -3,19 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://fossday.org/bento/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fossday.org/lajeado/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fossday.org/pelotas/</loc>
-  </url>
-  
-  <url>
     <loc>https://fossday.org/apoie/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/categories/bento/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -28,7 +21,8 @@
   </url>
   
   <url>
-    <loc>https://fossday.org/divulgue/</loc>
+    <loc>https://fossday.org/tags/desenvolvimento/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -37,7 +31,8 @@
   </url>
   
   <url>
-    <loc>https://fossday.org/eventos/</loc>
+    <loc>https://fossday.org/categories/eventos/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -46,11 +41,39 @@
   </url>
   
   <url>
-    <loc>https://fossday.org/grupo/</loc>
+    <loc>https://fossday.org/bento-2018/</loc>
   </url>
   
   <url>
-    <loc>https://fossday.org/organize-evento/</loc>
+    <loc>https://fossday.org/lajeado-2018/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/pelotas-2018/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/tags/inova%C3%A7%C3%A3o/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/categories/institucional/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/categories/lajeado/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/tags/open-source/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/adicione-sua-cidade/</loc>
   </url>
   
   <url>
@@ -59,15 +82,22 @@
   </url>
   
   <url>
-    <loc>https://fossday.org/participe/</loc>
+    <loc>https://fossday.org/categories/pelotas/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://fossday.org/seja-um-voluntario/</loc>
+    <loc>https://fossday.org/tags/software-livre/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fossday.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fossday.org/tags/tecnologia/</loc>
     <priority>0</priority>
   </url>
   
