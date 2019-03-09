@@ -37,5 +37,5 @@ jobs:
         verbose: true
         target_branch: master
         on:
-          branch: develop
+          tags: true
         fqdn: fossday.org
