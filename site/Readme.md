@@ -68,8 +68,42 @@ Veja:
             - static
             	- assets
             		- css
+            			- animate.css
+                        - blogpage.css
+                        - bootstrap.min.css
+                        - carousel-slider.css
+                        - colors
+                        - color-switcher.css
+                        - custom-components.css
+                        - global.css
+                        - main.css
+                        - nav-menu.css
+                        - nivo-lightbox.css
+                        - owl.carousel.css
+                        - presets.css
+                        - responsive.css
+                        - slicknav.css
                     - fonts
                     - img
                     - js
+                    	- bootstrap.min.js
+                        - color-switcher.js
+                        - contact-form-script.js
+                        - form-validator.min.js
+                        - initializers.js
+                        - jquery.countdown.min.js
+                        - jquery.mapit.min.js
+                        - jquery.min.js
+                        - jquery.slicknav.js
+                        - main.js
+                        - nivo-lightbox.js
+                        - nivo-lightbox.min.js
+                        - owl.carousel.min.js
+                        - smooth-scroll.js
+                        - video.js
+                        - wow.js 
             - theme.toml
 
+
+
+#### Conference
