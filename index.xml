@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>FOSSDay</title>
+    <title>FOSS Day</title>
     <link>https://fossday.org/</link>
-    <description>Recent content on FOSSDay</description>
+    <description>Recent content on FOSS Day</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     
@@ -11,12 +11,39 @@
     
     
     <item>
-      <title>Apoie o FOSSDay</title>
+      <title>Apoie o Foss Day</title>
+      <link>https://fossday.org/bento/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fossday.org/bento/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apoie o Foss Day</title>
+      <link>https://fossday.org/lajeado/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fossday.org/lajeado/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apoie o Foss Day</title>
+      <link>https://fossday.org/pelotas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fossday.org/pelotas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apoie o Foss Day</title>
       <link>https://fossday.org/apoie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fossday.org/apoie/</guid>
-      <description> Ajude a divulgar e promover o FOSSDay </description>
+      <description></description>
     </item>
     
     <item>
@@ -29,39 +56,57 @@
     </item>
     
     <item>
-      <title>FOSSDay Bento Gonçalves 2018</title>
-      <link>https://fossday.org/bento-2018/</link>
+      <title>Divulgue</title>
+      <link>https://fossday.org/divulgue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://fossday.org/bento-2018/</guid>
-      <description> FOSSDay Bento Gonçalves 2018 </description>
+      <guid>https://fossday.org/divulgue/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>FOSSDay Lajeado 2018</title>
-      <link>https://fossday.org/lajeado-2018/</link>
+      <title>Eventos</title>
+      <link>https://fossday.org/eventos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://fossday.org/lajeado-2018/</guid>
-      <description> FOSSDay Lajeado 2018 </description>
+      <guid>https://fossday.org/eventos/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>FOSSDay Pelotas 2018</title>
-      <link>https://fossday.org/pelotas-2018/</link>
+      <title>O grupo que faz a mágica acontecer</title>
+      <link>https://fossday.org/grupo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://fossday.org/pelotas-2018/</guid>
-      <description> FOSSDay Pelotas 2018 </description>
+      <guid>https://fossday.org/grupo/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Organize um evento</title>
-      <link>https://fossday.org/adicione-sua-cidade/</link>
+      <link>https://fossday.org/organize-evento/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://fossday.org/adicione-sua-cidade/</guid>
-      <description> Organize um FOSSDay na sua cidade </description>
+      <guid>https://fossday.org/organize-evento/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Participe</title>
+      <link>https://fossday.org/participe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fossday.org/participe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seja Voluntário</title>
+      <link>https://fossday.org/seja-um-voluntario/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fossday.org/seja-um-voluntario/</guid>
+      <description></description>
     </item>
     
   </channel>

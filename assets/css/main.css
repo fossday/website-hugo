@@ -275,32 +275,9 @@ fieldset[disabled] .btn {
   border: none;
   border-radius: 0;
 }
-.navbar-brand-div {
+.navbar-brand {
   position: relative;
-  display: flex;
-  padding: 0.6em;
-  height: 3.7em;
-}
-.navbar-brand-div p {
-  font-size: 2.2rem;
-  line-height: 1.8em;
-  font-weight: 600;
-  padding: 0;
-  text-transform: uppercase;
-  margin-left: 0.3em;
-}
-.navbar-brand-div:hover p{
-  color: #00A456 !important;
-}
-.navbar-brand-div:hover img {
-  opacity: .7;
-}
-.navbar-brand-div img {
-  height: 2.5em;
-  /*position: absolute;*/
-}
-.navbar-brand-pre {
- 
+  padding: 0px 15px;
 }
 .navbar-nav a {
   -moz-transition: color .3s linear,background .3s linear;
@@ -361,10 +338,10 @@ fieldset[disabled] .btn {
   color: #222222;
   padding: 0 20px;
   margin-right: 1px;
-  line-height: 4em;
-  font-weight: 500;
-  height: 4em;
-
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  border-radius: 50px;
 }
 .navbar-event .navbar-nav li a:before {
   display: none;
@@ -389,7 +366,7 @@ fieldset[disabled] .btn {
   border-radius: 0;
   left: -20px;
   right: 0;
-  top: 56px;
+  top: 78px;
   width: 170px;
   border-color: #e91e63;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -460,11 +437,11 @@ fieldset[disabled] .btn {
 .caret:before {
   content: "\e604";
   font-family: 'Simple-Line-Icons';
-  left: -34px;
-  top: -12px;
+  left: -2px;
+  top: -20px;
   font-size: 11px;
   float: right;
-  position: relative;
+  position: absolute;
 }
 .wpb-mobile-menu {
   display: none;
@@ -1201,6 +1178,8 @@ fieldset[disabled] .btn {
 .ready-to-play {
   height: 560px;
   width: 100%;
+  overflow: hidden;
+  position: relative;
   z-index: 2;
 }
 .ready-to-play:before {
@@ -1209,7 +1188,9 @@ fieldset[disabled] .btn {
   display: block;
   left: 0px;
   top: 0px;
-  z-index: -999999990;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
   opacity: 0.70;
 }
 video {
@@ -1386,7 +1367,6 @@ h1 {
   -moz-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
   -o-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
   transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
-  max-height: 18em;
 }
 #team .single-member:hover {
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.14);
@@ -2221,8 +2201,8 @@ footer ul li a {
   opacity: 0.7;
 }
 #sidebar .posts-list .widget-content {
-  margin-left: 2em;
-  padding: 11px 0px;
+  margin-left: 104px;
+  padding: 5px 0;
 }
 #sidebar .posts-list .widget-content a {
   font-size: 15px;
