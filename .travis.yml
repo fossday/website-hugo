@@ -12,8 +12,6 @@ stages:
 jobs:
   include:
     - stage: run
-      before_script:
-        - docker --version
       script:
         - |
           docker run \
@@ -25,7 +23,7 @@ jobs:
         - git config --local user.name "Deploy FOSSDay"
         - git config --local user.email "fossday@fossday.org"
         - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-        - git tag $TRAVIS_TAG
+        - git tag v$TRAVIS_TAG -a -m "Tagging version v$TRAVIS_TAG"
         - git push --tags
     - stage: publish
       script:
