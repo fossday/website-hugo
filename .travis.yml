@@ -20,6 +20,11 @@ jobs:
           -v $(pwd)/site:/src \
           -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
     - stage: publish
+      before_deploy:
+        - git config --local user.name "Deploy FOSSDay"
+        - git config --local user.email "fossday@fossday.org"
+        - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+        - git tag $TRAVIS_TAG
       script:
         - |
           docker run \
@@ -27,6 +32,7 @@ jobs:
           -v $(pwd)/site:/src \
           -v $(pwd)/public:/src/public \
           raffaeldutra/docker-gohugo /gohugo.sh -p config-docker.toml
+
       deploy:
         name: "FOSS Team Deployment"
         provider: pages
@@ -37,5 +43,5 @@ jobs:
         verbose: true
         target_branch: master
         on:
-          branch: develop
+          tags: true
         fqdn: fossday.org
