@@ -24,8 +24,7 @@ jobs:
         - git config --local user.email "fossday@fossday.org"
         - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
         - git tag v$TRAVIS_TAG -a -m "Tagging version v$TRAVIS_TAG"
-        - git push "https://${GITHUB_TOKEN}@github.com:fossday/site.git" --tags
-
+        - git push "https://${GITHUB_TOKEN}@github.com/fossday/site.git" --tags
     - stage: publish
       script:
         - |
