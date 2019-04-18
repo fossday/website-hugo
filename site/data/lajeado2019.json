@@ -332,9 +332,9 @@
   "Workshops":[
     {
       "name": "Rafael Dutra",
-      "vitae": "Entusiasta da cultura DevOps e especialista em TI com foco em infraestrutura como código. Possui 13 anos de experiência atuando como SysAdmin em ambientes GNU/Linux. Atualmente trabalha pros gringos remotamente como Arquiteto SaaS para a Jive Software.",
-      "speeche": "Workshop sobre Docker",
-      "summary": "Se você é daqueles que já já ouviu falar ou tem pouco conhecimento em como iniciar usando Docker, seja sua área de desenvolvimento ou operações, aqui está sua oportunidade. Vamos neste workshop conhecer esta poderosa ferramenta que ganhou forte nome no mercado nos últimos anos. Iremos rodar comandos para manipular containers, gerar e utilizar imagens, levantar serviços e tentar entender como e onde ele pode encaixar no seu dia-a-dia.",
+      "vitae": "Administrador de Sistemas, “Agilista” de Infraestrutura e entusiasta Dev*Ops",
+      "speeche": "Ansible Workshop",
+      "summary": "Ansible é a ferramenta de automação de código fonte aberto mais popular atualmente no GitHub, contendo mais de 2900 contribuidores. Seja você desenvolvedor ou operações (infraestrutura), todos devem saber como administrar infraestrutura como código. Com Ansible podemos automatizar, por exemplo, tarefas de instalação de programas, gerenciamento de usuários e configurações, reduzindo erros em servidores/desktops/laptops, reaproveitando código e ganhando tempo.",
       "links": [
         {
           "title": "<i class=\"fa fa-external-link\"></i>",
