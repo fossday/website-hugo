@@ -13,7 +13,7 @@
       "date": "2019-05-04",
       "limitSubmit": "2019-04-06",
       "linkSubmit": "https://goo.gl/forms/sO7xoH4ja7If7KjR2",
-      "linkSubs": "#",
+      "linkSubs": "https://www.univates.br/eventos/evento/8304-fossday-free-and-open-source-software",
       "limitSubs": "2019-05-04"
     }
   ],
@@ -21,7 +21,7 @@
     {
       "title": "FOSSDay Lajeado",
       "img": "https://i.imgur.com/wEnAyH6.jpg",
-      "blink": "#",
+      "blink": "https://www.univates.br/eventos/evento/8304-fossday-free-and-open-source-software",
       "btext": "Realizar inscrição",
       "active": "active"
     },
@@ -47,9 +47,9 @@
       "logo": "https://i.imgur.com/ew62Ksf.png"
     },
     {
-      "title": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "title": "Apoie o FOSSDay Lajeado 2019",
       "url": "https://goo.gl/forms/FZWI4VC2joiHDh1D3",
-      "short": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "short": "Apoie o FOSSDay Lajeado 2019",
       "logo": "https://i.imgur.com/aTpvv71.png"
     }
   ],
@@ -61,9 +61,15 @@
       "logo": "https://i.imgur.com/UEGm4zc.png"
     },
     {
-      "title": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "title": "Locaweb",
+      "url": "https://www.locaweb.com.br/",
+      "short": "Hospedagem de sites e servidores dedicados no Brasil.",
+      "logo": "https://i.imgur.com/EwiwTea.png"
+    },
+    {
+      "title": "Apoie o FOSSDay Lajeado 2019",
       "url": "https://goo.gl/forms/FZWI4VC2joiHDh1D3",
-      "short": "Apoie o FOSSDay Bento Gonçalves 2018",
+      "short": "Apoie o FOSSDay Lajeado 2019",
       "logo": "https://i.imgur.com/aTpvv71.png"
     }
   ],
@@ -76,10 +82,152 @@
       "avatar": "https://i.imgur.com/yFnbmL4.png"
     },
     {
+      "name": "Luiz H. Rauber Rodrigues",
+      "vitae": "Atualmente professor de informática no SENAC Santa Cruz do Sul e doutorando em Tecnologia Ambiental na UNISC; É voluntário em projetos educacionais; Fez palestras em vários eventos de Software Livre e mentorias em Startups Weekends;",
+      "speeche": "25 minutos de dicas pra se aprimorar em informática!",
+      "summary": "Depois de 10 anos participando e atuando com software livre e tecnologia, e dentro deste tempo alguns cursos longos e me tornar professor, aprendi e ví muita coisa que tem um caminho parecido pro auto-aprimoramento, e é isso que vou falar.",
+      "level": "Iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-linux\"></i>",
+          "link": "https://www.vivaolinux.com.br/~luizrauber"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/luizrauber/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/luizrauber"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/lrauber"
+        }
+      ],
+      "avatar": "https://i.imgur.com/mpmncDv.jpg",
+      "start": "09h00min"
+    },
+    {
+      "name": "Vinício Zanchettin",
+      "vitae": "Estudante de engenharia de computação e empresário na área de tecnologia.",
+      "speeche": "Virtualização de terminal e aplicações GNU/Linux.",
+      "summary": "Apresentação de uma ferramenta para virtualização de desktops e aplicações GNU/Linux(netbeans, Firefox e qualquer aplicação executável). Acesso de qualquer lugar com browser e client, muito utilizado na Suécia e outros países da Europa, usa e America Latina.",
+      "level": "Iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://valeti.inf.br"
+        },
+        {
+          "title": "<i class=\"fa fa-linux\"></i>",
+          "link": "https://www.vivaolinux.com.br/~vzanchettin"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/vinicio-zanchettin-vini-b1437b2b"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/vinicio.zanchettin"
+        }
+      ],
+      "avatar": "https://i.imgur.com/iUxrGsn.jpg",
+      "start": "09h35min"
+    },
+    {
+      "name": "Caffe Break",
+      "vitae": "out",
+      "speeche": "Pausa para conversa e café.",
+      "start": "10h15min",
+      "avatar": "https://i.imgur.com/yFnbmL4.png"
+    },
+    {
+      "name": "Anderson L. Porciuncula",
+      "vitae": "Analista de Sistemas, Desenvolvedor, Especialista em Aprendizagem Ativas, engajado em metodologias educacionais na utilização de tecnologia como facilitador do aprendizado, projetos relacionados a softwares livres  educacionais, ensino híbrido, sala de aula invertida, TBL, PBL e Pensamento Computacional, ferramentas Google for Education, experiência mais de 13 anos em escolas.",
+      "speeche": "Software Livre na educação e Pensamento Computacional no Ensino Fundamental e Médio.",
+      "summary": "Compartilhamento de experiências positivas e negativas na utilização de software livres em salas de informática escolas. ENDLESS OS. PENSAMENTO COMPUTACIONAL - MEC e Currículo de tecnologia na educação, exposição do que temos atualmente inspirados e currículos educacionais como do Canadá, EUA, Europa e Argentina, estamos no caminho certo em passos lentos!  ",
+      "level": "Intermediário",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-youtube\"></i>",
+          "link": "https://www.youtube.com/channel/UCPC_fnUgQCEZU60Qa30GhuQ"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/anderson-porciuncula-408300143/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/porciuncula85"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/porciuncula85"
+        }
+      ],
+      "avatar": "https://i.imgur.com/c7AWvjU.jpg",
+      "start": "10h35min"
+    },
+    {
+      "name": "Diego Henicka",
+      "vitae": "Desenvolvedor de Software a mais de 5 anos, trabalhando a área de ERP, graduando em Análise e Desenvolvimento de Sistemas na UNIVATES.",
+      "speeche": "Introdução ao MongoDB",
+      "summary": "Irei compartilhar meu caso de uso do MongoDB em uma aplicação, abordando o motivo da escolha, pontuando suas diferenças aos bancos relacionais e exibir exemplos. ",
+      "level": "Intermediário",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-envelope-o\"></i>",
+          "link": "mailto:diego.henicka@gmail.com"
+        },
+        {
+          "title": "<i class=\"fa fa-github\"></i>",
+          "link": "https://github.com/diegohenicka"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/diego-henicka-2199ba56/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/diegohenicka"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/diegohenicka"
+        }
+      ],
+      "avatar": "https://i.imgur.com/IjYrIwB.jpg",
+      "start": "11h20min"
+    },
+    {
+      "name": "Jônatas A. Chagas Júnior",
+      "vitae": "Home Office",
+      "speeche": "Trabalhar em casa é tão bom assim?",
+      "summary": "Tive uma agência durante 2 anos no centro da cidade de Bento Gonçalves, recebi nesse meio tempo 1 cliente, não fazia mais sentido em continuar trabalhando com um ambiente físico sendo que poderia muito bem trabalhar no conforto da minha casa, porém... Home Office não é esse mar de rosas que todo mundo fala, gostaria de passar minha experiência de 3 anos já trabalhando num comodo da minha casa que hoje hospeda minha Agência Digital, com clientes no Rio Grande do Sul todo, dificuldades, família, amigos e aquela velha frase: \"Ué, mas você trabalha na frente do computador em casa? E ainda ganha por isso? Vida boa essa tua em?!?!\"",
+      "level": "Iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://www.ofitec.com.br"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/jonatas032/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/jcomjota"
+        }
+      ],
+      "avatar": "https://i.imgur.com/TAny0Wy.jpg",
+      "start": "13h10min"
+    },
+    {
       "name": "Régis Tomkiel",
-      "vitae": "Sócio-fundador da <a href=\"https://doseextra.com\" target=\"_blank\">Dose Extra Multimídia</a>, desenvolvedor web, podcaster e co-organizador as edições de Bento Gonçalves do Tchelinux e Foss Day.",
-      "speeche": "Não! Use Wordpress.",
-      "summary": "Que tal repensar um pouco sobre como você está desenvolvendo os seus projetos web? Você desenvolve o seu framework PHP do zero? Usa Laravel? Já está migrando para o Node.js? Vamos conversar sobre como otimizar seu tempo de desenvolvimento, criar projetos seguros e que pagam boletos. ",
+      "vitae": "Proprietário da <a href=\"https://doseextra.com\" target=\"_blank\">Dose Extra Multimídia</a>, desenvolvedor web e Mobile, SysAdmin, produtor de conteúdo e co-organizador do FOSSDay.",
+      "speeche": "React Native e desenvolvimento mobile.",
+      "summary": "Uma conversa sobre desenvolvimento de aplicativos mobile, analisando as principais qualidades e dificuldades da utilização de tecnologias \"controversas\", como o React Native.",
       "level": "Intermediário",
       "links": [
         {
@@ -104,11 +252,114 @@
         }
       ],
       "avatar": "https://i.imgur.com/OuZxm3a.jpg",
-      "start": "09h00min"
+      "start": "14h00min"
+    },
+    {
+      "name": "Estevan Luiz Junges",
+      "vitae": "Desenvolvedor Web Full-stack. Formado em Engenharia Elétrica pela Univates trabalha a mais de 7 anos com TI",
+      "speeche": "Redes Neurais Artificiais com tecnologias Open Source",
+      "summary": "Apresentação dos conceitos básicos sobre redes neurais artificiais (RNA). Apresentação de tecnologias Open Source utilizadas no desenvolvimento e prototipação de RNAs, como o Python, Theano, TensorFlow e Keras. Breve demonstração de um treinamento e teste de um modelo de RNA.",
+      "level": "Intermediário",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-envelope-o\"></i>",
+          "link": "mailto:estevanjunges@gmail.com"
+        },
+        {
+          "title": "<i class=\"fa fa-github\"></i>",
+          "link": "https://github.com/EstevanLJ"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/estevan-junges-3750b7137"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/estevanjunges"
+        }
+      ],
+      "avatar": "https://i.imgur.com/2rQHa6v.jpg",
+      "start": "15h00min"
+    },
+    {
+      "name": "Diego de Souza Maia",
+      "vitae": "Analista de infraestrutura, graduado em Segurança da Informação, especialista em Gestão de Segurança da Informação e entusiasta DevOps.",
+      "speeche": "Avaliação de segurança em aplicativos de mobile banking utilizando softwares Open Source",
+      "summary": "Dispositivos móveis e seus aplicativos estão cada vez mais proporcionando conveniência para a população. No entanto, o seu uso tem despertado interesse de pessoas mal-intencionadas que visam obter informações dos usuários de dispositivos móveis. A apresentação tem como objetivo demonstrar como ferramentas open source podem ser utilizadas para identificar de forma simples e com o menor custo possível se aplicativos disponibilizados e executados no sistema operacional Android possuem as preocupações de segurança necessárias para proteção das informações pessoais de seus usuários.",
+      "level": "Iniciante",
+      "links": [
+        
+      ],
+      "avatar": "https://i.imgur.com/ICPBoeH.jpg",
+      "start": "15h50min"
+    },
+    {
+      "name": "Diego Tiemann",
+      "vitae": "Diego Tiemann é sócio-proprietário da RETTA Tecnologia da informação, graduado em Sistemas de Informação, possuí mais de 12 anos de experiência com desenvolvimento de software, influenciado pelo último FOSSDay começou a \"brincar\" com Docker e atualmente utiliza-o profissionalmente em projetos para clientes de sua empresa.",
+      "speeche": "Conhecendo o potencial do Node-RED",
+      "summary": "Apresentação do ferramenta Node-Red (https://nodered.org/) e de alguns cases práticos usando essa ferramentar, tudo isso executando em contêiner Docker.",
+      "level": "Intermediário",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "http://diegotiemann.blogspot.com/"
+        },
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://RETTA.COM.BR"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/regis-tomkiel//"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/tiemann.diego"
+        }
+      ],
+      "avatar": "https://i.imgur.com/0tqNp9l.jpg",
+      "start": "16h25min"
+    },
+    {
+      "name": "Fechamento",
+      "vitae": "out",
+      "speeche": "Pausa para conversa e café.",
+      "start": "17h15min",
+      "avatar": "https://i.imgur.com/yFnbmL4.png"
     }
 
   ],
   "Workshops":[
+    {
+      "name": "Rafael Dutra",
+      "vitae": "Entusiasta da cultura DevOps e especialista em TI com foco em infraestrutura como código. Possui 13 anos de experiência atuando como SysAdmin em ambientes GNU/Linux. Atualmente trabalha pros gringos remotamente como Arquiteto SaaS para a Jive Software.",
+      "speeche": "Workshop sobre Docker",
+      "summary": "Se você é daqueles que já já ouviu falar ou tem pouco conhecimento em como iniciar usando Docker, seja sua área de desenvolvimento ou operações, aqui está sua oportunidade. Vamos neste workshop conhecer esta poderosa ferramenta que ganhou forte nome no mercado nos últimos anos. Iremos rodar comandos para manipular containers, gerar e utilizar imagens, levantar serviços e tentar entender como e onde ele pode encaixar no seu dia-a-dia.",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://rafaeldutra.me"
+        },
+        {
+          "title": "<i class=\"fa fa-github\"></i>",
+          "link": "https://github.com/raffaeldutra"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/rafaeldutra/"
+        },
+        {
+          "title": "<i class=\"fa fa-gitlab\"></i>",
+          "link": "https://gitlab.com/raffaeldutra"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/raffaeldutra"
+        }
+      ],
+      "avatar": "https://i.imgur.com/wdhkIiu.jpg?1",
+      "start": "10h00min"
+    },
     {
       "name": "Cesar Brod",
       "vitae": "Diretor de Desenvolvimento Regional para o Brasil do Linux Professional Institute e seu trabalho consiste em promover a compreensão do LPI acerca das necessidades da região, a fim de fortalecer suas ações com relação à formação profissional em Linux e software livre, bem como como ampliar seu renomado programa de certificação no país.",
@@ -117,8 +368,8 @@
       "level": "iniciante",
       "links": [
         {
-          "title": "<i class=\"fa fa-external-link\"></i>",
-          "link": "https://www.lpi.org/"
+          "title": "<i class=\"fa fa-youtube\"></i>",
+          "link": "https://www.youtube.com/channel/UC2_KuH92vOTY2rzb3phs5kw"
         },
         {
           "title": "<i class=\"fa fa-facebook\"></i>",
@@ -141,9 +392,9 @@
   ],
   "Closing": [
     {
-    "schedules": "X horas de palestras e workshops*",
-    "speakers": "X palestrantes",
-    "workshops": "X palestras e X Workshops"
+    "schedules": "9 horas de palestras e workshops*",
+    "speakers": "9 palestrantes",
+    "workshops": "9 palestras e 1 Workshop"
   }
 ]
   }

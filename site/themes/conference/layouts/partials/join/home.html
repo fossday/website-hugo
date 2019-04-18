@@ -112,7 +112,7 @@
             </div>
             <div class="col-md-12 col-sm-6 col-xs-12">
               <div class="content-text">
-              <a href="https://www.sympla.com.br/foss-day-bento-goncalves__356202" class="btn btn-lg btn-common">Realizar inscrição</a>
+              <a href="https://www.univates.br/eventos/evento/8304-fossday-free-and-open-source-software" class="btn btn-lg btn-common">Realizar inscrição</a>
               </div>
             </div>
         </div>
@@ -129,14 +129,14 @@
                 <div class="main-board wow fadeInDown" data-wow-delay="0.3s">
 
                     <ul class="nav nav-tabs day" role="tablist">
-                        <li role="presentation"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">08:30 - 12:00 <br> <span>Manhã</span></a></li>
-                        <li role="presentation" class="active"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">13:00 - 17:00 <br> <span>Tarde</span> </a></li>
+                        <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">08:30 - 12:00 <br> <span>Manhã</span></a></li>
+                        <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">13:00 - 17:00 <br> <span>Tarde</span> </a></li>
                         <li role="presentation"><a href="#day3" aria-controls="day2" role="tab" data-toggle="tab"><span>Manhã e tarde</span> <br> Workshops <br> </a></li>
                     </ul>
 
                     <div class="tab-content">
 
-                        <div role="tabpanel" class="tab-pane" id="day1">
+                        <div role="tabpanel" class="tab-pane active" id="day1">
                             <div class="row">
                                 <div class="col-md-12 board text-center">
                                     <div class="column-1 col-md-3 col-sm-5">
@@ -145,10 +145,10 @@
                                                 <ul>
                                                   <li class="color-1"><a>8h30min</a></li>
                                                   <li class="color-2"><a>09h00min</a></li>
-                                                  <li class="color-3"><a>09h50min</a></li>
-                                                  <li class="color-4"><a>10h50min</a></li>
-                                                  <li class="color-5"><a>11h30min</a></li>
-                                                  <li class="color-6"><a>12h00min</a></li>
+                                                  <li class="color-3"><a>09h35min</a></li>
+                                                  <li class="color-4"><a>10h15min</a></li>
+                                                  <li class="color-5"><a>10h35min</a></li>
+                                                  <li class="color-6"><a>11h20min</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -171,23 +171,24 @@
                                                 <a class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
-                                            <p>{{ .summary }}</p>
+                                            <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
-                                        {{ if eq .start "10h00min"}}
+                                        {{ if eq .start "09h35min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-3"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
-                                            <p>{{ .summary }}</p>
+                                            <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
                                       {{ end }}
                                     </div>
+                                   
                                     <div class="col-md-4 col-sm-12">
                                       {{ range .Schedule }}
-                                        {{ if eq .start "11h00min"}}
+                                      {{ if eq .start "10h15min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-4"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
@@ -196,13 +197,22 @@
                                             <p>{{ .summary }}</p>
                                         </div>
                                         {{ end }}
-                                        {{ if eq .start "11h25min"}}
+                                        {{ if eq .start "10h35min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-5"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
-                                            <p>{{ .summary }}</p>
+                                            <p>{{ .summary | markdownify | truncate 150 }}</p>
+                                        </div>
+                                        {{ end }}
+                                        {{ if eq .start "11h20min"}}
+                                        <div class="member">
+                                            <div class="button">
+                                                <a class="btn-large bg-6"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
+                                            </div>
+                                            <h4> {{ .speeche }}</h4>
+                                            <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
                                       {{ end }}
@@ -224,32 +234,32 @@
                         </div>
 
 
-                        <div role="tabpanel" class="tab-pane active" id="day2">
+                        <div role="tabpanel" class="tab-pane" id="day2">
                             <div class="row">
                                 <div class="col-md-12 board text-center">
                                     <div class="column-1 col-md-3 col-sm-5">
                                         <ul class="nav nav-pills event-time-list">
                                             <li><a>Horário</a>
                                                 <ul>
-                                                    <li class="color-1"><a>13h00min</a></li>
-                                                    <li class="color-2"><a>13h50min</a></li>
-                                                    <li class="color-3"><a>14h25min</a></li>
-                                                    <li class="color-4"><a>15h00min</a></li>
-                                                    <li class="color-5"><a>16h00min</a></li>
-                                                    <li class="color-7"><a>16h50min</a></li>
+                                                    <li class="color-1"><a>13h10min</a></li>
+                                                    <li class="color-2"><a>14h00min</a></li>
+                                                    <li class="color-3"><a>15h00min</a></li>
+                                                    <li class="color-4"><a>15h30min</a></li>
+                                                    <li class="color-5"><a>15h50min</a></li>
+                                                    <li class="color-7"><a>16h25min</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-4 col-sm-6">
                                       {{ range .Schedule }}
-                                        {{ if eq .start "13h00min"}}
+                                        {{ if eq .start "13h10min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
-                                            <p>{{ .summary }}</p>
+                                            <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
                                         {{ if eq .start "14h00min"}}
@@ -258,16 +268,16 @@
                                                 <a class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
-                                            <p>{{ .summary }}</p>
+                                            <p>{{ .summary  }}</p>
                                         </div>
                                         {{ end }}
-                                        {{ if eq .start "14h25min"}}
+                                        {{ if eq .start "15h00min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-3"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
-                                            <p>{{ .summary }}</p>
+                                            <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
                                       {{ end }}
@@ -284,25 +294,25 @@
                                     </div>
                                     <div class="col-md-4 col-sm-12">
                                       {{ range .Schedule }}
-                                        {{ if eq .start "15h00min"}}
+                                        {{ if eq .start "15h50min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-4"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
-                                            <p>{{ .summary }}</p>
+                                            <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
-                                        {{ if eq .start "16h00min"}}
+                                        {{ if eq .start "16h25min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-5"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                             </div>
                                             <h4> {{ .speeche }}</h4>
-                                            <p>{{ .summary }}</p>
+                                            <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
-                                        {{ if eq .start "16h50min"}}
+                                        {{ if eq .start "17h15min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-7"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
@@ -366,7 +376,7 @@
                                               <a class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
                                           </div>
                                           <h4> {{ .speeche }}</h4>
-                                          <p>{{ .summary }}</p>
+                                          <p>{{ .summary | markdownify | truncate 150 }}</p>
                                       </div>
                                         {{ end }}
                                       {{ end }}
@@ -489,37 +499,3 @@
 </section>
 {{ end }}
 {{ end }}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-
-  <!-- Modal -->
-  <div class="modal fade" id="lpi" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        {{ partial "join/temp.html" . }}
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</div>
-
-</body>
-</html>

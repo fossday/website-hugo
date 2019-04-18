@@ -1,29 +1,30 @@
-<script src="{{ .Site }}/assets/js/jquery.min.js"></script>
 
-<script src="{{ .Site }}/assets/js/bootstrap.min.js"></script>
 
-<script src="{{ .Site }}/assets/js/jquery.countdown.min.js"></script>
+{{ $jquery := resources.Get "ressources/js/jquery.min.js" | minify | fingerprint }}
+{{ $bootstrap := resources.Get "ressources/js/bootstrap.min.js" | minify | fingerprint }}
+{{ $countdown := resources.Get "ressources/js/jquery.countdown.min.js" | minify | fingerprint  }}
+{{ $smooth := resources.Get "ressources/js/smooth-scroll.js" | minify | fingerprint  }}
+{{ $wow := resources.Get "ressources/js/wow.js" | minify | fingerprint  }}
+{{ $carousel := resources.Get "ressources/js/owl.carousel.min.js" | minify | fingerprint  }}
+{{ $slicknav := resources.Get "ressources/js/jquery.slicknav.js" | minify | fingerprint  }}
+{{ $nivo := resources.Get "ressources/js/nivo-lightbox.js" | minify | fingerprint  }}
+{{ $jsLibraries := slice $jquery $bootstrap $countdown $smooth $wow $carousel $slicknav $nivo | resources.Concat "ressources/js/libraries_bundle.js" | minify | fingerprint}}
 
-<script src="{{ .Site }}/assets/js/smooth-scroll.js"></script>
+<script type="text/javascript" src="{{ $jsLibraries.Permalink }}" integrity="{{ $jsLibraries.Data.Integrity }}"></script>
 
-<script src="{{ .Site }}/assets/js/wow.js"></script>
 
-<script src="{{ .Site }}/assets/js/owl.carousel.min.js"></script>
-
-<script src="{{ .Site }}/assets/js/jquery.slicknav.js"></script>
-
-<script src="{{ .Site }}/assets/js/nivo-lightbox.js"></script>
-
-<script src="{{ .Site }}/assets/js/form-validator.min.js"></script>
-<script src="{{ .Site }}/assets/js/contact-form-script.js"></script>
 
 {{ range .event }}
   {{ range .Event }}
 
-  <script src="{{ .Site }}/assets/js/main.js"></script>
+  {{ $mainJS := resources.Get "ressources/js/main.js" | minify | fingerprint }}
+  {{ $mapit := resources.Get "ressources/js/jquery.mapit.min.js" | minify | fingerprint }}
+  {{ $init := resources.Get "ressources/js/initializers.js" | minify | fingerprint }}
+  {{ $map := slice $mainJS $mapit $init | resources.Concat "ressources/js/main_bundle.js" | minify | fingerprint}}
+
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{ .GoogleMapsKey }}"></script>
-  <script src="{{ .Site }}/assets/js/jquery.mapit.min.js"></script>
-  <script src="{{ .Site }}/assets/js/initializers.js"></script>
+  <script type="text/javascript" src="{{ $map.Permalink }}" integrity="{{ $map.Data.Integrity }}"></script>
+
 
   <script type="text/javascript">
   /* ==========================================================================

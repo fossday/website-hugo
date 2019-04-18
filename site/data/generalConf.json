@@ -51,7 +51,7 @@
       },
       {
         "text": "Inscreva-se",
-        "link":""
+        "link":"https://www.univates.br/eventos/evento/8304-fossday-free-and-open-source-software"
       }
     ],
     "FooterMenu":[
@@ -107,7 +107,7 @@
             {
                 "title": "FOSSDay Lajeado 2019",
                 "img": "assets/img/slider/bg-2.jpg",
-                "blink": "https://fossday.org/lajeado",
+                "blink": "https://www.univates.br/eventos/evento/8304-fossday-free-and-open-source-software",
                 "btext": "Saiba Mais",
                 "active": "active"
             },
