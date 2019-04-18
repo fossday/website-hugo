@@ -24,25 +24,28 @@
 
     <link rel="icon" type="image/png" href="https://i.imgur.com/yFnbmL4.png" />
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/bootstrap.min.css">
+    {{ $bootstrap := resources.Get "ressources/css/bootstrap.min.css" | minify | fingerprint }}
+    {{ $main := resources.Get "ressources/css/main.css" | minify | fingerprint }}
+    {{ $responsive := resources.Get "ressources/css/responsive.css" | minify | fingerprint  }}
+    {{ $css := slice $bootstrap $main $responsive | resources.Concat "ressources/css/style_bundle.css" | minify | fingerprint}}
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/main.css">
+    {{ $fawesome := resources.Get "ressources/fonts/font-awesome.min.css" | minify | fingerprint }}
+    {{ $simple_icons := resources.Get "ressources/fonts/simple-line-icons.css" | minify | fingerprint  }}
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/responsive.css">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/fonts/font-awesome.min.css">
+    {{ $slicknav := resources.Get "ressources/css/slicknav.css" | minify | fingerprint  }}
+    {{ $nivo_lightbox := resources.Get "ressources/css/nivo-lightbox.css" | minify | fingerprint  }}
+    {{ $animate := resources.Get "ressources/css/animate.css" | minify | fingerprint  }}
+    {{ $carousel := resources.Get "ressources/css/owl.carousel.css" | minify | fingerprint  }}
+    {{ $foss := resources.Get "ressources/css/colors/foss.css" | minify | fingerprint  }}
+    {{ $libraries := slice $slicknav $nivo_lightbox $animate $carousel $foss | resources.Concat "ressources/css/libraries.css" | minify | fingerprint}}
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/fonts/simple-line-icons.css">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/slicknav.css">
+    <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ $fawesome.Permalink }}" integrity="{{ $fawesome.Data.Integrity }}" >
+    <link rel="stylesheet" type="text/css" href="{{ $simple_icons.Permalink }}" integrity="{{ $simple_icons.Data.Integrity }}" >
+    <link rel="stylesheet" type="text/css" href="{{ $libraries.Permalink }}" integrity="{{ $libraries.Data.Integrity }}" media="screen">
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/nivo-lightbox.css">
-
-    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/animate.css">
-
-    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/owl.carousel.css">
-
-    <link rel="stylesheet" type="text/css" href="{{ .Site }}/assets/css/colors/foss.css" media="screen" />
 
 
     <!--[if lt IE 9]>
