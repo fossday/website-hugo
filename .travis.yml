@@ -5,9 +5,10 @@ services:
   - docker
 
 stages:
-  - run
-  - tag
-  - publish
+  - name: run
+  - name: tag
+    if: branch = develop
+  - name: publish
 
 jobs:
   include:
@@ -19,9 +20,6 @@ jobs:
           -v $(pwd)/site:/src \
           -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
     - stage: tag
-      branches:
-        only:
-          - develop
       script:
         - git config --local user.name "Deploy FOSSDay"
         - git config --local user.email "fossday@fossday.org"
