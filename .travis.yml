@@ -1,4 +1,4 @@
-    # Rafael Dutra
+# Rafael Dutra
 sudo: required
 
 services:
@@ -22,9 +22,12 @@ jobs:
       script:
         - git config --local user.name "Deploy FOSSDay"
         - git config --local user.email "fossday@fossday.org"
-        - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-        - git tag v$TRAVIS_TAG -a -m "Tagging version v$TRAVIS_TAG"
+        - export TRAVIS_TAG=$(($(git describe --tags $(git rev-list --tags --max-count=1) | cut -d "." -f1)+1))
+        - git tag ${TRAVIS_TAG}.0 -a -m "Tagging version ${TRAVIS_TAG}.0"
         - git push "https://${GITHUB_TOKEN}@github.com/fossday/site.git" --tags
+      branches:
+        only:
+          - develop
     - stage: publish
       script:
         - |
