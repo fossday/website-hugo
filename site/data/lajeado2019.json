@@ -290,7 +290,7 @@
       "links": [
         
       ],
-      "avatar": "https://i.imgur.com/ICPBoeH.jpg",
+      "avatar": "http://diegosmaia.me/img/avatar.jpg",
       "start": "15h50min"
     },
     {
@@ -330,6 +330,28 @@
 
   ],
   "Workshops":[
+    {
+      "name": "Diego de Souza Maia",
+      "vitae": "Analista de infraestrutura, graduado em Segurança da Informação, especialista em Gestão de Segurança da Informação e entusiasta DevOps.",
+      "speeche": "Ansible Workshop",
+      "summary": "Ansible é a ferramenta de automação de código fonte aberto mais popular atualmente no GitHub, contendo mais de 2900 contribuidores. Seja você desenvolvedor ou operações (infraestrutura), todos devem saber como administrar infraestrutura como código. Com Ansible podemos automatizar, por exemplo, tarefas de instalação de programas, gerenciamento de usuários e configurações, reduzindo erros em servidores/desktops/laptops, reaproveitando código e ganhando tempo.",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "http://diegosmaia.me"
+        },
+        {
+          "title": "<i class=\"fa fa-github\"></i>",
+          "link": "https://github.com/2dsm"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://linkedin.com/in/diegosmaia"
+        }
+      ],
+      "avatar": "https://i.imgur.com/wdhkIiu.jpg?1",
+      "start": "10h00min"
+    },
     {
       "name": "Rafael Dutra",
       "vitae": "Administrador de Sistemas, “Agilista” de Infraestrutura e entusiasta Dev*Ops",
