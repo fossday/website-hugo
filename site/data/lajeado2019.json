@@ -4,8 +4,8 @@
     {
       "title": "Segundo FOSSDay Lajeado",
       "description": "Palestras sobre tecnologia, Software Livre e Open Source. O evento possui entrada gratuita, mas incentivamos a doação de 2kg de alimentos não perecíveis no momento da inscrição.",
-      "local": "A definir",
-      "address": "A definir",
+      "local": "Univates - Universidade do Vale do Taquari<br>  Av. Avelino Talini, 171<br> Bairro Universitário, Lajeado - Rio Grande do Sul",
+      "address": "Av. Avelino Talini, 171",
       "city":  "Lajeado",
       "state": "Rio Grande do Sul",
       "image": "/img/badge.jpg",
@@ -82,64 +82,37 @@
       "avatar": "https://i.imgur.com/yFnbmL4.png"
     },
     {
-      "name": "Luiz H. Rauber Rodrigues",
-      "vitae": "Atualmente professor de informática no SENAC Santa Cruz do Sul e doutorando em Tecnologia Ambiental na UNISC; É voluntário em projetos educacionais; Fez palestras em vários eventos de Software Livre e mentorias em Startups Weekends;",
-      "speeche": "25 minutos de dicas pra se aprimorar em informática!",
-      "summary": "Depois de 10 anos participando e atuando com software livre e tecnologia, e dentro deste tempo alguns cursos longos e me tornar professor, aprendi e ví muita coisa que tem um caminho parecido pro auto-aprimoramento, e é isso que vou falar.",
-      "level": "Iniciante",
-      "links": [
-        {
-          "title": "<i class=\"fa fa-linux\"></i>",
-          "link": "https://www.vivaolinux.com.br/~luizrauber"
-        },
-        {
-          "title": "<i class=\"fa fa-linkedin\"></i>",
-          "link": "https://www.linkedin.com/in/luizrauber/"
-        },
-        {
-          "title": "<i class=\"fa fa-facebook\"></i>",
-          "link": "https://www.facebook.com/luizrauber"
-        },
-        {
-          "title": "<i class=\"fa fa-twitter\"></i>",
-          "link": "https://twitter.com/lrauber"
-        }
-      ],
-      "avatar": "https://i.imgur.com/mpmncDv.jpg",
-      "start": "09h00min"
-    },
-    {
-      "name": "Vinício Zanchettin",
-      "vitae": "Estudante de engenharia de computação e empresário na área de tecnologia.",
-      "speeche": "Virtualização de terminal e aplicações GNU/Linux.",
-      "summary": "Apresentação de uma ferramenta para virtualização de desktops e aplicações GNU/Linux(netbeans, Firefox e qualquer aplicação executável). Acesso de qualquer lugar com browser e client, muito utilizado na Suécia e outros países da Europa, usa e America Latina.",
-      "level": "Iniciante",
+      "name": "Diego Tiemann",
+      "vitae": "Diego Tiemann é sócio-proprietário da RETTA Tecnologia da informação, graduado em Sistemas de Informação, possuí mais de 12 anos de experiência com desenvolvimento de software, influenciado pelo último FOSSDay começou a \"brincar\" com Docker e atualmente utiliza-o profissionalmente em projetos para clientes de sua empresa.",
+      "speeche": "Conhecendo o potencial do Node-RED",
+      "summary": "Apresentação do ferramenta Node-Red (https://nodered.org/) e de alguns cases práticos usando essa ferramentar, tudo isso executando em contêiner Docker.",
+      "level": "Intermediário",
       "links": [
         {
           "title": "<i class=\"fa fa-external-link\"></i>",
-          "link": "https://valeti.inf.br"
+          "link": "http://diegotiemann.blogspot.com/"
         },
         {
-          "title": "<i class=\"fa fa-linux\"></i>",
-          "link": "https://www.vivaolinux.com.br/~vzanchettin"
+          "title": "<i class=\"fa fa-external-link\"></i>",
+          "link": "https://RETTA.COM.BR"
         },
         {
           "title": "<i class=\"fa fa-linkedin\"></i>",
-          "link": "https://www.linkedin.com/in/vinicio-zanchettin-vini-b1437b2b"
+          "link": "https://www.linkedin.com/in/regis-tomkiel//"
         },
         {
           "title": "<i class=\"fa fa-facebook\"></i>",
-          "link": "https://www.facebook.com/vinicio.zanchettin"
+          "link": "https://www.facebook.com/tiemann.diego"
         }
       ],
-      "avatar": "https://i.imgur.com/iUxrGsn.jpg",
-      "start": "09h35min"
+      "avatar": "https://i.imgur.com/0tqNp9l.jpg",
+      "start": "09h00min"
     },
     {
       "name": "Coffee Break",
       "vitae": "out",
       "speeche": "Pausa para conversa e café.",
-      "start": "10h15min",
+      "start": "09h50min",
       "avatar": "https://i.imgur.com/yFnbmL4.png"
     },
     {
@@ -167,7 +140,7 @@
         }
       ],
       "avatar": "https://i.imgur.com/c7AWvjU.jpg",
-      "start": "10h35min"
+      "start": "10h10min"
     },
     {
       "name": "Diego Henicka",
@@ -198,7 +171,7 @@
         }
       ],
       "avatar": "https://i.imgur.com/IjYrIwB.jpg",
-      "start": "11h20min"
+      "start": "11h00min"
     },
     {
       "name": "Jônatas A. Chagas Júnior",
@@ -278,8 +251,8 @@
           "link": "https://www.facebook.com/estevanjunges"
         }
       ],
-      "avatar": "https://i.imgur.com/2rQHa6v.jpg",
-      "start": "15h00min"
+      "avatar": "https://i.imgur.com/3av57jNl.jpg",
+      "start": "15h20min"
     },
     {
       "name": "Diego de Souza Maia",
@@ -290,41 +263,68 @@
       "links": [
         
       ],
-      "avatar": "http://diegosmaia.me/img/avatar.jpg",
+      "avatar": "https://i.imgur.com/IEQWNddl.jpg",
       "start": "15h50min"
     },
     {
-      "name": "Diego Tiemann",
-      "vitae": "Diego Tiemann é sócio-proprietário da RETTA Tecnologia da informação, graduado em Sistemas de Informação, possuí mais de 12 anos de experiência com desenvolvimento de software, influenciado pelo último FOSSDay começou a \"brincar\" com Docker e atualmente utiliza-o profissionalmente em projetos para clientes de sua empresa.",
-      "speeche": "Conhecendo o potencial do Node-RED",
-      "summary": "Apresentação do ferramenta Node-Red (https://nodered.org/) e de alguns cases práticos usando essa ferramentar, tudo isso executando em contêiner Docker.",
-      "level": "Intermediário",
+      "name": "Vinício Zanchettin",
+      "vitae": "Estudante de engenharia de computação e empresário na área de tecnologia.",
+      "speeche": "Virtualização de terminal e aplicações GNU/Linux.",
+      "summary": "Apresentação de uma ferramenta para virtualização de desktops e aplicações GNU/Linux(netbeans, Firefox e qualquer aplicação executável). Acesso de qualquer lugar com browser e client, muito utilizado na Suécia e outros países da Europa, usa e America Latina.",
+      "level": "Iniciante",
       "links": [
         {
           "title": "<i class=\"fa fa-external-link\"></i>",
-          "link": "http://diegotiemann.blogspot.com/"
+          "link": "https://valeti.inf.br"
         },
         {
-          "title": "<i class=\"fa fa-external-link\"></i>",
-          "link": "https://RETTA.COM.BR"
+          "title": "<i class=\"fa fa-linux\"></i>",
+          "link": "https://www.vivaolinux.com.br/~vzanchettin"
         },
         {
           "title": "<i class=\"fa fa-linkedin\"></i>",
-          "link": "https://www.linkedin.com/in/regis-tomkiel//"
+          "link": "https://www.linkedin.com/in/vinicio-zanchettin-vini-b1437b2b"
         },
         {
           "title": "<i class=\"fa fa-facebook\"></i>",
-          "link": "https://www.facebook.com/tiemann.diego"
+          "link": "https://www.facebook.com/vinicio.zanchettin"
         }
       ],
-      "avatar": "https://i.imgur.com/0tqNp9l.jpg",
+      "avatar": "https://i.imgur.com/iUxrGsn.jpg",
       "start": "16h25min"
+    },
+    {
+      "name": "Luiz H. Rauber Rodrigues",
+      "vitae": "Atualmente professor de informática no SENAC Santa Cruz do Sul e doutorando em Tecnologia Ambiental na UNISC; É voluntário em projetos educacionais; Fez palestras em vários eventos de Software Livre e mentorias em Startups Weekends;",
+      "speeche": "25 minutos de dicas pra se aprimorar em informática!",
+      "summary": "Depois de 10 anos participando e atuando com software livre e tecnologia, e dentro deste tempo alguns cursos longos e me tornar professor, aprendi e ví muita coisa que tem um caminho parecido pro auto-aprimoramento, e é isso que vou falar.",
+      "level": "Iniciante",
+      "links": [
+        {
+          "title": "<i class=\"fa fa-linux\"></i>",
+          "link": "https://www.vivaolinux.com.br/~luizrauber"
+        },
+        {
+          "title": "<i class=\"fa fa-linkedin\"></i>",
+          "link": "https://www.linkedin.com/in/luizrauber/"
+        },
+        {
+          "title": "<i class=\"fa fa-facebook\"></i>",
+          "link": "https://www.facebook.com/luizrauber"
+        },
+        {
+          "title": "<i class=\"fa fa-twitter\"></i>",
+          "link": "https://twitter.com/lrauber"
+        }
+      ],
+      "avatar": "https://i.imgur.com/mpmncDv.jpg",
+      "start": "16h50min"
     },
     {
       "name": "Fechamento",
       "vitae": "out",
-      "speeche": "Pausa para conversa e café.",
-      "start": "17h15min",
+      "speeche": "Sorteio de brindes e um apanhado geral.",
+      "start": "17h20min",
       "avatar": "https://i.imgur.com/yFnbmL4.png"
     }
 
@@ -349,7 +349,7 @@
           "link": "https://linkedin.com/in/diegosmaia"
         }
       ],
-      "avatar": "https://i.imgur.com/wdhkIiu.jpg?1",
+      "avatar": "https://i.imgur.com/IEQWNddl.jpg",
       "start": "10h00min"
     },
     {
