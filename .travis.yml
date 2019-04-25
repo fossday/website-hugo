@@ -19,7 +19,8 @@ jobs:
           -v $(pwd)/site:/src \
           -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
       branches:
-        - develop
+        only:
+          - develop
     - stage: tag
       script:
         - git config --local user.name "Deploy FOSSDay"
@@ -28,7 +29,8 @@ jobs:
         - git tag ${TRAVIS_TAG}.0 -a -m "Tagging version ${TRAVIS_TAG}.0"
         - git push "https://${GITHUB_TOKEN}@github.com/fossday/site.git" --tags
       branches:
-        - develop
+        only:
+          - develop
     - stage: publish
       script:
         - |
@@ -38,7 +40,8 @@ jobs:
           -v $(pwd)/public:/src/public \
           raffaeldutra/docker-gohugo /gohugo.sh -p config-docker.toml
       branches:
-        - develop
+        only:
+          - develop
       deploy:
         name: "FOSS Team Deployment"
         provider: pages
