@@ -47,6 +47,12 @@
       "logo": "https://i.imgur.com/ew62Ksf.png"
     },
     {
+      "title": "Fábrica de Personagens",
+      "url": "http://afabricadepersonagens.com.br",
+      "short": "Criação de Mascotes e Design de Personagens",
+      "logo": "https://i.imgur.com/eROsjy7.png"
+    },
+    {
       "title": "Apoie o FOSSDay Lajeado 2019",
       "url": "https://goo.gl/forms/FZWI4VC2joiHDh1D3",
       "short": "Apoie o FOSSDay Lajeado 2019",
@@ -55,16 +61,16 @@
   ],
     "Partners":[
     {
-      "title": "Univates -  Universidade do vale do taquari",
-      "url": "https://www.univates.br/",
-      "short": "UCS - Campus de Bento Gonçalves (Carvi)",
-      "logo": "https://i.imgur.com/UEGm4zc.png"
-    },
-    {
       "title": "Locaweb",
       "url": "https://www.locaweb.com.br/",
       "short": "Hospedagem de sites e servidores dedicados no Brasil.",
       "logo": "https://i.imgur.com/EwiwTea.png"
+    },
+    {
+      "title": "Apoie o FOSSDay Lajeado 2019",
+      "url": "https://goo.gl/forms/FZWI4VC2joiHDh1D3",
+      "short": "Apoie o FOSSDay Lajeado 2019",
+      "logo": "https://i.imgur.com/aTpvv71.png"
     },
     {
       "title": "Apoie o FOSSDay Lajeado 2019",
@@ -261,7 +267,7 @@
       "summary": "Dispositivos móveis e seus aplicativos estão cada vez mais proporcionando conveniência para a população. No entanto, o seu uso tem despertado interesse de pessoas mal-intencionadas que visam obter informações dos usuários de dispositivos móveis. A apresentação tem como objetivo demonstrar como ferramentas open source podem ser utilizadas para identificar de forma simples e com o menor custo possível se aplicativos disponibilizados e executados no sistema operacional Android possuem as preocupações de segurança necessárias para proteção das informações pessoais de seus usuários.",
       "level": "Iniciante",
       "links": [
-        
+
       ],
       "avatar": "https://i.imgur.com/IEQWNddl.jpg",
       "start": "15h50min"
