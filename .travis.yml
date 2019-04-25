@@ -7,7 +7,6 @@ services:
 stages:
   - name: run
   - name: tag
-    if: branch = develop
   - name: publish
 
 jobs:
@@ -19,6 +18,8 @@ jobs:
           -itd \
           -v $(pwd)/site:/src \
           -p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
+      branches:
+        - develop
     - stage: tag
       script:
         - git config --local user.name "Deploy FOSSDay"
@@ -26,6 +27,8 @@ jobs:
         - export TRAVIS_TAG=$(($(git describe --tags $(git rev-list --tags --max-count=1) | cut -d "." -f1)+1))
         - git tag ${TRAVIS_TAG}.0 -a -m "Tagging version ${TRAVIS_TAG}.0"
         - git push "https://${GITHUB_TOKEN}@github.com/fossday/site.git" --tags
+      branches:
+        - develop
     - stage: publish
       script:
         - |
@@ -34,6 +37,8 @@ jobs:
           -v $(pwd)/site:/src \
           -v $(pwd)/public:/src/public \
           raffaeldutra/docker-gohugo /gohugo.sh -p config-docker.toml
+      branches:
+        - develop
       deploy:
         name: "FOSS Team Deployment"
         provider: pages
