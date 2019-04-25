@@ -27,6 +27,8 @@ jobs:
         - git config --local user.name "Deploy FOSSDay"
         - git config --local user.email "fossday@fossday.org"
         - export TRAVIS_TAG=$(($(git describe --tags $(git rev-list --tags --max-count=1) | cut -d "." -f1)+1))
+        - echo "tag antiga: $(git describe --tags $(git rev-list --tags --max-count=1))"
+        - echo "nova tag seria: ${TRAVIS_TAG}"
         - git tag ${TRAVIS_TAG}.0 -a -m "Tagging version ${TRAVIS_TAG}.0"
         - git push "https://${GITHUB_TOKEN}@github.com/fossday/site.git" --tags
       branches:
