@@ -1,5 +1,0 @@
-#!/bin/bash
-
-docker run -it \
--v $(pwd)/site:/src \
--p 1313:1313 raffaeldutra/docker-gohugo /gohugo.sh -s config-docker.toml
