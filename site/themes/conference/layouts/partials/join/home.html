@@ -185,7 +185,7 @@
                                         {{ end }}
                                       {{ end }}
                                     </div>
-                                   
+
                                     <div class="col-md-4 col-sm-12">
                                       {{ range .Schedule }}
                                       {{ if eq .start "10h10min"}}
@@ -232,20 +232,20 @@
                                         <ul class="nav nav-pills event-time-list">
                                             <li><a>Horário</a>
                                                 <ul>
-                                                    <li class="color-1"><a>13h10min</a></li>
-                                                    <li class="color-2"><a>14h00min</a></li>
-                                                    <li class="color-3"><a>15h20min</a></li>
-                                                    <li class="color-4"><a>15h50min</a></li>
-                                                    <li class="color-5"><a>16h25min</a></li>
-                                                    <li class="color-6"><a>16h50min</a></li>
-                                                    <li class="color-7"><a>17h20min</a></li>
+                                                    <li class="color-1"><a>13h00min</a></li>
+                                                    <li class="color-2"><a>13h50min</a></li>
+                                                    <li class="color-3"><a>15h10min</a></li>
+                                                    <li class="color-4"><a>15h40min</a></li>
+                                                    <li class="color-5"><a>16h15min</a></li>
+                                                    <li class="color-6"><a>17h00min</a></li>
+                                                    <li class="color-7"><a>17h30min</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-4 col-sm-6">
                                       {{ range .Schedule }}
-                                        {{ if eq .start "13h10min"}}
+                                        {{ if eq .start "13h00min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-1"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
@@ -254,7 +254,7 @@
                                             <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
-                                        {{ if eq .start "14h00min"}}
+                                        {{ if eq .start "13h50min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-2"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
@@ -263,7 +263,7 @@
                                             <p>{{ .summary  }}</p>
                                         </div>
                                         {{ end }}
-                                        {{ if eq .start "15h20min"}}
+                                        {{ if eq .start "15h10min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-3"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
@@ -286,7 +286,7 @@
                                     </div>
                                     <div class="col-md-4 col-sm-12">
                                       {{ range .Schedule }}
-                                        {{ if eq .start "15h50min"}}
+                                        {{ if eq .start "15h40min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-4"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
@@ -295,7 +295,7 @@
                                             <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
-                                        {{ if eq .start "16h25min"}}
+                                        {{ if eq .start "16h15min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-5"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
@@ -304,7 +304,7 @@
                                             <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
-                                        {{ if eq .start "16h50min"}}
+                                        {{ if eq .start "17h00min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-6"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
@@ -313,7 +313,7 @@
                                             <p>{{ .summary | markdownify | truncate 150 }}</p>
                                         </div>
                                         {{ end }}
-                                        {{ if eq .start "17h20min"}}
+                                        {{ if eq .start "17h30min"}}
                                         <div class="member">
                                             <div class="button">
                                                 <a class="btn-large bg-7"><img src="{{ .avatar }}" alt="{{ .name }}" class="avatar-img"> {{ .name }}</a>
