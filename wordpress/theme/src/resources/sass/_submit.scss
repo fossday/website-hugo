@@ -1,0 +1,24 @@
+/* :: 19.0 Submit Page CSS */
+
+.map-area {
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+
+        .map-area-col {
+            padding: 0;
+
+            .call-to-action-content {
+                padding: 3em;
+                background: $primary;
+
+                .ticket-btn {
+                    .btn {
+                        background: $secondary;
+                    }
+                }
+            }
+        }
+
+    }
+}

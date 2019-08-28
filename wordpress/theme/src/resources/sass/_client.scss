@@ -1,0 +1,168 @@
+/* 16.0 Client Area CSS */
+
+.our-client-area {
+    position: relative;
+    z-index: 1;
+
+    .owl-prev,
+    .owl-next {
+        @include transition-duration(500ms);
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        height: 50px;
+        margin-top: -25px;
+        z-index: 10;
+        text-align: center;
+        line-height: 50px;
+        color: $white;
+        font-size: 40px;
+        opacity: 0.5;
+
+        @media #{$breakpoint-lg} {
+            left: -15px;
+        }
+
+        @media #{$breakpoint-xs} {
+            left: -15px;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+    }
+
+    .owl-next {
+        left: auto;
+        right: -30px;
+
+        @media #{$breakpoint-lg} {
+            right: -15px;
+        }
+
+        @media #{$breakpoint-xs} {
+            right: -15px;
+        }
+    }
+
+    &.about-page {
+
+        .owl-prev,
+        .owl-next {
+            color: $dark-2;
+            opacity: 1;
+
+            &:hover,
+            &:active {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.single-client-content {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px 50px;
+    border-radius: 10px;
+    margin: 5px;
+
+    @media #{$breakpoint-xs} {
+        padding: 30px;
+    }
+
+    .single-client-text {
+        position: relative;
+        z-index: 1;
+
+        p {
+            color: $white;
+            margin-bottom: 20px;
+            font-weight: 300;
+
+            @media #{$breakpoint-md} {
+                font-size: 14px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 14px;
+            }
+        }
+
+        .single-client-thumb-info {
+            .single-client-thumb {
+                width: 65px;
+                height: 65px;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .client-info {
+                margin-left: 15px;
+
+                h6 {
+                    color: $white;
+                    font-size: 18px;
+                    margin-bottom: 0;
+
+                    @media #{$breakpoint-md} {
+                        font-size: 14px;
+                    }
+
+                    @media #{$breakpoint-xs} {
+                        font-size: 14px;
+                    }
+                }
+
+                p {
+                    margin-bottom: 0;
+                    color: $primary;
+
+                    @media #{$breakpoint-md} {
+                        font-size: 14px;
+                    }
+
+                    @media #{$breakpoint-xs} {
+                        font-size: 14px;
+                    }
+
+                    @media #{$breakpoint-sm} {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        &.about-page {
+            p {
+                color: $text-4;
+            }
+
+            .client-info {
+                h6 {
+                    color: $text-3;
+                }
+            }
+        }
+    }
+
+    .client-icon {
+        background: $primary;
+        background: -moz-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.7;
+        position: absolute;
+        top: -8px;
+        left: 45px;
+        font-size: 80px;
+
+        i {
+            @include transform(rotate(180deg));
+        }
+    }
+}

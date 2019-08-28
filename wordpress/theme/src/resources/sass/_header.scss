@@ -1,0 +1,130 @@
+/* :: 7.0 Header Area CSS */
+
+.classy-nav-container {
+    background-color: transparent;
+    padding: 0;
+
+    .classy-navbar {
+        @include transition-duration(500ms);
+        height: 5em;
+        padding: 0;
+
+        .nav-brand {
+            @media #{$breakpoint-xs} {
+                max-width: 90px;
+                margin-right: 15px;
+            }
+        }
+
+        .classynav ul li {
+            a {
+                font-size: 16px;
+                text-transform: uppercase;
+                color: $white;
+                font-weight: 500;
+                padding: 0 20px;
+
+                &:hover,
+                &:focus {
+                    color: $hover;
+                }
+
+                @media #{$breakpoint-lg} {
+                    font-size: 14px;
+                }
+
+                @media #{$breakpoint-md} {
+                    font-size: 14px;
+                    color: $heading;
+
+                    &:hover,
+                    &:focus {
+                        color: $hover;
+                    }
+                }
+
+                @media #{$breakpoint-xs} {
+                    font-size: 14px;
+                    color: $heading;
+
+                    &:hover,
+                    &:focus {
+                        color: $hover;
+                    }
+                }
+            }
+
+            &.cn-dropdown-item,
+            &.megamenu-item {
+                ul li {
+                    a {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        height: 42px;
+                        line-height: 42px;
+                        padding: 0 30px;
+                        color: $heading;
+
+                        &:focus,
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                a {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.classynav ul li.has-down > a::after,
+.classynav ul li.has-down.active > a::after,
+.classynav ul li.megamenu-item > a::after {
+    color: $primary;
+}
+
+.breakpoint-off .classynav ul li .dropdown,
+.breakpoint-off .classynav ul li .megamenu {
+    width: 200px;
+    @include box-shadow($box-shadow);
+    border-radius: 4px;
+}
+
+.breakpoint-off .classynav ul li .megamenu {
+    width: 100%;
+}
+
+.classy-navbar-toggler .navbarToggler span {
+    background-color: $white;
+}
+
+.header-area {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    @include transition-duration(500ms);
+    background-color: rgba(0, 0, 0, 0);
+
+    &.sticky {
+        background-color: $dark;
+        @include box-shadow($box-shadow);
+
+        .classy-navbar {
+            height: 75px;
+        }
+    }
+
+    &.is-single {
+        background-color: $dark;
+        @include box-shadow($box-shadow);
+
+        .classy-navbar {
+            height: 75px;
+        }
+    }
+}

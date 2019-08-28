@@ -1,0 +1,96 @@
+/* :: 4.0 Heading Area CSS */
+
+.section-heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+
+    p {
+        color: $white;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-size: 38px;
+        color: $white;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        @media #{$breakpoint-xs} {
+            font-size: 26px;
+        }
+
+        @media #{$breakpoint-sm} {
+            font-size: 30px;
+        }
+    }
+}
+
+.section-heading-2 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+    margin-top: 3em;
+
+
+    p {
+        color: $primary;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-size: 38px;
+        color: $white;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        @media #{$breakpoint-xs} {
+            font-size: 26px;
+        }
+
+        @media #{$breakpoint-sm} {
+            font-size: 30px;
+        }
+    }
+}
+
+.section-heading-3 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1em;
+
+    p {
+        color: $primary;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-size: 38px;
+        color: $text-3;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        @media #{$breakpoint-xs} {
+            font-size: 26px;
+        }
+
+        @media #{$breakpoint-sm} {
+            font-size: 30px;
+        }
+    }
+}

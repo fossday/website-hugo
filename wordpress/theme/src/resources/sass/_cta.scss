@@ -1,0 +1,55 @@
+/* :: 21.0 CTA Area CSS */
+
+.call-to-action-area {
+    position: relative;
+    z-index: 1;
+}
+
+.call-to-action-content {
+    position: relative;
+    z-index: 1;
+
+    .call-to-action-heading {
+        h6 {
+            font-size: 18px;
+            color: $white;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 55px;
+            text-transform: capitalize;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: $white;
+            margin-bottom: 30px;
+            display: inline-block;
+
+            @media #{$breakpoint-xs} {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .event-time {
+        background-color: rgba(255, 255, 255, 0.10);
+        padding: 30px 50px;
+        display: inline-block;
+        border-radius: 10px;
+
+        p {
+            font-size: 18px;
+            color: $white;
+            margin-bottom: 3px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            i {
+                margin-right: 3px;
+            }
+        }
+    }
+}

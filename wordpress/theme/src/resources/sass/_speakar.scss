@@ -1,0 +1,111 @@
+/* :: 12.0 Speaker Area CSS */
+
+.our-speaker-area {
+    position: relative;
+    background: #4e54c8;
+
+    .row {
+        margin-left: -20px;
+        margin-right: -20px;
+
+        @media #{$breakpoint-xs} {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .col-12 {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            @media #{$breakpoint-xs} {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+.single-speaker-area {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-radius: .5em;
+    padding: 1em;
+    cursor: pointer;
+    
+    
+    &:hover {
+        background-color: $hover_sec;
+    }
+
+    .section-heading-3 {
+        h4 {
+            color: $white;
+        }
+    }
+
+    .speaker-single-thumb {
+        position: relative;
+        z-index: 0;
+        border-radius: 50%;
+        padding: 0 2em;
+
+        img {
+            @include transition-duration(1500ms);
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+
+    .social-info {
+        position: absolute;
+        top: -180px;
+        right: 1.5em;
+        z-index: 22;
+        background-color: $primary;
+        padding: 15px;
+        border-radius: 0;
+        text-align: center;
+        @include transition-duration(800ms);
+
+        a {
+            display: block;
+            font-size: 18px;
+            color: $white;
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .speaker-info {
+        padding: 1em 0;
+        text-align: center;
+
+        h5 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $white;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $white;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        .social-info {
+            top: 1em;
+        }
+    }
+}

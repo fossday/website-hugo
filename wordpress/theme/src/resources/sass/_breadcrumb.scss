@@ -1,0 +1,134 @@
+/* :: 13.0 Breadcrumb CSS */
+
+.breadcrumb-area {
+    position: relative;
+    z-index: 1;
+    height: 470px;
+
+    @media #{$breakpoint-xs} {
+        height: 300px;
+    }
+
+    .page-title {
+        color: $white;
+        font-size: 45px;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        @media #{$breakpoint-xs} {
+            font-size: 24px;
+        }
+    }
+}
+
+.breadcrumb-content {
+    position: relative;
+    z-index: 1;
+    margin-top: 105px;
+
+    .breadcrumb {
+        padding: 0;
+        background-color: transparent;
+        margin-bottom: 0;
+
+        .breadcrumb-item {
+            color: $white;
+            font-weight: 400;
+            font-size: 18px;
+
+            a {
+                font-size: 16px;
+                color: $white;
+                font-weight: 400;
+
+                &:hover,
+                &:focus {
+                    color: $hover;
+                }
+            }
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: '\f105';
+            color: $white;
+            font-family: "FontAwesome";
+        }
+    }
+}
+
+.breadcrumb-area {
+    &.blog {
+        height: 550px;
+
+        .breadcrumb-content {
+            .post-catagory {
+                padding: 2px 15px;
+                border-radius: 2px;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: $white;
+                background-color: $primary;
+                font-weight: 500;
+                margin-bottom: 15px;
+
+                &:hover,
+                &:focus {
+                    font-weight: 500;
+                    background-color: $dark;
+                }
+            }
+
+            .page-title {
+                display: block;
+                font-size: 48px;
+                margin-bottom: 20px;
+
+                @media #{$breakpoint-xs} {
+                    font-size: 30px;
+                }
+            }
+
+            .post-meta {
+                position: relative;
+                z-index: 1;
+                margin-bottom: 5px;
+
+                a {
+                    position: relative;
+                    z-index: 1;
+                    font-size: 16px;
+                    color: $white;
+                    font-weight: 500;
+                    margin-right: 21px;
+
+                    @media #{$breakpoint-xs} {
+                        font-size: 13px;
+                    }
+
+                    &::after {
+                        content: '|';
+                        position: absolute;
+                        top: 0;
+                        right: -11px;
+                        z-index: 1;
+                    }
+
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $hover;
+
+                        &::after {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

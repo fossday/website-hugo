@@ -1,0 +1,6 @@
+{
+  "/mix.js": "/mix.js",
+  "/public/dist/app_bundle.css": "/public/dist/app_bundle.css",
+  "public/dist/jquery.min.js": "public/dist/jquery.min.js",
+  "public/dist/app_bundle.js": "public/dist/app_bundle.js"
+}

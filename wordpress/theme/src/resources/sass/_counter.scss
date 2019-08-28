@@ -1,0 +1,101 @@
+/* :: 11.0 Counter Area CSS */
+
+.about-us-countdown-area {
+    position: relative;
+    z-index: 1;
+
+    .countdown-up-area {
+        position: relative;
+        z-index: 1;
+
+        .countdown-content-text {
+            h6 {
+                font-size: 14px;
+                text-transform: uppercase;
+                color: $primary;
+                font-weight: 400;
+                margin-bottom: 15px;
+                letter-spacing: 1px;
+            }
+
+            h4 {
+                font-size: 20px;
+                color: $white;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-bottom: 0;
+
+                @media #{$breakpoint-lg} {
+                    font-size: 16px;
+                }
+
+                @media #{$breakpoint-md} {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .countdown-timer {
+            #clock {
+                @include display-flex(flex);
+                @include align-items-center;
+                @include justify-content-center;
+                color: $white;
+
+                div {
+                    font-size: 62px;
+                    font-weight: 600;
+                    padding: 20px 5px;
+                    width: 20%;
+                    margin: 0 15px;
+                    border: 2px solid rgba(255, 255, 255, 0.15);
+                    text-align: center;
+                    line-height: 1;
+
+                    @media #{$breakpoint-lg} {
+                        font-size: 42px;
+                        margin: 0 10px;
+                    }
+
+                    @media #{$breakpoint-md} {
+                        font-size: 36px;
+                        margin: 0 5px;
+                    }
+
+                    @media #{$breakpoint-xs} {
+                        font-size: 16px;
+                        margin: 0 2px;
+                    }
+
+                    @media #{$breakpoint-xs-landscape} {
+                        font-size: 24px;
+                    }
+
+                    span {
+                        margin-top: 5px;
+                        font-size: 18px;
+                        color: $text;
+                        font-weight: 500;
+                        display: block;
+
+                        @media #{$breakpoint-lg} {
+                            font-size: 16px;
+                        }
+
+                        @media #{$breakpoint-md} {
+                            font-size: 14px;
+                        }
+
+                        @media #{$breakpoint-xs} {
+                            font-size: 10px;
+                        }
+
+                        @media #{$breakpoint-xs-landscape} {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

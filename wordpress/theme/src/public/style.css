@@ -1,0 +1,13 @@
+/*!
+Theme Name: Schultz
+Version: 0.1
+Theme URI: https://doseextra.com/schultz
+Author: Dose Extra/Regis Tomkiel
+Author URI: https://doseextra.com/schultz
+Description: schultz é um tema desenvolvido para o Projeto FOSSDay.
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: schultz
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-colors, custom-menu, featured-images, theme-options, blog, e-commerce, custom-logo, footer-widgets, rtl-language-support, threaded-comments
+*/
+@import 'dist/app_bundle.css';

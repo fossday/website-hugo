@@ -1,0 +1,172 @@
+/* :: 20.0 Contact Area CSS */
+
+.contact-our-area {
+    position: relative;
+    z-index: 1;
+    background-color: $bg-blue;
+
+    .contact-information {
+        .single-contact-info {
+            margin-bottom: 25px;
+
+            p {
+                color: $text-2;
+                margin-bottom: 5px;
+            }
+
+            h6 {
+                font-size: 18px;
+                color: $white;
+                margin-bottom: 0;
+
+                @media #{$breakpoint-md} {
+                    font-size: 16px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    font-size: 14px;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .contact_from_area {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        border-radius: 10px;
+    }
+}
+
+.form-group {
+    .form-control {
+        @include transition-duration(300ms);
+        background-color: transparent;
+        border-right: none;
+        border-top: none;
+        border-left: none;
+        border-radius: 0;
+        border-bottom: 1px solid $border-4;
+        font-size: 15px;
+        text-transform: capitalize;
+        color: $text-2;
+        padding-left: 0;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:active,
+        &:focus {
+            border-bottom-color: $white;
+        }
+    }
+
+    textarea.form-control {
+        height: 80px;
+    }
+}
+
+/* :: Contact us single page CSS */
+
+.contact--us-area {
+    .row {
+        margin-right: -25px;
+        margin-left: -25px;
+
+        @media #{$breakpoint-xs} {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .col-12 {
+            padding-left: 25px;
+            padding-right: 25px;
+
+            @media #{$breakpoint-xs} {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .contact-us-thumb {
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .contact_from_area {
+        .contact-heading {
+            h4 {
+                font-size: 25px;
+                color: $text-3;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: $text-4;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.contact_input_area {
+    .form-group {
+        .form-control {
+            border-bottom: 1px solid $border-7;
+            color: $text-2;
+
+            &:active,
+            &:focus {
+                border-bottom-color: $text-4;
+            }
+        }
+
+        textarea.form-control {
+            height: 70px;
+        }
+    }
+}
+
+.map-area {
+    position: relative;
+    z-index: 1;
+
+    iframe {
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+}
+
+.contact--info-area {
+    padding: 40px 50px 0;
+    position: relative;
+    z-index: 22;
+    top: -75px;
+    background-color: $white;
+    border-radius: 10px;
+
+    .single-contact--info {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 50px;
+
+        h5 {
+            color: $text-3;
+            font-size: 16px;
+            margin-bottom: 0;
+            margin-top: 10px;
+            display: inline-block;
+
+            @media #{$breakpoint-md} {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+/* Import Fonts & All CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700');
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../node_modules/wowjs/css/libs/animate.css';
+@import '../css/default-assets/classy-nav.css';
+@import '../../node_modules/owl.carousel2/dist/assets/owl.carousel.min.css';
+@import '../../node_modules/magnific-popup/dist/magnific-popup.css';
+@import '../../node_modules/font-awesome/css/font-awesome.min.css';
+@import '../../node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.min.css';
+@import '../css/style.css';
+
+// Utilities
+
+@import "utilities/fonts";
+@import "utilities/color";
+@import "utilities/variables";
+@import "utilities/responsive";
+
+// Mixins
+
+
+@import "mixins/flex";
+@import "mixins/miscellaneous";
+
+// Stylesheet
+
+@import "reboot";
+@import "spacing";
+@import "preloader";
+@import "heading";
+@import "backtotop";
+@import "buttons"; 
+@import "header";
+@import "hero";
+@import "footer";
+@import "about";
+@import "counter";
+@import "speakar";
+@import "breadcrumb";
+@import "blog";
+@import "widget";
+@import "client";
+@import "schedule";
+@import "ticket";
+@import "sponsor";
+@import "contact";
+@import "submit";
+@import "cta";
+
+.modal-header {
+    border-bottom: 0;
+}
+.modal-header .close {
+    padding: .2rem 1rem;
+}
+.modal-body {
+    padding: 0 1rem;
+}
+.social-info-modal {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    font-size: 2rem;
+    padding: .5em 0em;
+}
+.speaker-modal-thumb {
+    img {
+        border-radius: 50%;
+    }
+}
+.social-info-bio {
+    padding: 1em 0 0 0;
+}

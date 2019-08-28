@@ -1,0 +1,244 @@
+/* :: 15.0 Widget Area CSS */
+
+.single-widget-area {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .widget-title {
+        position: relative;
+        z-index: 1;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: $text-3;
+    }
+
+    .search-widget {
+        position: relative;
+        z-index: 1;
+
+        form {
+            position: relative;
+            z-index: 1;
+
+            input {
+                color: $text-4;
+                width: 100%;
+                height: 40px;
+                border: none;
+                border-bottom: 1px solid $text-2;
+                font-size: 14px;
+            }
+
+            button {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                top: 0;
+                right: 0;
+                z-index: 120;
+                border: none;
+                background-color: transparent;
+                font-size: 18px;
+                color: $text-4;
+            }
+        }
+    }
+
+    .categories-list {
+        li {
+            a {
+                display: block;
+                color: $text-4;
+                font-size: 16px;
+                margin-bottom: 10px;
+                font-weight: 400;
+            }
+
+            &:last-child {
+                a {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .tag-cloud {
+        li {
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 10px;
+
+            a {
+                display: inline-block;
+                padding: 5px 15px;
+                border: 1px solid #dbdcf1;
+                border-radius: 30px;
+                font-size: 16px;
+                font-weight: 400;
+                color: $text-4;
+
+                &:hover,
+                &:focus {
+                    border-color: $hover;
+                }
+            }
+        }
+    }
+
+    .sidebar-gallery {
+        .row {
+            margin-right: -5px;
+            margin-left: -5px;
+
+            .col-4 {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+        a {
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 100%;
+
+            img {
+                border-radius: 5px;
+                width: 100%;
+            }
+
+            &::before {
+                background: #c63fa4;
+                background-image: -webkit-linear-gradient(120deg, rgb(80, 90, 221) 0%, rgb(223, 66, 177) 100%);
+                background-image: -ms-linear-gradient(120deg, rgb(80, 90, 221) 0%, rgb(223, 66, 177) 100%);
+                content: "";
+                height: 100%;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                opacity: 0;
+                visibility: hidden;
+                @include transition-duration (300ms);
+                border-radius: 5px;
+            }
+
+            &:hover {
+                &::before {
+                    visibility: visible;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .post-author-widget {
+        position: relative;
+        z-index: 1;
+        padding: 45px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 8px 27px 0px rgba(90, 111, 120, 0.15);
+        text-align: center;
+
+        .post-author-avatar {
+            position: relative;
+            z-index: 1;
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            background: $primary;
+            background-image: -webkit-linear-gradient(120deg, rgb(80, 90, 221) 0%, rgb(223, 66, 177) 100%);
+            background-image: -ms-linear-gradient(120deg, rgb(80, 90, 221) 0%, rgb(223, 66, 177) 100%);
+            padding: 4px;
+            margin: 0 auto 20px;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .post-author-content {
+            h5 {
+                font-size: 18px;
+                margin-bottom: 5px;
+                color: $text-3;
+            }
+
+            span {
+                font-size: 14px;
+                margin-bottom: 15px;
+                display: block;
+                color: $primary;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: $text-4;
+            }
+        }
+
+        .author-social-info {
+            a {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                border: 1px solid #ebebf3;
+                border-radius: 50%;
+                line-height: 32px;
+                font-size: 14px;
+                margin: 0 5px;
+
+                &:hover,
+                &:focus {
+                    background-color: #505add;
+                    border-color: #505add;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.single-recent-post-area {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .post-thumb {
+        @include flex(0 0 84px);
+        max-width: 84px;
+        width: 84px;
+        border-radius: 5px;
+        margin-right: 15px;
+
+        img {
+            border-radius: 5px;
+        }
+    }
+
+    .post-content {
+        .post-title {
+            display: block;
+            color: $text-3;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .post-date {
+            display: block;
+            font-size: 14px;
+            color: $text-2;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+version: '3.1'
+
+services:
+  db:
+    image: mariadb:latest
+    container_name: mariadb_schulttz
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./dbserver/files:/var/lib/mysql
+      - ./dbserver/dump:/docker-entrypoint-initdb.d
+      - ./dbserver/exp:/mnt/exp
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: site_schulttz
+      MYSQL_ROOT_PASSWORD: schulttz
+    networks:
+      - app-network
+  wordpress:
+    container_name: wordpress_schulttz
+    build:
+      context: ./wordpress
+    working_dir: /var/www/html
+    volumes:
+      - ./wordpress/theme/src/public:/var/www/html/wp-content/themes/schulttz
+      - ./wordpress/wp-content/plugins:/var/www/html/wp-content/plugins
+      - ./wordpress/wp-content/uploads:/var/www/html/wp-content/uploads
+      - ./wordpress/wp-content/languages:/var/www/html/wp-content/languages
+      - ./apache2:/etc/apache2/sites-enabled
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - db:mariadb
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: site_schulttz
+      WORDPRESS_DB_PASSWORD: schulttz
+      ENV: local
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,19 @@
+# Keep these files out of the repo
+wordpress/wp-content/upgrade
+wordpress/wp-content/languages
+wordpress/wp-content/uploads
+wordpress/wp-content/plugins
+!wordpress/wp-content/plugins/sap
+wordpress/theme/src/node_modules
+
+wordpress/theme/src/*.zip
+dbserver
+confer
+
+# Hidden files
+*.DS_Store
+*Thumbs.db
+*.sass-cache*
+*~imageoptim*
+**.log
+

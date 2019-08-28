@@ -1,0 +1,160 @@
+/* :: 10.0 About Area CSS */
+
+.about-us-countdown-area {
+    position: relative;
+    z-index: 1;
+    background-color: $bg-blue;
+    .about-content-text {
+        h6 {
+            font-size: 14px;
+            font-weight: 500;
+            color: $primary;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid $border;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+
+            @media #{$breakpoint-lg} {
+                font-size: 32px;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 24px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 22px;
+            }
+        }
+
+        p {
+            color: $white;
+        }
+    }
+}
+
+/* :: About Single Page CSS */
+
+.single-we-offer-content {
+    position: relative;
+    z-index: 1;
+    @include box-shadow(0px 8px 27px 0px rgba(90, 111, 120, 0.15));
+    border-radius: 10px;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    .offer-icon {
+        position: relative;
+        z-index: 1;
+        margin: auto;
+        height: 115px;
+        width: 115px;
+        background: #c63fa4;
+        background-image: -moz-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
+        background-image: -webkit-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
+        background-image: -ms-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
+        border-radius: 50%;
+        line-height: 115px;
+
+        &::after {
+            @include transition-duration(1000ms);
+            border-radius: 50%;
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            background: #c63fa4;
+            background-image: -moz-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
+            background-image: -webkit-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
+            background-image: -ms-linear-gradient(120deg, rgb(223, 66, 177) 0%, rgb(80, 90, 221) 100%);
+            z-index: -10;
+        }
+    }
+
+    h5 {
+        @include transition-duration(1000ms);
+        font-size: 22px;
+        color: $text-3;
+        margin-top: 25px;
+        position: relative;
+        z-index: 2;
+    }
+
+    p {
+        @include transition-duration(1000ms);
+        color: $text-4;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    &:hover,
+    &:focus {
+
+        h5,
+        p {
+            color: $white;
+        }
+
+        .offer-icon {
+            &::after {
+                width: 800%;
+                height: 800%;
+            }
+        }
+    }
+}
+
+.our-gallery-area {
+    position: relative;
+    z-index: 1;
+
+    .row {
+        margin-left: -7.5px;
+        margin-right: -7.5px;
+
+        .col-12 {
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+        }
+    }
+
+    .single-gallery-thumb {
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            background: #c63fa4;
+            background-image: -webkit-linear-gradient(120deg, rgb(80, 90, 221) 0%, rgb(223, 66, 177) 100%);
+            background-image: -ms-linear-gradient(120deg, rgb(80, 90, 221) 0%, rgb(223, 66, 177) 100%);
+            content: "";
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            @include transition-duration(300ms);
+        }
+
+        &:hover {
+            &::before {
+                opacity: 0.8;
+            }
+        }
+    }
+}

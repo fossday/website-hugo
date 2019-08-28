@@ -1,0 +1,274 @@
+/* :: 17.0 Schedule Area CSS */
+
+.our-schedule-area {
+    position: relative;
+    z-index: 1;
+    background-color: $bg-blue;
+
+    .schedule-tab {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 45px;
+
+        .nav-tabs {
+            @include justify-content-center;
+            border-bottom: none;
+            width: 100%;
+
+            .nav-item {
+                width: 50%;
+
+                .nav-link {
+                    color: $text-2;
+                    background-color: $bg-blue-2;
+                    text-align: center;
+                    border-radius: 0;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    padding: 15px 0;
+                    border-bottom: none;
+                    border-top: none;
+                    border-left: none;
+                    border-right: 1px solid $border-2;
+
+                    @media #{$breakpoint-md} {
+                        font-size: 14px;
+                    }
+
+                    @media #{$breakpoint-xs} {
+                        font-size: 10px;
+                        padding: 10px;
+                    }
+
+                    @media #{$breakpoint-xs-landscape} {
+                        font-size: 12px;
+                        padding: 15px 0;
+                    }
+
+                    @media #{$breakpoint-sm} {
+                        font-size: 14px;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 0;
+                        text-transform: capitalize;
+
+                        @media #{$breakpoint-xs} {
+                            font-size: 9px;
+                        }
+
+                        @media #{$breakpoint-xs-landscape} {
+                            font-size: 10px;
+                        }
+                    }
+
+                    &.active {
+                        background-color: $text;
+                        color: $white;
+                    }
+                }
+
+                &:nth-child(1) {
+                    .nav-link {
+                        border-radius: 10px 0 0 10px;
+                    }
+                }
+
+                &:last-child {
+                    .nav-link {
+                        border-right: none;
+                        border-radius: 0 10px 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.single-schedule-area {
+    border: 1px solid $border-3;
+    border-radius: 10px;
+    padding: 25px;
+    @include transition-duration(500ms);
+    margin-bottom: 20px;
+
+    &:hover,
+    &:focus {
+        border-color: $primary;
+    }
+
+    .single-schedule-tumb-info {
+        @include flex(0 0 42%);
+        max-width: 42%;
+        width: 42%;
+        padding-right: 15px;
+
+        @media #{$breakpoint-md} {
+            @include flex(0 0 35%);
+            max-width: 35%;
+            width: 35%;
+        }
+
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+            padding-left: 0;
+            padding-bottom: 30px;
+        }
+
+        .single-schedule-tumb {
+            height: 90px;
+            width: 90px;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .single-schedule-info {
+            margin-left: 30px;
+
+            h6 {
+                font-size: 20px;
+                color: $white;
+                font-weight: 600;
+
+                @media #{$breakpoint-lg} {
+                    font-size: 16px;
+                }
+
+                @media #{$breakpoint-md} {
+                    font-size: 14px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    font-size: 14px;
+                }
+            }
+
+            p {
+                color: $text-2;
+                margin-bottom: 0;
+
+                @media #{$breakpoint-lg} {
+                    font-size: 12px;
+                }
+
+                @media #{$breakpoint-md} {
+                    font-size: 12px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    font-size: 12px;
+                }
+
+                span {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .schedule-time-place {
+        @include flex(0 0 42%);
+        max-width: 42%;
+        width: 42%;
+        padding: 0 15px;
+
+        @media #{$breakpoint-md} {
+            @include flex(0 0 35%);
+            max-width: 35%;
+            width: 35%;
+        }
+
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+            padding: 0 0 30px 0;
+        }
+
+        p {
+            color: $white;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+
+            @media #{$breakpoint-lg} {
+                font-size: 12px;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 12px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 12px;
+            }
+
+            i {
+                color: $primary;
+                margin-right: 5px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .btn.confer-btn {
+        @include flex(0 0 16%);
+        max-width: 16%;
+        width: 16%;
+
+        @media #{$breakpoint-md} {
+            @include flex(0 0 30%);
+            max-width: 30%;
+            width: 30%;
+        }
+
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    &.single-page {
+        @include box-shadow (0px 8px 27px 0px rgba(90, 111, 120, 0.15));
+        border-color: $white;
+        @include transition-duration(500ms);
+
+        .single-schedule-info {
+
+            h6 {
+                color: $text-3;
+            }
+
+            p {
+                color: $text-2;
+                margin-bottom: 0;
+
+                span {
+                    color: $text-3;
+                }
+            }
+        }
+
+        .schedule-time-place {
+            p {
+                color: $text-3;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $primary;
+        }
+    }
+}

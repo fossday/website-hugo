@@ -1,0 +1,224 @@
+/* :: 6.0 Buttons Area CSS */
+
+.btn {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.confer-btn {
+    position: relative;
+    z-index: 1;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    padding: 0 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: $white;
+    border-radius: 23px;
+    @include transition-duration(500ms);
+    overflow: hidden;
+
+    i {
+        margin-left: 5px;
+    }
+
+    &::before {
+        @include transition-duration(800ms);
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        top: -10%;
+        left: -10%;
+        content: '';
+        background: $primary;
+        background-image: -webkit-linear-gradient(120deg, rgb(80, 90, 221) 0%, rgb(223, 66, 177) 100%);
+        background-image: -ms-linear-gradient(120deg, rgb(80, 90, 221) 0%, rgb(223, 66, 177) 100%);
+        z-index: -2;
+    }
+
+    &:focus,
+    &:hover {
+        font-weight: 500;
+        background-color: $white;
+        color: $heading !important;
+        @include box-shadow($box-shadow);
+
+        i {
+            @include animation(buttonIcon 1s ease-in infinite);
+        }
+
+        &::before {
+            left: 110%;
+        }
+    }
+}
+
+@-webkit-keyframes buttonIcon {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes buttonIcon {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.confer-btn-2 {
+    position: relative;
+    z-index: 1;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: $white;
+    border-radius: 23px;
+    @include transition-duration(500ms);
+
+    i {
+        margin-left: 4px;
+    }
+
+    &.btn-2 {
+        color: $heading;
+    }
+
+    &:focus,
+    &:hover {
+        font-weight: 500;
+        @include box-shadow($box-shadow);
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+.confer-btn-white {
+    position: relative;
+    z-index: 1;
+    height: 46px;
+    padding: 0 25px;
+    border: 2px solid $white;
+    color: $white;
+    border-radius: 23px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 42px;
+    font-weight: 500;
+    @include transition-duration(500ms);
+
+    i {
+        margin-left: 5px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+    }
+}
+
+.confer-btn-white-2 {
+    position: relative;
+    z-index: 1;
+    height: 46px;
+    padding: 0 25px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: $white;
+    border-radius: 23px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 42px;
+    font-weight: 500;
+    @include transition-duration(500ms);
+
+    i {
+        margin-left: 3px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+    }
+}
+
+.confer-gb-btn {
+    position: relative;
+    z-index: 1;
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 46px;
+    padding: 0 25px;
+    min-width: 180px;
+    height: 46px;
+    @include transition-duration(500ms);
+    border-radius: 23px;
+    border: none;
+    overflow: hidden;
+
+    &::before {
+        @include transition-duration(800ms);
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        top: -10%;
+        left: -10%;
+        content: '';
+        background: $primary;
+        background-image: -webkit-linear-gradient(120deg, rgb(80, 90, 221) 0%, rgb(223, 66, 177) 100%);
+        background-image: -ms-linear-gradient(120deg, rgb(80, 90, 221) 0%, rgb(223, 66, 177) 100%);
+        z-index: -2;
+    }
+
+    &::after {
+        @include transition-duration(500ms);
+        position: absolute;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+        border-radius: 23px;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        background-color: $bg-blue;
+        content: '';
+        z-index: -1;
+    }
+
+    &:hover,
+    &:focus {
+        color: $white;
+
+        &::after {
+            opacity: 0;
+        }
+    }
+}

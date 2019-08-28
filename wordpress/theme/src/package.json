@@ -1,0 +1,46 @@
+{
+  "name": "schultz",
+  "version": "1.0.0",
+  "description": "schultz theme for FOSSDay",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doseextra/schultz.git"
+  },
+  "author": "Dose Extra/Regis Tomkiel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doseextra/schultzissues"
+  },
+  "homepage": "https://github.com/doseextra/schultz#readme",
+  "devDependencies": {
+    "laravel-mix": "0.*"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "counterup": "^1.0.2",
+    "elegant-icons": "0.0.1",
+    "font-awesome": "^4.7.0",
+    "imagesloaded": "^4.1.4",
+    "isotope-layout": "^3.0.6",
+    "jarallax": "^1.10.6",
+    "jquery": "^2.2.4",
+    "jquery-countdown": "^2.2.0",
+    "jquery-waypoints": "^2.0.5",
+    "jquery.easing": "^1.4.1",
+    "magnific-popup": "^1.1.0",
+    "material-design-iconic-font": "^2.2.0",
+    "owl.carousel2": "^2.2.1",
+    "popper.js": "^1.14.5",
+    "wowjs": "^1.1.3"
+  }
+}
