@@ -35,7 +35,7 @@
             autoplayTimeout: 10000,
             nav: true,
             navText: [('<i class="zmdi zmdi-chevron-left"></i>'), ('<i class="zmdi zmdi-chevron-right"></i>')]
-        })
+        });
 
         welcomeSlider.on('translate.owl.carousel', function () {
             var layer = $("[data-animation]");
@@ -148,14 +148,14 @@
     $('.portfolio-menu button.btn').on('click', function () {
         $('.portfolio-menu button.btn').removeClass('active');
         $(this).addClass('active');
-    })
+    });
 
     // ********************************
     // :: 7.0 Search Button Active Code
     // ********************************
     $('.search-btn').on('click', function () {
         $('.search-form').toggleClass('search-form-active');
-    })
+    });
 
     // ************************
     // :: 8.0 Stick Active Code

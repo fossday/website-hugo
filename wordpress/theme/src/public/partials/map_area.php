@@ -10,7 +10,7 @@
                 </div>
                 <div class="event-time">
                     <p><i class="zmdi zmdi-alarm-check"></i>
-                        <?php echo date('d F Y',strtotime(get_post_meta($post->ID, 'vega_events_date', true))); ?>
+                        <?php echo gmstrftime('%d de %B de %Y',strtotime(get_post_meta($post->ID, 'vega_events_date', true))); ?>
                     </p>
                     <p><i class="zmdi zmdi-map"></i>
                         <?php echo get_post_meta($post->ID, 'vega_events_address', true) ?></p>

@@ -97,37 +97,7 @@
 
             <!-- Blog Sidebar Area -->
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="confer-sidebar-area mb-100">
-
-                    <!-- Single Widget Area -->
-                    <div class="single-widget-area">
-                        <h5 class="widget-title mb-30">Postagens recentes</h5>
-
-                         <!-- Single Recent Post Area -->
-                        <?php 
-                            $related = new WP_Query(array('posts_per_page' => 5));
-                            
-                            if( $related->have_posts() ) { 
-                                while( $related->have_posts() ) { 
-                                    $related->the_post(); ?>
-
-                        <div class="single-recent-post-area d-flex align-items-center">
-                            <!-- Thumb -->
-                            <div class="post-thumb">
-                                <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $_post->ID, 'large' ); ?></a>
-                            </div>
-                            <!-- Content -->
-                            <div class="post-content">
-                                <a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>
-                                <a href="<?php the_permalink(); ?>" class="post-date"><i class="zmdi zmdi-time"></i> <?php echo get_the_date(); ?></a>
-                            </div>
-                        </div>
-                        <?php   }
-                                wp_reset_postdata();
-                            }
-                            ?>
-                    </div>
-
+                <div class="confer-sidebar-area mb-100"
                     <!-- Single Widget Area -->
                     <div class="single-widget-area">
                         <h5 class="widget-title mb-30">Categorias</h5>
@@ -136,18 +106,9 @@
                         <?php wp_list_categories(array(
                                 'orderby'    => 'name',
                                 'show_count' => true,
-                                'title_li' => ''
+                                'title_li' => '',
+                                'post_type' => 'talks'
                             )); ?>
-                    </div>
-
-                    <!-- Single Widget Area -->
-                    <div class="single-widget-area">
-                        <h5 class="widget-title mb-30">Tags</h5>
-
-                        <!-- Tag Cloud -->
-                        <ul class="tag-cloud">
-                            <li><?php wp_tag_cloud(); ?></li>
-                        </ul>
                     </div>
 
                 </div>

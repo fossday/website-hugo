@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-<html lang="pt-BR" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="pt_BR" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"/>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <base href="<?php echo get_bloginfo( 'siteurl' );?>"/>
@@ -39,6 +39,26 @@
     echo '<meta name="twitter:site" content=""/>';
     echo '<meta name="twitter:image" content=""/>';
 
+} elseif(is_page()) {
+
+    echo '<title>' . get_bloginfo( 'name' ) . ' ' . get_the_title() .'</title>';
+    echo '<meta name="description" content="' . get_the_excerpt() . '"/>';
+    echo '<meta property="og:type" content="article" />';
+    echo '<meta property="og:title" content="' . get_the_title() .'"/>';
+    echo '<meta property="og:url" content="' . get_the_permalink() .'"/>';
+    echo '<meta property="og:site_name" content="' . get_bloginfo( 'name' ) . '"/>';
+    echo '<meta property="og:image" content="' .  get_the_post_thumbnail_url(get_the_ID(),'large') .'"/>';
+    echo '<meta property="article:author" content="'.  get_the_author_meta('facebook_profile') . '"/>';
+    echo '<meta property="article:published_time" content="' . get_the_date() .'">';
+    echo '<meta property="article:publisher" content="'.  get_option('facebook_field') . '" />';
+    echo '<meta property="og:site_name" content="'. get_bloginfo( 'name' ). '" />';
+    echo '<meta name="twitter:card" content="summary"/>';
+    echo '<meta name="twitter:description" content=""/>';
+    echo '<meta name="twitter:title" content=""/>';
+    echo '<meta name="twitter:site" content=""/>';
+    echo '<meta name="twitter:image" content=""/>';
+
+
 } elseif(is_home()) {
 
     echo '<title>' . get_bloginfo( 'name' ) .' - ' . get_bloginfo( 'description' ) .'</title>';
@@ -48,7 +68,7 @@
     echo '<meta property="og:description" content="'. get_option('description_field') .'"/>';
     echo '<meta property="og:url" content="' . get_bloginfo('siteurl') . '"/>';
     echo '<meta property="og:site_name" content="' . get_bloginfo('name') .'"/>';
-    echo '<meta property="og:image" content="http://blog.careus.com.br/wp-content/uploads/2019/08/JCvf0gSuMuecn6ynpLIluA1fEIhiXfRptmdkfXUl.png"/>';
+    echo '<meta property="og:image" content=""/>';
 } ?>
 <meta property="fb:admins" content=""/>
 <meta property="fb:pages" content=""/>
@@ -105,7 +125,7 @@
                                  'menu_class'=> '',) ); 
                             ?>
                             <!-- Get Tickets Button -->
-                            <a href="<?php echo get_post_meta($post->ID, 'vega_events_submit_link', true) ?>" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Quero palestrar <i class="zmdi zmdi-long-arrow-right"></i></a>
+                            <a href="<?php echo get_post_meta($post->ID, 'vega_events_subscribe_link', true) ?>" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Quero participar <i class="zmdi zmdi-long-arrow-right"></i></a>
                         </div>
                         <!-- Nav End -->
                     </div>

@@ -602,4 +602,7 @@
 
 .post-categories {
     display: flex;
+        li {
+            display: flex;
+        }
 }

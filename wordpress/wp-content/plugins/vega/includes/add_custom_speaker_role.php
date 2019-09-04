@@ -2,25 +2,26 @@
 
 function add_roles_on_plugin_activation()
 {
+  remove_role( 'speaker' );
   add_role(
     'speaker',
     __('Palestrante'),
     array(
-      'level_1' => true,
-      'read'         => true,
-      'read_talks'  => true,
-      'edit_talk'   => true,
-      'edit_talks'   => true,
-      'edit_published_talks' => true,
-      'edit_posts' => false,
-      'publish_posts' => false,
-      'delete_posts' => false,
-      'upload_files'  => true
+	      'level_1' => true,
+	      'read'         => true,
+	      'read_talks'  => true,
+	      'edit_talk'   => true,
+	      'edit_talks'   => true,
+	      'edit_published_talks' => true,
+	      'edit_posts' => false,
+	      'publish_posts' => false,
+	      'delete_posts' => false,
+	      'upload_files'  => true
     )
   );
 
   // Role for update
-  $roles = array('editor', 'administrator');
+  $roles = array('editor','administrator');
 
   // Loop through each role and assign capabilities
   foreach ($roles as $the_role) {
@@ -40,5 +41,3 @@ function add_roles_on_plugin_activation()
     $role->add_cap('delete_published_talks');
   }
 }
-register_activation_hook(__FILE__, 'add_roles_on_plugin_activation');
-//remove_role( 'speaker' );

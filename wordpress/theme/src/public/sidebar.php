@@ -1,76 +1,83 @@
-<div class="col-lg-4">
-                    <div class="blog_right_sidebar">
-                        <aside class="single_sidebar_widget search_widget">
-                            <form action="#">
-                               <div class="form-group">
-                                  <div class="input-group mb-3">
-                                     <input type="text" class="form-control" placeholder='Procurar no Blog'
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Procurar no Blog'">
-                                     <div class="input-group-append">
-                                        <button class="btn" type="button"><i class="ti-search"></i></button>
-                                     </div>
-                                  </div>
-                               </div>
-                               <button class="button rounded-0 primary-bg text-white w-100 btn_1" type="submit">Pesquisar</button>
-                            </form>
-                         </aside>
-
-                        <aside class="single_sidebar_widget post_category_widget">
-                            <h4 class="widget_title">Categorias</h4>
-                            <?php wp_list_categories(array(
-                                'orderby'    => 'name',
-                                'show_count' => true,
-                                'title_li' => ''
-                            )); ?>
-                        </aside>
-
-                        <aside class="single_sidebar_widget popular_post_widget">
-                            <h3 class="widget_title">Autores do Blog</h3>
-                            <?php $users = get_users('orderby=post_count&role=author&order=DESC'); 
-                      
-                            ?>
-                            <?php
-                                foreach($users as $user)
-                                {
-                                    if(!in_array( 'subscriber', $user->roles ) && !in_array( 'administrator', $user->roles))
-                                    {
-                                    ?>
-                                    <div class="media post_item">
-                                            <?php echo get_avatar( $user->user_email, $size = '80', $default, $alt, $args = array('class' => 'round')); ?>
-                                            <div class="media-body">
-                                                <a href="<?php echo get_author_posts_url( $user->ID, $user->user_nicename); ?>">
-                                                    <h3><?php echo $user->first_name . ' ' . $user->last_name; ?></h3>
-                                                </a>
-                                                <p><a href="mailto:<?php echo $user->user_email; ?>" class="social-link" target="_blank"> <?php echo $user->user_email; ?></a></p>
-                                                <p><a href="<?php echo get_author_posts_url( $user->ID, $user->user_nicename); ?>" class="social-link" target="_blank">Todos os posts</a></p>
-                                            </div>
-                                    </div>
-                                <?php
-                                    }
-                                }
-                            ?>
-                        </aside>
-                        <aside class="single_sidebar_widget tag_cloud_widget">
-                            <h4 class="widget_title">Tags</h4>
-                            <ul class="list">
-                                <li>
-                                    <?php wp_tag_cloud(); ?>
-                                </li>
-                            </ul>
-                        </aside>
+<!-- Blog Sidebar Area -->
+<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+    <div class="confer-sidebar-area mb-100">
 
 
-                        <aside class="single_sidebar_widget newsletter_widget">
-                            <h4 class="widget_title">Newsletter</h4>
-
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Endereço de E-mail'" placeholder='Endereço de E-mail' required>
-                                </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1"
-                                    type="submit">Subscrever</button>
-                            </form>
-                        </aside>
-                    </div>
+        <!-- Single Widget Area -->
+        <div class="single-widget-area">
+            <!-- Post Author Widget -->
+            <div class="post-author-widget">
+                <!-- Thumbnail -->
+                <div class="post-author-avatar">
+                    <img src="img/bg-img/50.jpg" alt="">
                 </div>
+                <!-- Author Content -->
+                <div class="post-author-content">
+                    <h5>Crystal Perkins</h5>
+                    <span>Photographer</span>
+                    <p>On the other hand, de-nounce with righteous</p>
+                </div>
+                <!-- Social Info -->
+                <div class="author-social-info">
+                    <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                    <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                    <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                    <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Single Widget Area -->
+        <div class="single-widget-area">
+            <h5 class="widget-title mb-30">Postagens recentes</h5>
+
+            <!-- Single Recent Post Area -->
+			<?php
+			$related = new WP_Query(array('posts_per_page' => 5));
+
+			if( $related->have_posts() ) {
+				while( $related->have_posts() ) {
+					$related->the_post(); ?>
+
+                    <div class="single-recent-post-area d-flex align-items-center">
+                        <!-- Thumb -->
+                        <div class="post-thumb">
+                            <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $_post->ID, 'large' ); ?></a>
+                        </div>
+                        <!-- Content -->
+                        <div class="post-content">
+                            <a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink(); ?>" class="post-date"><i class="zmdi zmdi-time"></i> <?php echo get_the_date(); ?></a>
+                        </div>
+                    </div>
+				<?php   }
+				wp_reset_postdata();
+			}
+			?>
+        </div>
+
+        <!-- Single Widget Area -->
+        <div class="single-widget-area">
+            <h5 class="widget-title mb-30">Categorias</h5>
+
+            <!-- Catagories List -->
+			<?php wp_list_categories(array(
+				'orderby'    => 'name',
+				'show_count' => true,
+				'title_li' => ''
+			)); ?>
+        </div>
+
+        <!-- Single Widget Area -->
+        <div class="single-widget-area">
+            <h5 class="widget-title mb-30">Tags</h5>
+
+            <!-- Tag Cloud -->
+            <ul class="tag-cloud">
+                <li><?php wp_tag_cloud(); ?></li>
+            </ul>
+        </div>
+
+    </div>
+</div>

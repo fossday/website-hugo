@@ -2,8 +2,8 @@
 wordpress/wp-content/upgrade
 wordpress/wp-content/languages
 wordpress/wp-content/uploads
+!wordpress/wp-content/plugins/vega
 wordpress/wp-content/plugins
-!wordpress/wp-content/plugins/sap
 wordpress/theme/src/node_modules
 
 wordpress/theme/src/*.zip

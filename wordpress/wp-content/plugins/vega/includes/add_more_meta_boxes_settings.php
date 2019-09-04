@@ -121,6 +121,26 @@ function sap_general_section()
     )
   );
 
+  // Custom fields for events
+
+  add_settings_section(
+    'event_settings_section',
+    'Sobre eventos',
+    'event_section_options_callback',
+    'general'
+  );
+
+  add_settings_field(
+    'pdf_download_field',
+    '<label for="pdf_download_field"><span class="dashicons dashicons-media-spreadsheet"></span> ' . __('Link PDF com palestras', 'pdf_download_field') . '</label>',
+    'sap_fields_callback',
+    'general',
+    'event_settings_section',
+    array(
+      'pdf_download_field'
+    )
+  );
+
   register_setting('general', 'email_field', 'esc_attr');
   register_setting('general', 'facebook_field', 'esc_attr');
   register_setting('general', 'github_field', 'esc_attr');
@@ -131,6 +151,7 @@ function sap_general_section()
   register_setting('general', 'feed_field', 'esc_attr');
   register_setting('general', 'analytics_field', 'esc_attr');
   register_setting('general', 'description_field', 'esc_attr');
+  register_setting( 'general', 'event_settings_section', 'esc_attr');
 }
 
 function sap_section_options_callback()
@@ -138,9 +159,9 @@ function sap_section_options_callback()
   echo '<p>Informaçoes de contato, redes sociais e rastreamento.</p>';
 }
 
-function sap_section_date_callback()
+function event_section_options_callback()
 {
-  echo '<p>Quando será o próximo evento?.</p>';
+  echo '<p>Informaçoes referentes à palestras.</p>';
 }
 
 function sap_fields_callback_date($args)

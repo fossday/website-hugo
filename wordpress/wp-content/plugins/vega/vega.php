@@ -25,6 +25,15 @@ if (!function_exists('get_logo')) {
 };
 // End of Display Logo
 
+//Register Custom role for users
+require plugin_dir_path( __FILE__ ) . 'includes/add_custom_speaker_role.php';
+register_activation_hook(__FILE__, 'add_roles_on_plugin_activation');
+//End of Register Custom role for users
+
+//Register Upload Filter for "speaker" user
+require plugin_dir_path(__FILE__) . 'includes/trusted_upload_files.php';
+//End of register Upload Filter for "speaker" user
+
 // Custom functions for page
 add_post_type_support( 'page', 'excerpt' );
 // End of Custom functions for page
@@ -64,11 +73,3 @@ require  plugin_dir_path( __FILE__ ) . 'includes/add_more_infos_users.php';
 //Rigester Custom Fields for Settings page
 require  plugin_dir_path( __FILE__ ) . 'includes/add_more_meta_boxes_settings.php';
 //End of Rigester Custom Fields for Settings page
-
-//Register Custom role for users
-require plugin_dir_path( __FILE__ ) . 'includes/add_custom_speaker_role.php'; 
-//End of Register Custom role for users
-
-//Register Upload Filter for "speaker" user
-require plugin_dir_path(__FILE__) . 'includes/trusted_upload_files.php';
-//End of register Upload Filter for "speaker" user

@@ -78,7 +78,7 @@
                                                 </div>
                                                 <!-- Single Schedule Info -->
                                                 <div class="schedule-time-place">
-                                                    <p><i class="zmdi zmdi-time"></i> <?php echo get_post_meta($post->ID, 'vega_talks_time', true); ?></p>
+                                                    <p><i class="zmdi zmdi-time"></i> <?php echo get_post_meta($post->ID, 'vega_talks_time', true); ?> - <?php echo get_post_meta($post->ID, 'vega_talks_room', true); ?></p>
                                                     <p><i class="fa fa-list"></i> <?php if(get_the_category()){foreach(get_the_category() as $category){ echo $category->name . '. '; }}; ?> </p>
                                                 </div>
                                                 <!-- Schedule Btn -->
@@ -94,7 +94,7 @@
                                 <div class="col-12">
                                     <div class="more-schedule-btn text-center mt-50 wow fadeInUp"
                                         data-wow-delay="300ms">
-                                        <a href="#" class="btn confer-btn">Download em .pdf <i class="fa fa-download"></i></a>
+                                        <a href="<?php echo get_option( 'twitter_field' ); ?>" class="btn confer-btn">Download em .pdf <i class="fa fa-download"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@
                                         </div>
                                         <!-- Single Schedule Info -->
                                         <div class="schedule-time-place">
-                                            <p><i class="zmdi zmdi-time"></i> <?php echo get_post_meta($post->ID, 'vega_talks_time', true); ?></p>
+                                            <p><i class="zmdi zmdi-time"></i> <?php echo get_post_meta($post->ID, 'vega_talks_time', true); ?> - <?php echo get_post_meta($post->ID, 'vega_talks_room', true); ?></p>
                                             <p><i class="fa fa-list"></i> <?php if(get_the_category()){foreach(get_the_category() as $category){ echo $category->name. '. '; }}; ?></p>
                                         </div>
                                         <!-- Schedule Btn -->
@@ -142,7 +142,7 @@
                                 <div class="col-12">
                                     <div class="more-schedule-btn text-center mt-50 wow fadeInUp"
                                         data-wow-delay="300ms">
-                                        <a href="#" class="btn confer-btn">Download em .pdf <i class="fa fa-download"></i></a>
+                                        <a href="<?php echo get_option( 'twitter_field' ); ?>" class="btn confer-btn">Download em .pdf <i class="fa fa-download"></i></a>
                                     </div>
                                 </div>
                             </div>

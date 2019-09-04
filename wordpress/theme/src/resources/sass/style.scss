@@ -72,3 +72,9 @@
 .social-info-bio {
     padding: 1em 0 0 0;
 }
+.about-thumb {
+    img {
+        border-radius: 0.2em;
+        box-shadow: inset 0 0 0em #4c4c4a, 0 0 1em #000000;
+    }
+}

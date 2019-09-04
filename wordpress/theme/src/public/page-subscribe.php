@@ -1,7 +1,7 @@
-<?php /* Template Name: submit */ ?>
+<?php /* Template Name: subscribe */ ?>
 
 
-<?php 
+<?php
 
     $events = get_posts(array(
         'showposts' => 1,
@@ -26,7 +26,7 @@
                             <h6 class="wow fadeInUp" data-wow-delay="300ms"><?php echo get_the_title(); ?></h6>
                             <h3 class="wow fadeInUp" data-wow-delay="300ms"><?php echo get_the_excerpt(); ?></h3>
                             <p class="wow fadeInUp" data-wow-delay="300ms"><?php the_content(); ?></p>
-                            <a href="<?php echo get_post_meta($post->ID, 'vega_events_submit_link', true) ?>" class="btn confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Quero Palestrar <i class="zmdi zmdi-long-arrow-right"></i></a>
+                            <a href="<?php echo get_post_meta($post->ID, 'vega_events_subscribe_link', true) ?>" class="btn confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Inscrição <i class="zmdi zmdi-long-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -49,7 +49,7 @@
                                 <h6>Falta pouco</h6>
                                 <h4>
                                 <?php
-                                    echo date('d F Y',strtotime(get_post_meta($post->ID, 'vega_events_date', true))); 
+                                    echo gmstrftime('%A, %d de %B de %Y',strtotime(get_post_meta($post->ID, 'vega_events_date', true)));
                                 ?>
                                 </h4>
                             </div>
@@ -73,13 +73,13 @@
                     <div class="col-12">
                         <div class="call-to-action-content text-center">
                             <div class="call-to-action-heading">
-                                <h6>Seja um palestrante</h6>
-                                <h2>Submeter palestra</h2>
+                                <h6>Participar do evento</h6>
+                                <h2>Realizar inscrição</h2>
                             </div>
                             <div class="event-time">
                                 <p><i class="zmdi zmdi-alarm-check"></i> 
                                 <?php
-                                    echo date('d F Y',strtotime(get_post_meta($post->ID, 'vega_events_date', true))); 
+                                    echo gmstrftime('%A, %d de %B de %Y',strtotime(get_post_meta($post->ID, 'vega_events_date', true)));
                                 ?>
                                 </p>
                                 <p><i class="zmdi zmdi-map"></i> <?php echo get_post_meta($post->ID, 'vega_events_location', true) ?></p>
@@ -87,7 +87,7 @@
                         </div>
 
                         <div class="ticket-btn text-center">
-                            <a href="<?php echo get_post_meta($post->ID, 'vega_events_submit_link', true) ?>" class="btn confer-btn-white-2 mt-40">Eu quero palestrar <i class="zmdi zmdi-long-arrow-right"></i></a>
+                            <a href="<?php echo get_post_meta($post->ID, 'vega_events_subscribe_link', true) ?>" class="btn confer-btn-white-2 mt-40">Eu quero participar <i class="zmdi zmdi-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                 <div class="row">
 
                     <!-- Get Submit link  -->
-                    <?php $submit = get_post_meta($post->ID, 'vega_events_submit_link', true); ?>
+                    <?php $submit = get_post_meta($post->ID, 'vega_events_subscribe_link', true); ?>
                     <!-- End of get Submit link  -->
 
                     <!-- Get Speakers -->
@@ -123,7 +123,7 @@
 
                     <div class="col-12">
                         <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
-                            <a class="btn confer-btn" href="<?php echo $submit ?>">Enviar palestra <i class="zmdi zmdi-long-arrow-right"></i></a>
+                            <a class="btn confer-btn" href="<?php echo $submit ?>">Inscrição <i class="zmdi zmdi-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

@@ -12,24 +12,20 @@
         <div class="row">
             <div class="col-12">
                 <!-- Our Sponsor area -->
-                <div class="our-sponsor-area d-flex flex-wrap">
-            
-            <?php
-                $sponsors = get_posts(array(
-                    'showposts' => -1,
-                    'post_type' => 'sponsors'
-                    ));
-                    
-                    
-                    foreach ($sponsors as $post) { 
-                        setup_postdata($post);
-                        
-                    ?>
-
-                    <!-- Single Sponsor -->
-                    <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                        <a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php echo get_the_post_thumbnail($post->ID, array('500', '500')) ?></a>
-                    </div>
+                <div class="our-sponsor-area row">
+                    <?php
+                        $sponsors = get_posts(array(
+                            'showposts' => -1,
+                            'post_type' => 'sponsors',
+                            'order' => 'ASC'
+                            ));
+                            foreach ($sponsors as $post) {
+                                setup_postdata($post);
+                            ?>
+                            <!-- Single Sponsor -->
+                            <div class="single-sponsor wow fadeInUp col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-wow-delay="300ms">
+                                <a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php echo get_the_post_thumbnail($post->ID, array('500', '500')) ?></a>
+                            </div>
                     <?php }; ?>
                 </div>
             </div>
@@ -47,12 +43,13 @@
         <div class="row">
                 <div class="col-12">
                     <!-- Our Sponsor area -->
-                    <div class="our-sponsor-area d-flex flex-wrap">
+                    <div class="our-sponsor-area row">
                 
                 <?php
                     $supporters = get_posts(array(
                         'showposts' => -1,
-                        'post_type' => 'supporter'
+                        'post_type' => 'supporter',
+                        'order' => 'ASC'
                         ));
                         
                         foreach ($supporters as $post) { 
@@ -61,7 +58,7 @@
                         ?>
     
                         <!-- Single supporter -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                        <div class="single-sponsor wow fadeInUp col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-wow-delay="300ms">
                             <a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php echo get_the_post_thumbnail($post->ID, array('500', '500')) ?></a>
                         </div>
                         <?php }; ?>
