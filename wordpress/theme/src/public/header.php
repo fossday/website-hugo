@@ -41,7 +41,7 @@
 
 } elseif(is_page()) {
 
-    echo '<title>' . get_bloginfo( 'name' ) . ' ' . get_the_title() .'</title>';
+    echo '<title>' . get_bloginfo( 'name' ) . ' - ' . get_the_title() .'</title>';
     echo '<meta name="description" content="' . get_the_excerpt() . '"/>';
     echo '<meta property="og:type" content="article" />';
     echo '<meta property="og:title" content="' . get_the_title() .'"/>';
@@ -97,7 +97,7 @@
     <!-- /Preloader -->
 
     <!-- Header Area Start -->
-    <header class="header-area <?php if(is_single() || is_archive()){ echo 'is-single'; }; ?>">
+    <header class="header-area <?php if(is_single() || is_archive() || is_page()){ echo 'is-single'; }; ?>">
         <div class="classy-nav-container breakpoint-off">
             <div class="container">
                 <!-- Classy Menu -->

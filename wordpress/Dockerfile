@@ -1,4 +1,4 @@
-FROM wordpress:5.2-apache
+FROM wordpress:5.2.3-apache
 
 RUN rm /etc/apt/preferences.d/no-debian-php
 RUN apt update && apt upgrade -y && \

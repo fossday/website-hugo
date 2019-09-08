@@ -18,8 +18,8 @@ function sap_custom_post_talk()
     'all_items'          => __('Todas Palestras'),
     'view_item'          => __('Ver Palestra'),
     'search_items'       => __('Procurar Palestra'),
-    'featured_image'     => 'Foto Palestrante',
-    'set_featured_image' => 'Add Foto'
+    'featured_image'     => 'Capa Palestra',
+    'set_featured_image' => 'Add imagem'
   );
 
   $args = array(
@@ -37,7 +37,7 @@ function sap_custom_post_talk()
     'taxonomies' => array('category','city_events'),
     'menu_icon'          => 'dashicons-format-status',
     'show_in_rest' => true,
-    'supports' => array('editor','title','excerpt','comments','custom-fields','author')
+    'supports' => array('editor','title','excerpt','thumbnail','comments','custom-fields','author')
   );
 
   register_post_type('talks', $args);

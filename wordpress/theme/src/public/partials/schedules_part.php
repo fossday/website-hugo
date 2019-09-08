@@ -29,7 +29,8 @@
                             'taxonomy' => 'city_events',
                             'field' => 'slug',
                             'terms' => $post->post_name)
-                        ))
+                            )
+                        )
                     );
                     $morning = array();
                     $afternoon = array();
@@ -78,7 +79,11 @@
                                                 </div>
                                                 <!-- Single Schedule Info -->
                                                 <div class="schedule-time-place">
-                                                    <p><i class="zmdi zmdi-time"></i> <?php echo get_post_meta($post->ID, 'vega_talks_time', true); ?> - <?php echo get_post_meta($post->ID, 'vega_talks_room', true); ?></p>
+	                                                <?php
+	                                                $time = substr_replace(get_post_meta($post->ID, 'vega_talks_time', true),'h', 2,0 );
+	                                                $time = substr_replace($time,'min', 6, 0);
+	                                                ?>
+                                                    <p><i class="zmdi zmdi-time"></i> <?php echo $time; ?> - <?php echo get_post_meta($post->ID, 'vega_talks_room', true); ?></p>
                                                     <p><i class="fa fa-list"></i> <?php if(get_the_category()){foreach(get_the_category() as $category){ echo $category->name . '. '; }}; ?> </p>
                                                 </div>
                                                 <!-- Schedule Btn -->
@@ -126,7 +131,11 @@
                                         </div>
                                         <!-- Single Schedule Info -->
                                         <div class="schedule-time-place">
-                                            <p><i class="zmdi zmdi-time"></i> <?php echo get_post_meta($post->ID, 'vega_talks_time', true); ?> - <?php echo get_post_meta($post->ID, 'vega_talks_room', true); ?></p>
+                                            <?php
+                                                $time = substr_replace(get_post_meta($post->ID, 'vega_talks_time', true),'h', 2,0 );
+                                                $time = substr_replace($time,'min', 6, 0);
+                                            ?>
+                                            <p><i class="zmdi zmdi-time"></i> <?php echo $time; ?> - <?php echo get_post_meta($post->ID, 'vega_talks_room', true); ?></p>
                                             <p><i class="fa fa-list"></i> <?php if(get_the_category()){foreach(get_the_category() as $category){ echo $category->name. '. '; }}; ?></p>
                                         </div>
                                         <!-- Schedule Btn -->

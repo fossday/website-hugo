@@ -51,7 +51,7 @@ function vega_talks_time() {
 	$location = get_post_meta( $post->ID, 'vega_talks_time', true );
 
 	// Output the field
-	echo '<input type="time" name="vega_talks_time" value="' . esc_textarea( $location ) . '" class="widefat">';
+	echo '<input type="time" name="vega_talks_time" value="' . substr_replace($location,':', 2,0 ) . '" class="widefat">';
 }
 
 // Generate Html for vega_talks_period
@@ -123,7 +123,7 @@ function vega_save_talks_meta( $post_id, $post ) {
 	// This sanitizes the data from the field and saves it into an array $vega_talks_time.
 
 	//vega_talks_time
-	$vega_event_data['vega_talks_time']   = $_POST['vega_talks_time'];
+	$vega_event_data['vega_talks_time']   = str_replace(':','', $_POST['vega_talks_time']);
 	$vega_event_data['vega_talks_period'] = esc_textarea( $_POST['vega_talks_period'] );
 	$vega_event_data['vega_talks_room']   = esc_textarea( $_POST['vega_talks_room'] );
 

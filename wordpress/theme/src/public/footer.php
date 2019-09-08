@@ -17,11 +17,17 @@
 
                         <!-- Social Info -->
                         <div class="social-info">
-                            <a href="#"><i class="fa fa-facebook"></i><?php echo get_option( 'facebook_field' ); ?></a>
-                            <a href="<?php echo get_option( 'telegram_field' ); ?>"><i
-                                        class="fa fa-paper-plane"></i></a>
-                            <a href="#"><i class="fa fa-github"></i><?php echo get_option( 'twitter_field' ); ?></a>
-                            <a href="#"><i class="fa fa-linkedin"></i><?php echo get_option( 'linkedin_field' ); ?></a>
+                            <a href="<?php echo get_option( 'facebook_field' ); ?>">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="<?php echo get_option( 'telegram_field' ); ?>">
+                                <i class="fa fa-paper-plane"></i></a>
+                            <a href="<?php echo get_option( 'github_field' ); ?>">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="<?php echo get_option( 'linkedin_field' ); ?>">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

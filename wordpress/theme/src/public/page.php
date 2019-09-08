@@ -3,10 +3,8 @@
 <?php get_header(); ?>
 <!-- End of Get Header  -->
 
-<!-- Init content -->
-
 <!-- Blog Area Start -->
-<section class="confer-blog-details-area section-padding-100-0">
+<section class="confer-blog-details-area section-padding-100-0-17">
     <div class="container">
         <div class="row justify-content-center">
             <!-- Single Post Details Area -->
@@ -20,15 +18,19 @@
 
                         <!-- Post Meta -->
                         <div class="post-meta">
-                            <a class="post-date"><i class="zmdi zmdi-alarm-check"></i><?php the_date('j \d\e F \d\e Y'); ?></a>
+                            <a class="post-date"><i class="zmdi zmdi-alarm-check"></i> <?php the_date('j \d\e F \d\e Y'); ?></a>
                         </div>
 
                         <?php the_content(); ?>
 
+                    
                     </div>
 
                     <!-- Post Tags & Social Info -->
                     <div class="post-tags-social-area mt-30 pb-5 d-flex flex-wrap align-items-center">
+                        <!-- Popular Tags -->
+                        <div class="popular-tags d-flex align-items-center">
+                        </div>
 
                         <!-- Author Social Info -->
                         <div class="author-social-info">
@@ -38,10 +40,10 @@
                                     class="fa fa-twitter"></i></a>
                             <a
                                 href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i
-                                    class="fa fa-linkedin"></i></a>
+                                    class="fa fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -50,7 +52,7 @@
 <!-- Blog Area End -->
 
 <!-- Get Footer -->
-
 <?php get_footer(); ?>
+
 <?php endwhile;
 endif; ?>

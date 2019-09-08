@@ -20,7 +20,7 @@
 
                         <!-- Post Meta -->
                         <div class="post-meta">
-                            <a class="post-date"><i class="zmdi zmdi-alarm-check"></i><?php the_date(); ?></a>
+                            <a class="post-date"><i class="zmdi zmdi-alarm-check"></i><?php the_date('j \d\e F \d\e Y'); ?></a>
                             <a class="post-author"
                                 href="<?php echo get_author_posts_url(get_the_author_meta('ID'), get_the_author_meta('user_nicename')); ?>"><i
                                     class="zmdi zmdi-account"></i> <?php the_author_meta('first_name'); ?>

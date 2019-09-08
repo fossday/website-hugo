@@ -1,4 +1,5 @@
 <?php
+
     $data = get_posts(array(
         'showposts' => -1,
         'post_type' => 'talks',
@@ -12,7 +13,8 @@
 
     $authors = array();
 
-    foreach ($data as $post) { 
+    foreach ($data as $post) {
+
         setup_postdata($post);
         
         if (get_the_author_meta('user_login') !== 'zumbi' && !in_array(get_the_author_meta('ID'), $authors) ){?>
@@ -87,7 +89,6 @@
             </div>
         </div>
     <?php 
-    $authors[] = get_the_author_meta('ID');
-
+        $authors[] = get_the_author_meta('ID');
     } 
 } ?>
